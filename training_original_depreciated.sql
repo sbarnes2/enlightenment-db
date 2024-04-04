@@ -12157,6 +12157,9 @@ ALTER TABLE ONLY public.userstate
     ADD CONSTRAINT userstate_pkey PRIMARY KEY (id);
 
 
+ALTER TABLE ADD COLUMN roles VARCHAR(20);
+
+
 --
 -- PostgreSQL database dump complete
 --
