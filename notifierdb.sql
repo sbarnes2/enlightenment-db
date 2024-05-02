@@ -81,7 +81,7 @@ CREATE TABLE "public"."training_record"(
     "needs_verification" BOOLEAN DEFAULT false,
     "trained" BOOLEAN DEFAULT false,
     "verified" BOOLEAN DEFAULT false,
-    "date_verified" TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP,
+    "date_verified" DATE NULL,
     "verified_by" INTEGER not null default 0, --< user id of manager / admin
     "current_escalation_level" INTEGER not null default 0
 );
