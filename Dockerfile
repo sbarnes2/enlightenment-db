@@ -1,6 +1,6 @@
-FROM postgres:16-alpine 
+FROM postgres:16-bookworm 
 
 COPY initdb.pg.sql /docker-entrypoint-initdb.d/
 
-EXPOSE 5432
+EXPOSE 5432:5432
 

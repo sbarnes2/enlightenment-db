@@ -1,0 +1,972 @@
+Document Code	Doc. ID	Document Name	Rev. #	Doc. Type
+CO-OPS-PTL-050	926	 Factory Acceptance Test (FAT)  TQC in-line leak test equipment	0	Protocol
+CO-QA-PTL-120	1781	Enlightenment Notifier Validation and Verification Protocol	0	Protocol
+CO-QA-URS-031	1651	Enlightenment Software Requirements Specification	0	User Requirements Specification
+CO-LAB-FRM-086	676	0260 CT Forward Primer from SGS DNA	7	Forms
+CO-LAB-FRM-096	686	25U/µL Taq-B DNA Polymerase (Low Glycerol) Part Number 0270	3	Forms
+CO-LAB-FRM-108	698	CT di452 Probe from SGS Part No. 0289	5	Forms
+CO-LAB-FRM-106	696	CT/NG: CT/IC Detection Reagent	9	Forms
+CO-LAB-FRM-100	690	CT/NG: IC DNA Reagent	9	Forms
+CO-LAB-FRM-101	691	CT/NG: NG1/NG2/IC Primer Passivation Reagent	10	Forms
+CO-LAB-FRM-104	694	CT/NG: NG2/IC Detection Reagent	9	Forms
+CO-LAB-FRM-102	692	CT/NG: TaqUNG Reagent	9	Forms
+CO-LAB-FRM-107	697	IC di275 Probe from SGS Part No. 0288	5	Forms
+CO-LAB-FRM-099	689	Neisseria gonorrhoeae DNA Part Number 0273	2	Forms
+CO-LAB-FRM-079	669	Uracil DNA Glycosylase [50 thousand U/mL] Part Number 0240	4	Forms
+CO-QA-URS-040	1782	Enlightenment” Notifier Software Requirement Specification	0	User Requirements Specification
+CO-PRD1-FRM-231	1347	0.5M EDTA Oak House Production IQC	4	Forms
+CO-OPS-SOP-109	339	1 x lysis buffer	9	Standard Operating Procedure
+CO-OPS-SCR-001	1759	21011-4501 - Force End of Line Test Script	2	Script-io 
+CO-OPS-SCR-002	1760	21011-4502 Pneumatic End of Line Test Script	4	Script-io 
+CO-OPS-T-230	1756	21011-MEF010- FTC2 - Force Test Results Master Template for FTC2	8	Templates
+CO-OPS-T-229	1755	21011-MEF020-FTC2 - Force Test Configuration File.	15	Templates
+CO-OPS-T-231	1757	21011-MEF030 - Calibration Spread Sheet for FTC2.	15	Templates
+CO-OPS-T-226	1752	21011-MEP010-PTC2 Pneumatics End of Line Test Results Master	9	Templates
+CO-OPS-T-227	1753	21011-MEP020-PTC2 - Pneumatic Test Configuration File	11	Templates
+CO-OPS-T-232	1758	21011-MEP030 - Calibration Spreadsheet for PTC #2	11	Templates
+CO-OPS-T-222	1745	21011-MET010 Thermal - Sample Hold Template TTDL-No.2	10	Templates
+CO-OPS-T-223	1746	21011-MET011 Thermal - PCR HoldTemplate -TTDL-No.2	10	Templates
+CO-OPS-T-224	1747	21011-MET012 Thermal-PCR CycleTemplate for-TTDL-No.2.xlsm	12	Templates
+CO-OPS-T-225	1748	21011-MET013 Thermal-Detect HoldTemplate -TTDL-No.2.xlsx	10	Templates
+CO-OPS-T-221	1744	21011-MET015 - Thermal Test Summary Template	4	Templates
+CO-OPS-T-233	1768	21011-MET020 - Agilent Datalogger Configuration for TTC2	0	Templates
+CO-OPS-T-234	1769	21011-VCR003 Calibration Factors for 21011-TTDL-No.2	1	Templates
+CO-OPS-SOP-110	282	225mM Potassium phosphate buffer	3	Standard Operating Procedure
+CO-OPS-SOP-111	346	50U/uL T7 Exonuclease in CTNG Storage Buffer	4	Standard Operating Procedure
+CO-OPS-SOP-112	345	600pM Stocks of Synthetic Uracil containing Amplicon	3	Standard Operating Procedure
+CO-OPS-SOP-113	284	9.26pc (w.v) BSA in 208.3 mM Potassium Phosphate buffer	3	Standard Operating Procedure
+CO-OPS-SOP-114	283	9.26pc (w.v) NZ Source BSA in 208.3mM Potassium Phosphate buffer	3	Standard Operating Procedure
+CO-QA-JA-001	535	A Basic Guide to Finding Documents in SharePoint	2	Job Aid
+CO-QC-JA-019	1178	A Guide for QC Document Filing	0	Job Aid
+CO-IT-POL-022	1180	Access Control Policy	1	Policy
+CO-QA-SOP-030	472	Accessing and Finding Documents in QT9	3	Standard Operating Procedure
+CO-H&S-PRO-004	1528	Accident Incident and near miss reporting procedure	6	H&S Procedures
+CO-LAB-SOP-002	264	Agilent Bioanalyzer SOP for RNA 6000 Pico and Nano Kits	4	Standard Operating Procedure
+CO-PRD1-JA-008	978	Air conditioning	1	Job Aid
+CO-SUP-JA-062	1554	AirSea 2-8°c Shipper Packing Instructions	0	Job Aid
+CO-PRD1-FRM-244	1360	Albumin from bovine serum (BSA) Oak House Production IQC	5	Forms
+CO-QA-SOP-096	539	Analysis of Quality Data	5	Standard Operating Procedure
+CO-DES-T-219	1701	Analytical Verification Test Protocol template	0	Templates
+CO-DES-T-220	1702	Analytical Verification Test Report template	0	Templates
+CO-QA-SOP-274	1070	Applicable Standards Management Procedure	1	Standard Operating Procedure
+CO-LAB-LBL-003	882	Approved material label	2	Label
+CO-QA-REG-024	844	Archived Document Retrieval Log	1	Registers
+CO-QA-T-109	421	Archiving Box Contents List	4	Templates
+CO-LAB-LBL-019	899	Asset Calibration Label	2	Label
+CO-FIN-SOP-373	1572	Asset Capitalization Procedure	0	Standard Operating Procedure
+CO-IT-POL-023	1181	Asset Management Policy	1	Policy
+CO-LAB-FRM-278	1546	Asset Not Temperature Controlled Sign	0	Forms
+CO-LAB-REG-011	828	Asset Register	3	Registers
+CO-LAB-SOP-167	602	Attaching Electrode and Blister Adhesive and Blister Pack and Cover (M600)	5	Standard Operating Procedure
+CO-QA-FRM-194	1065	Auditor Competency Assessment	0	Forms
+CO-QA-FRM-193	1064	Auditor Qualification	0	Forms
+CO-QA-REG-033	1075	Auditor register	0	Registers
+CO-LAB-T-159	957	Autoclave Biological Indicator Check Form	0	Templates
+CO-QC-T-033	318	Autoclave Record	5	Templates
+CO-LAB-URS-039	1778	Automated Electrophoresis System URS	0	User Requirements Specification
+CO-QA-REG-007	501	Bacterial Stock Register	2	Registers
+CO-LAB-SOP-013	329	Balance calibration	6	Standard Operating Procedure
+CO-QC-T-028	313	Balance Calibration form	3	Templates
+CO-DES-PTL-006	463	Balance IQ/OQ	3	Protocol
+CO-LAB-SOP-164	599	Bambi compressor: Use and Maintenance	3	Standard Operating Procedure
+CO-LAB-REG-020	839	Batch Retention Register	1	Registers
+CO-LAB-URS-001	850	Binder incubator and humidity chamber User Requirement Specification	0	User Requirements Specification
+CO-LAB-SOP-012	274	Binder KBF-115 Oven	2	Standard Operating Procedure
+CO-SUP-T-184	1417	binx Commercial Invoice (Misc. shipments)	1	Templates
+CO-OPS-REG-029	867	binx health ltd Master Assay Code Register	7	Registers
+CO-SUP-FRM-177	951	binx health Vendor Information Form	0	Forms
+CO-CS-SOP-358	1476	binx io Field Service Procedure	0	Standard Operating Procedure
+CO-CS-FRM-275	1537	binx io RMA Number Request Form 	0	Forms
+CO-QA-T-042	354	binx Meeting Minutes Template	6	Templates
+CO-QA-T-038	350	binx Memorandum Template	8	Templates
+CO-SUP-T-185	1418	binx Packing List (Misc shipments)	1	Templates
+CO-DES-T-040	352	binx Report Template	7	Templates
+CO-DES-T-041	353	binx Technical Report Template	8	Templates
+CO-QC-T-107	419	Bioanalyzer Cleaning Record	3	Templates
+CO-H&S-T-203	1499	Blank Form for H&S COSHH assessments	6	Templates
+CO-OPS-PTL-037	816	Blister Cropping Press IQ and OQ Validation Protocol	1	Protocol
+CO-OPS-PTL-038	817	Blister Filling Rig and Cropping Press PQ Validation Protocol	3	Protocol
+CO-PRD1-FRM-232	1348	Brij- 58 Oak House Production IQC	4	Forms
+CO-OPS-SOP-115	341	BSA Solution	6	Standard Operating Procedure
+CO-IT-POL-024	1182	Business Continuity and Disaster Recovery Plan	1	Policy
+CO-LAB-FRM-066	656	C. trachomatis serotype F Elementary Bodies Part No. 0106	5	Forms
+CO-LAB-FRM-318	1733	Cabinet Usage Log	0	Forms
+CO-PRD1-FRM-204	1209	Calibrated Clock/Timer verification form	0	Forms
+CO-DES-PTL-008	465	Calibration of V&V Laboratory Timers	3	Protocol
+CO-OPS-T-139	451	Cartridge and Packing Bill of Materials Template	1	Templates
+CO-LAB-LBL-021	901	Cartridge Materials Label	1	Label
+CO-DES-SOP-243	15	CE Mark/Technical File Procedure	6	Standard Operating Procedure
+CO-QA-T-145	459	Certificate of Conformance	2	Templates
+CO-PRD1-FRM-303	1675	Certificate of Conformance – CT IC Detection Reagent – 7.082.002 – MOB-D-082	0	Forms
+CO-PRD1-FRM-183	987	Certificate of conformance – CT IC detection reagent -7.067.002 - MOB-D-074	1	Forms
+CO-PRD1-FRM-304	1676	Certificate of Conformance - CT IC Primer Passivation Reagent – 7.086.002 – MOB-D-086	0	Forms
+CO-PRD1-FRM-184	988	Certificate of conformance - CT IC primer passivation reagent -7.071.002 - MOB-D-078	1	Forms
+CO-PRD1-FRM-306	1678	Certificate of Conformance - IC DNA Reagent  – 7.088.002 – MOB-D-088	0	Forms
+CO-PRD1-FRM-185	989	Certificate of Conformance - IC DNA reagent - 7.073.002 - MOB-D-080	1	Forms
+CO-PRD1-FRM-307	1679	Certificate of Conformance - NG1 IC Detection Reagent  – 7.083.002 – MOB-D-083	0	Forms
+CO-PRD1-FRM-186	990	Certificate of Conformance - NG1 IC detection reagent - 7.068.002 - MOB-D-075	1	Forms
+CO-PRD1-FRM-308	1680	Certificate of Conformance - NG1 NG2 IC Primer Passivation Reagent  – 7.087.002 – MOB-D-087	0	Forms
+CO-PRD1-FRM-188	992	Certificate of Conformance - NG1 NG2 IC primer passivation reagent - 7.072.002 - MOB-D-079	1	Forms
+CO-PRD1-FRM-187	991	Certificate of Conformance - NG2 IC detection reagent - 7.069.002 - MOB-D-076	1	Forms
+CO-PRD1-FRM-309	1681	Certificate of Conformance - NG2 IC Detection Reagent – 7.084.002 – MOB-D-084	0	Forms
+CO-PRD1-FRM-305	1677	Certificate of Conformance - Taq UNG – 7.085.002 – MOB-D-085	0	Forms
+CO-PRD1-FRM-189	993	Certificate of Conformance - Taq UNG- 7.070.002 - MOB-D-077	1	Forms
+CO-PRD1-T-163	1052	Certificate of Conformance template	1	Templates
+CO-QA-T-008	293	Change Management Form	14	Templates
+CO-REG-T-216	1685	Change Management Pre-Checklist Form	0	Templates
+CO-QA-SOP-139	562	Change Management Procedure for Product/Project Documents	17	Standard Operating Procedure
+CO-QA-REG-001	493	Change Management Register	10	Registers
+CO-QA-FRM-311	1687	Change Request Form	0	Forms
+CO-H&S-PRO-002	1526	Chemical and Biological COSHH Guidance	9	H&S Procedures
+CO-LAB-JA-043	1337	CIR Job Aid	1	Job Aid
+CO-LAB-LBL-026	906	CIR Label	2	Label
+CO-QC-T-073	385	CL2 Laboratory Cleaning Record	9	Templates
+CO-QC-COP-002	852	CL2 Microbiology Laboratory Code of Practice	3	Code of Practice
+CO-LAB-FRM-180	968	Class II MSC Monthly Airflow Check Form	1	Forms
+CO-PRD1-SOP-261	974	Cleaning Procedure for Oak House Production Facility	7	Standard Operating Procedure
+CO-CA-T-147	549	Clinical Trial Agreement	2	Templates
+CO-IT-POL-025	1183	Code of Conduct	1	Policy
+CO-SD-FRM-171	891	Code Review	0	Forms
+CO-SUP-POL-035	1496	Cold Chain Shipping Policy	0	Policy
+CO-CA-SOP-081	505	Collection of In-house Collected Samples	2	Standard Operating Procedure
+CO-QA-T-044	356	Competency Assessment Form	5	Templates
+CO-CA-FRM-041	534	Consent for Voluntary Donation of In-house Collected Samples	2	Forms
+CO-LAB-LBL-015	895	Consumables Label	2	Label
+CO-LAB-REG-016	834	Consumables Register	2	Registers
+CO-LAB-JA-093	1710	Containment Level 2 Laboratory Weekly Cleaning Job Aid	0	Job Aid
+CO-LAB-POL-039	1707	Contamination Control Policy	0	Policy
+CO-SAM-SOP-009	245	Control of Marketing and Promotion	6	Standard Operating Procedure
+CO-QA-SOP-383	1684	Control of Product Labeling	1	Standard Operating Procedure
+CO-QC-T-051	363	Controlled Lab Notes Template	6	Templates
+CO-IT-REG-028	866	Controlled Laboratory Equipment Software List	3	Registers
+CO-LAB-SOP-156	591	Controlled Laboratory Notes	10	Standard Operating Procedure
+CO-SAM-T-069	381	Copy Approval Form	3	Templates
+CO-H&S-P-004	1535	Coronavirus (COVID-19) Policy on employees being vaccinated	1	H&S Policy
+CO-QA-SOP-007	74	Correction Removal and Recall Procedure	5	Standard Operating Procedure
+CO-QA-SOP-093	517	Corrective and Preventive Action Procedure	7	Standard Operating Procedure
+CO-H&S-COSHH-006	1505	COSH-Assessment - Corrosive Acids	6	COSHH Assessment
+CO-H&S-COSHH-013	1511	COSHH Assessment  - Dry Ice	5	COSHH Assessment
+CO-H&S-COSHH-007	1506	COSHH assessment  - General Hazard Group 2 organisms	6	COSHH Assessment
+CO-H&S-COSHH-008	1507	COSHH assessment  - Hazard Group 2 respiratory pathogens	6	COSHH Assessment
+CO-H&S-COSHH-004	1503	COSHH Assessment - Chlorinated Solvents	6	COSHH Assessment
+CO-H&S-COSHH-010	1509	COSHH assessment - clinical samples	7	COSHH Assessment
+CO-H&S-COSHH-014	1512	COSHH Assessment - Compressed Gases	1	COSHH Assessment
+CO-H&S-COSHH-005	1504	COSHH Assessment - Corrosive Bases	6	COSHH Assessment
+CO-H&S-COSHH-009	1508	COSHH Assessment - Hazard Group 1 Pathogens	5	COSHH Assessment
+CO-H&S-COSHH-012	1510	COSHH Assessment - Inactivated Micro-organisms	6	COSHH Assessment
+CO-H&S-COSHH-003	1502	COSHH Risk Assessment - Flammable Materials	6	COSHH Assessment
+CO-H&S-COSHH-001	1500	COSHH Risk Assessment - General Chemicals	6	COSHH Assessment
+CO-H&S-COSHH-002	1501	COSHH Risk Assessment - Oxidising Agents	6	COSHH Assessment
+CO-H&S-RA-011	1523	Covid-19 Risk Assessment binx Health ltd	7	H&S Risk Assessments
+CO-DES-SOP-042	484	Creation and Maintenance of a Device Master Record (DMR)	4	Standard Operating Procedure
+CO-DES-SOP-371	40	Critical to Quality and Reagent Design Control	2	Standard Operating Procedure
+CO-IT-POL-026	1184	Cryptography Policy	1	Policy
+CO-PRD1-FRM-246	1362	CT di452 probe Oak House Production IQC	2	Forms
+CO-PRD1-FRM-249	1365	CT forward primer Oak House production IQC	3	Forms
+CO-PRD1-LBL-064	1661	CT IC Detection Reagent Box Label – 7.082.002 – MOB-D-082	1	Label
+CO-PRD1-LBL-041	1256	CT IC Detection Reagent Box Label -7.067.002 - MOB-D-074	3	Label
+CO-SUP-FRM-214	1305	CT IC Detection Reagent Pick List – 7.067.001B	6	Forms
+CO-PRD1-LBL-057	1654	CT IC Detection Reagent Vial Label – 7.082.002 – MOB-D-082	0	Label
+CO-PRD1-LBL-034	1249	CT IC Detection Reagent Vial Label -7.067.002 - MOB-D-074	2	Label
+CO-PRD1-LBL-065	1662	CT IC Primer Passivation Reagent Box Label – 7.086.002 – MOB-D-086	0	Label
+CO-PRD1-LBL-042	1257	CT IC Primer Passivation Reagent Box Label -7.071.002 - MOB-D-078	2	Label
+CO-SUP-FRM-215	1306	CT IC Primer Passivation Reagent Pick List – 7.071.001B	4	Forms
+CO-PRD1-LBL-058	1655	CT IC Primer Passivation Reagent Vial Label – 7.086.002 – MOB-D-086	0	Label
+CO-PRD1-LBL-035	1250	CT IC Primer Passivation Reagent Vial Label -7.071.002 - MOB-D-078	1	Label
+CO-PRD1-LBL-046	1261	CT NG Taq UNG Reagent Box Label - 7.070.002 - MOB-D-077	2	Label
+CO-PRD1-LBL-066	1663	CT NG Taq UNG Reagent Box Label – 7.085.002 – MOB-D-085	0	Label
+CO-SUP-FRM-219	1310	CT NG Taq UNG Reagent Pick List - 7.070.001B	4	Forms
+CO-PRD1-LBL-039	1254	CT NG Taq UNG Reagent Vial Label - 7.070.002 - MOB-D-077	1	Label
+CO-PRD1-LBL-059	1656	CT NG Taq UNG Reagent Vial Label – 7.085.002 – MOB-D-085	0	Label
+CO-QC-QCP-055	1139	CT Plasmid Quantification - qPCR Test (Part No. 0348)	1	Quality Control Protocol
+CO-PRD1-FRM-250	1366	CT reverse primer Oak House Production IQC	3	Forms
+CO-LAB-FRM-074	664	CT synthetic target containing Uracil Part no: 0168	6	Forms
+CO-LAB-FRM-016	262	CT Taqman Probe (FAM)	6	Forms
+CO-OPS-SOP-189	628	CT/NG ATCC Input Generation	16	Standard Operating Procedure
+CO-QC-PTL-074	1087	CT/NG Cartridge QC Test Analysis Template Validation Protocol	1	Protocol
+CO-QC-QCP-059	1143	CT/NG Collection Kit Batch Release	2	Quality Control Protocol
+CO-SUP-JA-068	1560	CT/NG ioTM Cartridge Packing Instructions for QC samples (Softbox MAX Shipper)	0	Job Aid
+CO-SUP-JA-067	1559	CT/NG ioTM Cartridge Packing Instructions for QC samples (Softbox PRO Shipper)	0	Job Aid
+CO-QC-QCP-068	1152	CT/NG Taq-UNG reagent qPCR test (MOB-D-0277)	11	Quality Control Protocol
+CO-QC-QCP-065	1149	CT/NG: CT/IC Detection Reagent Heated io detection rig	11	Quality Control Protocol
+CO-LAB-FRM-105	695	CT/NG: CT/IC Primer Passivation Reagent	10	Forms
+CO-QC-QCP-067	1151	CT/NG: CT/IC Primer-Passivation Reagent	9	Quality Control Protocol
+CO-QC-QCP-052	1122	CT/NG: IC DNA in TE Buffer - Raw Material qPCR test (Part 0248)	7	Quality Control Protocol
+CO-QC-QCP-069	1153	CT/NG: IC DNA Reagent qPCR Test	10	Quality Control Protocol
+CO-QC-QCP-064	1148	CT/NG: NG1/IC Detection Reagent	11	Quality Control Protocol
+CO-LAB-FRM-103	693	CT/NG: NG1/IC Detection Reagent	9	Forms
+CO-QC-QCP-066	1150	CT/NG: NG1/NG2/IC Primer-Passivation Reagent qPCR test	8	Quality Control Protocol
+CO-QC-QCP-063	1147	CT/NG: NG2/IC detection reagent Heated io detection rig	11	Quality Control Protocol
+CO-OPS-SOP-104	545	CT_IC Detection Reagent	7	Standard Operating Procedure
+CO-LAB-FRM-018	322	CTdi452 Probe from atdbio	6	Forms
+CO-QC-T-102	414	CTNG Cartridge Cof A	13	Templates
+CO-QC-PTL-066	1078	CTNG CT/IC Primer passivation	2	Protocol
+CO-QC-QCP-057	1141	CTNG CTIC NG1IC and NG2IC Detection Reagents QC test	6	Quality Control Protocol
+CO-QC-PTL-068	1080	CTNG Detection Reagent Validation	3	Protocol
+CO-QC-PTL-067	1079	CTNG NG/IC Primer passivation Validation	2	Protocol
+CO-QC-T-155	915	CTNG QC Cartridge Analysis Module	0	Templates
+CO-OPS-SOP-120	285	CTNG Storage Buffer (224.3mM Potassium Phosphate	3	Standard Operating Procedure
+CO-OPS-SOP-142	566	CTNG T7 Diluent	4	Standard Operating Procedure
+CO-OPS-SOP-121	344	CTNG T7 Diluent Rev 3.0 (NZ source BSA)	2	Standard Operating Procedure
+CO-CS-JA-069	1561	Customer Installation and Training Job Aid binx io 	1	Job Aid
+CO-DES-T-129	441	Customer Requirements Specification	1	Templates
+CO-CS-T-131	443	Customer Service Script	1	Templates
+CO-QA-T-194	1471	Declaration of Conformity Template	0	Templates
+CO-SUP-JA-047	1398	Demand Plan - Plan and Release	0	Job Aid
+CO-SUP-SOP-323	1245	Demand Planning 	1	Standard Operating Procedure
+CO-DES-SOP-029	14	Design and Development Procedure	10	Standard Operating Procedure
+CO-DES-T-004	289	Design Review Record	2	Templates
+CO-DES-SOP-041	483	Design Review Work Instruction	6	Standard Operating Procedure
+CO-DES-T-124	436	Design Transfer Form	2	Templates
+CO-QC-T-071	383	Detection Reagent Analysis Template	5	Templates
+CO-OPS-SOP-122	343	Detection Surfactants Solution	9	Standard Operating Procedure
+CO-OPS-T-020	305	Development Partner Ranking Criteria	2	Templates
+CO-QA-SOP-099	541	Deviation Procedure	7	Standard Operating Procedure
+CO-DES-T-099	411	Device Master Record	2	Templates
+CO-QA-T-166	1069	Device Specific List of Applicable Standards Form Template	0	Templates
+CO-OPS-SCR-008	1766	DigitalRegCalibration	1	Script-io 
+CO-OPS-SCR-009	1767	DigitalRegTest	1	Script-io 
+CO-QC-T-031	316	Dishwasher User Form	3	Templates
+CO-PRD1-FRM-245	1361	DL-dithiothreitol (DTT) Oak House Production IQC	4	Forms
+CO-QA-T-049	361	Document Acceptance Form	5	Templates
+CO-QA-T-142	456	Document and Record Disposition Form	2	Templates
+CO-QA-SOP-005	69	Document and Records Archiving	6	Standard Operating Procedure
+CO-QA-SOP-140	65	Document Control Procedure (Projects)	19	Standard Operating Procedure
+CO-QA-SOP-098	66	Document Matrix	8	Standard Operating Procedure
+CO-QA-T-110	422	Document Retrieval Request	3	Templates
+CO-QA-T-141	455	Document Signoff Front Sheet	3	Templates
+CO-CA-REG-031	869	Donor Number Consent Register	1	Registers
+CO-QC-PTL-072	1085	dPCR Performance Qualification	2	Protocol
+CO-QC-SOP-293	1127	dPCR Quantification of CT and NG Vircell Inputs	2	Standard Operating Procedure
+CO-SUP-JA-023	1263	Dry Ice Job aid (Oak House)	0	Job Aid
+CO-OPS-SOP-123	342	DTT Solution	8	Standard Operating Procedure
+CO-PRD1-FRM-242	1358	dUTP mix Oak House Production IQC	4	Forms
+CO-QC-QCP-061	1145	Electrode Electrochemical Functionality QC Assessment	7	Quality Control Protocol
+CO-LAB-LBL-024	904	Elution Reagent Label	4	Label
+CO-QA-REG-041	1565	Employee Unique Initial Register	0	Registers
+CO-OPS-SOP-035	477	Engineering Drawing Control	4	Standard Operating Procedure
+CO-OPS-SOP-174	609	Engineering Rework Procedure	3	Standard Operating Procedure
+CO-QA-SOP-400	1791	Enlightenment Database Administration Procedure	0	Standard Operating Procedure
+CO-QA-REG-046	1809	Enlightenment Job Role Register	0	Registers
+CO-QA-PTL-112	1652	Enlightenment Software Validation and Verification Protocol	0	Protocol
+CO-QA-JA-086	1639	Enlightenment User Guide	0	Job Aid
+CO-PRD1-SOP-263	977	Entry and Exit to the Oak House Production Facility and Production Suite	0	Standard Operating Procedure
+CO-LAB-REG-018	837	Enviromental Monitoring Results Register	2	Registers
+CO-QC-T-076	388	Environmental Chamber Monitoring Form	4	Templates
+CO-LAB-SOP-295	1129	Environmental Contamination Monitoring SOP	6	Standard Operating Procedure
+CO-LAB-SOP-103	544	Environmental Controls in the Laboratory	13	Standard Operating Procedure
+CO-QC-QCP-071	1155	Enzymatics Taq-B 25U/ul (Part 0270)	8	Quality Control Protocol
+CO-OPS-PTL-031	811	EOL thermal test 21011-MET-012 Thermal-PCR Cycle Template for TTDL-No.2.xlsx v4.0	3	Protocol
+CO-LAB-SOP-011	273	Eppendorf 5424 Centrifuge	2	Standard Operating Procedure
+CO-SUP-SOP-006	22	Equipment Fulfilment and Field Visit SOP for non-stock instruments	3	Standard Operating Procedure
+CO-OPS-T-130	442	Equipment Fulfilment Order	3	Templates
+CO-QC-T-032	317	Equipment Log	3	Templates
+CO-PRD1-FRM-205	1221	Equipment Maintenance and Calibration Form	0	Forms
+CO-LAB-LBL-025	905	Equipment Not Maintained Do Not Use Label	2	Label
+CO-CS-T-135	447	Equipment Return Order	4	Templates
+CO-LAB-REG-017	835	Equipment Service and Calibration Register	6	Registers
+CO-LAB-LBL-017	897	Equipment Under Qualification Label	2	Label
+CO-LAB-SOP-006	268	Esco Laminar Flow Cabinet	2	Standard Operating Procedure
+CO-PRD1-FRM-240	1356	Ethanol Oak House Production IQC	2	Forms
+CO-QA-SOP-357	1464	EU Performance Evaluation	1	Standard Operating Procedure
+CO-QA-T-206	1569	EU Performance Evaluation Plan Template	0	Templates
+CO-QA-T-207	1570	EU Performance Evaluation Report Template	0	Templates
+CO-QA-SOP-356	1463	EU Regulatory Strategy and Process	0	Standard Operating Procedure
+CO-LAB-T-198	1484	Eupry Calibration Cover Sheet	0	Templates
+CO-PRD1-SOP-264	980	Eupry temperature monitoring system	1	Standard Operating Procedure
+CO-PRD1-PTL-086	1212	Eupry Temperature Monitoring System Validation	0	Protocol
+CO-QC-LBL-032	1116	Excess Raw Material Label	0	Label
+CO-LAB-SOP-155	590	Experimental Planning and Write-Up	9	Standard Operating Procedure
+CO-DES-T-036	321	Experimental template: Planning	6	Templates
+CO-DES-T-068	380	Experimental Template: Write Up	6	Templates
+CO-LAB-LBL-007	886	Expiry Dates Label	4	Label
+CO-QA-T-007	292	External Change Notification Form	6	Templates
+CO-PRD1-PTL-119	1777	Factory Acceptance Test (FAT) for the New ALX-734 Label Print Dispenser	0	Protocol
+CO-OPS-PTL-051	927	Factory Acceptance Test (FAT) Sprint B+ In-line Leak Tester  	0	Protocol
+CO-LAB-LBL-010	889	Failed Testing - Not in use Label	2	Label
+CO-LAB-REG-037	1424	Female Urine Database	0	Registers
+CO-QA-T-078	390	Field Action Implementation Checklist	4	Templates
+CO-QA-T-079	391	Field Corrective Action File Review Form	3	Templates
+CO-CS-JA-071	1566	Field Service - Submitting Documents for QA Approval 	0	Job Aid
+CO-CS-FRM-267	1473	Field Service Report Form 	0	Forms
+CO-H&S-CH-022	1686	Fire Alarm System (Derby Court) CheckList	1	Check List
+CO-H&S-PRO-007	1531	Fire evacuation procedure for Oak House	1	H&S Procedures
+CO-OPS-SOP-007	269	Firmware Up-date	2	Standard Operating Procedure
+CO-FIN-FRM-280	1590	Fixed Asset Acquisition Form	0	Forms
+CO-FIN-FRM-281	1591	Fixed Asset Disposition Form	0	Forms
+CO-FIN-FRM-282	434	Fixed Asset Transfer Form	3	Forms
+CO-H&S-RA-005	1517	Flammable & Explosive Substances Risk Assessment for  binx health Ltd (Derby Court and Unit 6)	4	H&S Risk Assessments
+CO-QA-SOP-284	1109	FMEA Procedure	7	Standard Operating Procedure
+CO-DES-T-059	371	FMEA template	3	Templates
+CO-LAB-LBL-004	883	For Indication Only Label	1	Label
+CO-OPS-SOP-187	622	Force Test Rig Set up and Calibration	5	Standard Operating Procedure
+CO-QA-T-011	296	Form Template	6	Templates
+CO-LAB-LBL-012	892	General Calibration Label	2	Label
+CO-PRD1-FRM-287	1631	General Oak House Production IQC Form	0	Forms
+CO-OPS-T-111	423	Generic Cartridge Subassembly Build	3	Templates
+CO-PRD1-FRM-233	1349	Glycerol Oak House Production IQC	4	Forms
+CO-OPS-SOP-124	277	Glycerol Solution	3	Standard Operating Procedure
+CO-SUP-SOP-321	1233	Goods Received - Oak House	4	Standard Operating Procedure
+CO-LAB-LBL-005	884	GRN for R&D and Samples Label	4	Label
+CO-LAB-LBL-054	1584	GRN for R&D and Samples Label (Silver) 	0	Label
+CO-SUP-FRM-178	965	GRN Form for incoming goods 	1	Forms
+CO-LAB-REG-014	831	GRN Register	23	Registers
+CO-QA-T-196	1474	GSPR Template	0	Templates
+CO-QC-SOP-388	1697	Guidance for Product Release Documentation Checks	0	Standard Operating Procedure
+CO-PRD1-SOP-312	1213	Guidance for the completion of Reagent Production Manufacturing Batch Records (MBRs)	1	Standard Operating Procedure
+CO-LAB-SOP-135	557	Guidance for Use and Completion of MFG Documents	3	Standard Operating Procedure
+CO-QA-SOP-375	1581	Guidance for Writing Controlled Documents	0	Standard Operating Procedure
+CO-H&S-T-214	1625	H&S Safety Checklist Template	0	Templates
+CO-LAB-SOP-145	570	Handling Biological Materials	5	Standard Operating Procedure
+CO-QA-SOP-285	1110	Hazard Analysis Procedure	7	Standard Operating Procedure
+CO-DES-T-067	379	Hazard Analysis template	8	Templates
+CO-H&S-PRO-001	1525	Health & Safety Fire Related Procedures	11	H&S Procedures
+CO-H&S-CH-018	1648	Health and Safety Contractor Checklist	2	Check List
+CO-H&S-CH-016	1646	Health and Safety Fire Safety Check List	6	Check List
+CO-H&S-CH-012	1642	health and Safety Laboratory Checklist	7	Check List
+CO-H&S-PRO-006	1530	Health and Safety Legislation Review Procedure	1	H&S Procedures
+CO-H&S-RA-017	1541	Health and Safety Oak House Fire Risk Assessment	2	H&S Risk Assessments
+CO-H&S-CH-019	1649	Health and Safety Oak House Fire Safety Checklist	2	Check List
+CO-H&S-CH-020	1650	Health and Safety Oak House First Aid Checklist	2	Check List
+CO-H&S-CH-013	1643	Health and Safety Office Checklist	3	Check List
+CO-H&S-P-001	1532	Health and Safety Policy	10	H&S Policy
+CO-H&S-RA-012	1524	Health and Safety Risk Assessment for Use of a Butane Torch	2	H&S Risk Assessments
+CO-H&S-RA-016	1540	Health and Safety Risk Assessment Incoming-Outgoing goods and Packaging	3	H&S Risk Assessments
+CO-H&S-RA-018	1542	Health and Safety Risk Assessment Oak House Covid-19	3	H&S Risk Assessments
+CO-H&S-RA-014	1538	Health and Safety Risk Assessment Oak House Facility	3	H&S Risk Assessments
+CO-H&S-RA-015	1539	Health and Safety Risk Assessment Oak House Production Activities	4	H&S Risk Assessments
+CO-H&S-PRO-005	1529	Health and Safety Risk Assessment Procedure	2	H&S Procedures
+CO-H&S-T-202	1498	Health and Safety Risk Assessment Template	3	Templates
+CO-H&S-P-003	1534	Health and Safety Stress Management Policy	2	H&S Policy
+CO-H&S-CH-017	1647	Health and Safety Unit 6 Fire Checking Log	3	Check List
+CO-H&S-CH-015	1645	Health and Safety Workstation Checklist	4	Check List
+CO-OPS-PTL-029	809	Heated Detection Rig IQ Procedure	2	Protocol
+CO-OPS-PTL-009	536	Heated Detection Rig OQ Procedure	4	Protocol
+CO-LAB-SOP-130	552	Heated Detection Rig Work Instructions	2	Standard Operating Procedure
+CO-LAB-FRM-276	1544	High Risk Temperature Controlled Asset Sign 	0	Forms
+CO-IT-POL-027	1185	Human Resource Security Policy	1	Policy
+CO-PRD1-FRM-230	1346	Hybridization Oven Verification and Calibration Form	0	Forms
+CO-PRD1-FRM-251	1367	IC  forward primer Oak House Production IQC	2	Forms
+CO-PRD1-FRM-247	1363	IC di275 probe Oak House Production IQC	2	Forms
+CO-OPS-SOP-125	278	IC DNA in TE Buffer 100pg/ul Working Stock Aliquots	3	Standard Operating Procedure
+CO-PRD1-LBL-067	1664	IC DNA Reagent Box Label  – 7.088.002 – MOB-D-088	0	Label
+CO-PRD1-LBL-047	1262	IC DNA Reagent Box Label - 7.073.002 - MOB-D-080	2	Label
+CO-SUP-FRM-220	1311	IC DNA Reagent Pick List – 7.073.001B	4	Forms
+CO-PRD1-LBL-060	1657	IC DNA Reagent Vial Label  – 7.088.002 – MOB-D-088	0	Label
+CO-PRD1-LBL-040	1255	IC DNA Reagent Vial Label - 7.073.002 - MOB-D-080	1	Label
+CO-PRD1-FRM-252	1368	IC reverse primer Oak House Production IQC	2	Forms
+CO-LAB-FRM-017	263	IC Taqman Probe (FAM)	6	Forms
+CO-QA-SOP-016	152	Identification and Traceabillity	4	Standard Operating Procedure
+CO-QC-T-121	433	Impulse Sealer Use Log	2	Templates
+CO-LAB-LBL-013	893	In process MFG material label	3	Label
+CO-H&S-T-204	1497	Incidents and Near Miss Form	5	Templates
+CO-PRD1-LBL-049	1384	Incoming Goods - Oak House	2	Label
+CO-QC-T-115	427	Incoming Oligo QC Form	3	Templates
+CO-LAB-FRM-050	627	Incoming Quality Control and Specification for CMO Manufactured io® Cartridges	8	Forms
+CO-LAB-FRM-043	633	Incoming Quality Control and Specification for CT Plasmid in TE buffer Materials binx Part Number: 0348	0	Forms
+CO-LAB-FRM-088	678	Incoming Quality Control and Specification for IC Forward Primer from SGS DNA: Part number 0262 and 0419	7	Forms
+CO-LAB-FRM-041	631	Incoming Quality Control and Specification for NG1 Plasmid in TE buffer Materials binx Part Number: 0346	0	Forms
+CO-LAB-FRM-042	632	Incoming Quality Control and Specification for NG2 Plasmid in TE buffer Materials binx Part Number: 0347	0	Forms
+CO-PRD1-FRM-262	1381	Incoming Sartorius Minisart NML hydrophilic sterile Syringe Filter with 0.2 µm surfactant-free Cellulose Acetate Membrane Male Luer Lock Oak House IQC	1	Forms
+CO-QA-FRM-312	1688	Individual Training Form	0	Forms
+CO-IT-POL-028	1186	Information Security Policy	1	Policy
+CO-IT-POL-029	1187	Information Security Roles and Responsibilities	1	Policy
+CO-SUP-FRM-043	397	Initial Risk Assessment and Supplier Approval	3	Forms
+CO-PRD1-PTL-110	1585	Installation and Operational  Qualification Protocols for Jenway 924 030 6.0 mm Tris Buffer pH Electrode (Asset                  ) to be used with Oak House Jenway 3510 pH Meter (Asset 1143)	0	Protocol
+CO-CS-SOP-275	1081	Installation and Training - binx io 	0	Standard Operating Procedure
+CO-QA-T-164	1053	Instructional Video Template	0	Templates
+CO-LAB-SOP-072	489	Instructions for receipt of incoming Non-Stock goods  assigning GRN numbers and labelling	14	Standard Operating Procedure
+CO-SUP-SOP-277	1100	Instructions for Receipt of incoming Stock goods assigning GRN No.s & Labelling	4	Standard Operating Procedure
+CO-QA-T-012	297	Instructor-led Training Form	5	Templates
+CO-LAB-SOP-095	538	Instrument Cleaning Procedure	6	Standard Operating Procedure
+CO-OPS-SOP-036	478	Instrument Engineering Change Management	2	Standard Operating Procedure
+CO-LAB-SOP-152	584	Instrument Failure Reporting SOP	4	Standard Operating Procedure
+CO-OPS-REG-026	851	Instrument Register	7	Registers
+CO-CS-SOP-368	18	Instrument Service & Repair Procedure	5	Standard Operating Procedure
+CO-CS-T-149	444	Instrument Trouble Shooting Script	1	Templates
+CO-PRD1-JA-104	1736	Integra ASSIST PLUS Job Aid	0	Job Aid
+CO-PRD1-LBL-033	1199	Intermediate reagent labels	0	Label
+CO-QA-SOP-004	71	Internal Audit	13	Standard Operating Procedure
+CO-LAB-FRM-109	699	Internal Control di275 Probe from ATDBio Part Number 0294	2	Forms
+CO-LAB-SOP-149	581	Introducing New Laboratory Equipment	6	Standard Operating Procedure
+CO-LAB-SOP-287	1120	Introduction of New microorganisms SOP	1	Standard Operating Procedure
+CO-PRD1-JA-009	1067	Intruder Alarm	0	Job Aid
+CO-CS-SOP-249	938	io Insepction using Data Collection Cartridge	1	Standard Operating Procedure
+CO-CS-FRM-175	939	io Inspection using Data Collection Cartridge Form	1	Forms
+CO-OPS-T-235	1771	io Instrument DPR Calibration and Confirmation Template	0	Templates
+CO-QC-LBL-052	1549	io Instrument Failure - For Engineering Inspection Label	0	Label
+CO-OPS-T-210	1599	io Instrument Repair Form	1	Templates
+CO-OPS-SOP-379	1600	io Instrument Tracking at binx health	0	Standard Operating Procedure
+CO-OPS-PTL-023	803	io Reader - Digital Pressure Regulator Calibration Protocol	3	Protocol
+CO-OPS-PTL-025	805	io Reader – Force End Test Protocol	3	Protocol
+CO-OPS-PTL-024	804	io Reader - Pneumatics End Test Protocol	3	Protocol
+CO-QC-SOP-299	1133	io Reader interface - barcode scan rate	4	Standard Operating Procedure
+CO-OPS-PTL-048	912	io Release Record (following repair or refurbishment)	3	Protocol
+CO-OPS-PTL-026	806	io® Reader – Thermal End Test Protocol	3	Protocol
+CO-PRD1-PTL-121	1787	IQ Protocol and Report for the ALX-734 Label Print Dispenser	0	Protocol
+CO-PRD1-PTL-116	1739	IQ Protocol and Report for the INTEGRA ASSIST PLUS in Oak House	0	Protocol
+CO-LAB-PTL-045	846	IQ Protocol for Binder incubator and humidity chamber	0	Protocol
+CO-OPS-PTL-040	819	IQ Validation Protocol Blister Filling Rig	1	Protocol
+CO-LAB-PTL-111	1608	IQ/OQ  Validation Protocol for Dry Bath with Metal Block	1	Protocol
+CO-DES-PTL-005	462	IQ/OQ for Agilent Bioanalyzer	2	Protocol
+CO-LAB-FRM-313	1700	IQC for Part Numbered non-stock miscellaneous items 	1	Forms
+CO-FIN-T-026	311	IT GAMP Evaluation Form	4	Templates
+CO-IT-SOP-044	486	IT Management Back-UP and Support	5	Standard Operating Procedure
+CO-FIN-T-027	312	IT Request for Information	3	Templates
+CO-IT-POL-032	1190	IT Risk Management 	1	Policy
+CO-IT-FRM-005	1588	IT System Change Request Form	0	Forms
+CO-DES-T-022	307	IVD Directive - Essential Requirements Check List Template	4	Templates
+CO-LAB-SOP-168	603	Jenway 3510 model pH Meter	4	Standard Operating Procedure
+CO-PRD1-SOP-319	1223	Jenway 3510 model pH Meter with ATC probe and 924 30 6.0mm model Tris electrode SOP in Oak House	2	Standard Operating Procedure
+CO-CS-JA-050	1405	Job Aid _Field Service-Instrument cleaning	0	Job Aid
+CO-LAB-JA-098	1717	Job Aid for Decontamination of Equipment Between Areas	0	Job Aid
+CO-QA-JA-088	1689	Job Aid for Global Label Elements	0	Job Aid
+CO-LAB-JA-099	1718	Job Aid for Pipette Cleaning	0	Job Aid
+CO-QA-JA-072	1575	Job Aid for the Review of Change Controls in QT9	2	Job Aid
+CO-QA-JA-076	1579	Job Aid for the Review of Change Management Forms For Non-QT9 Processes	0	Job Aid
+CO-QA-JA-077	1580	Job Aid for the Review of Controlled Documents and Records	0	Job Aid
+CO-QA-JA-074	1577	Job Aid for the Review of Corrective Actions in QT9	0	Job Aid
+CO-QA-JA-075	1578	Job Aid for the Review of Deviations in QT9	0	Job Aid
+CO-QA-JA-083	1602	Job Aid for the Review of Feedback in QT9	0	Job Aid
+CO-QA-JA-073	1576	Job Aid for the Review of Non-Conforming Product in QT9	0	Job Aid
+CO-QA-JA-089	1690	Job Aid for the Review of Regulatory Change Assessment Forms	0	Job Aid
+CO-QA-JA-079	1595	Job Aid for the Use of the QT9 Deviation Module	1	Job Aid
+CO-QA-T-153	853	Job Aid Template	3	Templates
+CO-QC-JA-012	1118	Job Aid: A Guide to QC Cartridge Inspections	0	Job Aid
+CO-OPS-URS-028	1375	Keyence LM Series - User Requirements Specification	0	User Requirements Specification
+CO-QC-T-016	301	Lab Cleaning Form	9	Templates
+CO-QC-T-103	415	Lab investigation initiation Template	1	Templates
+CO-QC-T-128	440	LAB investigation summary report	1	Templates
+CO-PRD1-SOP-276	1096	Label printing	3	Standard Operating Procedure
+CO-LAB-SOP-108	548	Laboratory Cleaning	22	Standard Operating Procedure
+CO-QC-SOP-173	608	Laboratory Investigation (LI) Procedure for Invalid Assays and Out of Specification (OOS) Results	3	Standard Operating Procedure
+CO-LAB-REG-019	838	Laboratory Investigation Register	1	Registers
+CO-LAB-REG-021	840	Laboratory Responsibilities by Area	9	Registers
+CO-SUP-SOP-279	1102	Laboratory Stock Take Procedure	5	Standard Operating Procedure
+CO-LAB-FRM-277	1545	Low Risk Temperature Controlled Asset Sign 	0	Forms
+CO-OPS-SOP-376	1582	LRE Refurbishment Procedure	0	Standard Operating Procedure
+CO-PRD1-FRM-239	1355	Magnesium chloride Oak House Production IQC	4	Forms
+CO-LAB-SOP-151	583	Management and Control of Critical and Controlled Equipment	10	Standard Operating Procedure
+CO-PRD1-SOP-304	1162	Management of Critical and Controlled Equipment at Oak House Production Facility	2	Standard Operating Procedure
+CO-QA-SOP-025	468	Management Review	11	Standard Operating Procedure
+CO-QA-SOP-147	572	Managing an External Audit	5	Standard Operating Procedure
+CO-LAB-FRM-207	1226	Manipulated Material Aliquot form 	0	Forms
+CO-H&S-PRO-003	1527	Manual Lifting Procedure	6	H&S Procedures
+CO-SUP-JA-030	1318	Manual MRP Process (binx ERP system) and Releasing Purchase / Production Proposals	0	Job Aid
+CO-OPS-SOP-206	771	Manufacture of 1.5 M Trehalose	2	Standard Operating Procedure
+CO-OPS-SOP-205	770	Manufacture of 200mM Tris pH8.0	4	Standard Operating Procedure
+CO-OPS-SOP-133	555	Manufacture of Brij 58 Solution	8	Standard Operating Procedure
+CO-QC-PTL-071	1084	Manufacture of Cartridge Reagents	1	Protocol
+CO-OPS-SOP-200	765	Manufacture of Chlamydia trachomatis and Neisseria gonorrhoeae positive control samples	8	Standard Operating Procedure
+CO-PRD1-FRM-199	1169	Manufacture of CT/IC Detection Reagent - 7.067.002 - MOB-D-074	8	Forms
+CO-PRD1-FRM-288	1632	Manufacture of CT/IC Detection Reagent – 7.082.002 – MOB-D-082	0	Forms
+CO-OPS-SOP-118	280	Manufacture of CT/IC Primer Passivation Reagent	5	Standard Operating Procedure
+CO-PRD1-FRM-200	1170	Manufacture of CT/IC Primer Passivation Reagent - 7.071.002 - MOB-D-078	5	Forms
+CO-PRD1-FRM-292	1636	Manufacture of CT/IC Primer Passivation Reagent – 7.086.002 – MOB-D-086	0	Forms
+CO-LAB-SOP-199	764	Manufacture of CT/NG Negative Control Samples	7	Standard Operating Procedure
+CO-PRD1-FRM-202	1172	Manufacture of CT/NG Taq/UNG Reagent - 7.070.002 - MOB-D-077	6	Forms
+CO-PRD1-FRM-291	1635	Manufacture of CT/NG Taq/UNG Reagent – 7.085.002 – MOB-D-085	0	Forms
+CO-QC-PTL-070	1083	Manufacture of CTNG Cartridge Reagents	1	Protocol
+CO-OPS-SOP-132	554	Manufacture of Elution Buffer Revision 2	4	Standard Operating Procedure
+CO-PRD1-FRM-203	1173	Manufacture of IC DNA Reagent - 7.073.002 - MOB-D-080	6	Forms
+CO-PRD1-FRM-294	1638	Manufacture of IC DNA Reagent – 7.088.002 – MOB-D-088	0	Forms
+CO-OPS-SOP-117	279	Manufacture of IC DNA Reagent	5	Standard Operating Procedure
+CO-OPS-SOP-198	763	Manufacture of microorganism glycerol stocks	6	Standard Operating Procedure
+CO-PRD1-FRM-197	1167	Manufacture of NG1/IC Detection Reagent – 7.068.002 – MOB-D-075	7	Forms
+CO-PRD1-FRM-289	1633	Manufacture of NG1/IC Detection Reagent – 7.083.002 – MOB-D-083	0	Forms
+CO-OPS-SOP-119	281	Manufacture of NG1/NG2/IC Primer Passivation Reagent	8	Standard Operating Procedure
+CO-PRD1-FRM-293	1637	Manufacture of NG1/NG2/IC Primer Passivation Reagent – 7.087.002 – MOB-D-087	0	Forms
+CO-PRD1-FRM-201	1171	Manufacture of NG1/NG2/IC Primer Passivation Reagent -7.072.002 - MOB-D-079	5	Forms
+CO-OPS-SOP-107	547	Manufacture of NG2/IC Detection Reagent	7	Standard Operating Procedure
+CO-PRD1-FRM-198	1168	Manufacture of NG2/IC Detection Reagent - 7.069.002 – MOB-D-076	7	Forms
+CO-PRD1-FRM-290	1634	Manufacture of NG2/IC Detection Reagent – 7.084.002 – MOB-D-084	0	Forms
+CO-OPS-SOP-197	762	Manufacture of Taq/UNG Reagent	10	Standard Operating Procedure
+CO-OPS-SOP-134	556	Manufacture of Trehalose in PCR Buffer	7	Standard Operating Procedure
+CO-OPS-SOP-203	768	Manufacture of Wash Buffer II	3	Standard Operating Procedure
+CO-PRD1-T-200	1487	Manufacturing Batch Record (MBR) Template	1	Templates
+CO-LAB-REG-008	558	Manufacturing Lot Number Register	5	Registers
+CO-PRD1-SOP-370	1563	Manufacturing Overview for CT/NG Taq/UNG Reagent	1	Standard Operating Procedure
+CO-PRD1-SOP-355	1462	Manufacturing Overview for Detection Reagents	3	Standard Operating Procedure
+CO-PRD1-SOP-369	1562	Manufacturing Overview for IC DNA Reagent	1	Standard Operating Procedure
+CO-PRD1-SOP-365	1550	Manufacturing Overview for Primer/Passivation Reagents	1	Standard Operating Procedure
+CO-PRD1-SOP-306	1176	Manufacturing Overview for the binx Cartridge Reagent Manufacturing Facility	2	Standard Operating Procedure
+CO-OPS-T-152	849	Manufacturing Procedure (MFG) Template	1	Templates
+CO-SAM-REG-040	1548	Marketing Presentation Register	0	Registers
+CO-QA-REG-023	843	Master Archive Register	3	Registers
+CO-QA-REG-032	1071	Master List of Applicable Standards Form Template	0	Registers
+CO-LAB-LBL-016	896	MBG water label	3	Label
+CO-PRD1-FRM-229	1345	MBG Water Oak House Production IQC	4	Forms
+CO-OPS-SOP-193	755	MBR to record the details of the manufacture of T7 storage buffer”	5	Standard Operating Procedure
+CO-PRD1-FRM-212	1174	ME2002T/00 and ML104T/00 Balance Weight Verification Form	1	Forms
+CO-DES-PTL-001	452	Measuring pH values IQ/OQ Protocol	2	Protocol
+CO-OPS-SOP-090	514	MFG for preparing male and female urine with 10% eNAT	3	Standard Operating Procedure
+CO-QC-FRM-046	836	Micro Laboratory Checklist	1	Forms
+CO-LAB-SOP-239	857	Microorganism Ampoules Handling SOP	0	Standard Operating Procedure
+CO-PRD1-SOP-255	961	Mini Fuge Plus centrifuge SOP	0	Standard Operating Procedure
+CO-LAB-JA-090	1699	Miscellaneous Part Numbered Items Reference Sheet 	1	Job Aid
+CO-QC-T-118	430	Moby Detection Reagent Analysis Spreadsheet	12	Templates
+CO-QC-PTL-060	1066	MOBY Detection Reagent Spreadsheet Validation Protocol	1	Protocol
+CO-OPS-SOP-377	1586	NetSuite ERP SOP	0	Standard Operating Procedure
+CO-OPS-JA-078	1589	NetSuite User Guide	0	Job Aid
+CO-SUP-SOP-385	21	New Customer Procedure	3	Standard Operating Procedure
+CO-LAB-JA-082	1601	New Equipment and Fixed Asset Crosswalk	0	Job Aid
+CO-LAB-FRM-165	860	New Microorganism Introduction Checklist Form	0	Forms
+CO-LAB-FRM-021	325	NG1  di452 Probe from SGS	6	Forms
+CO-PRD1-FRM-248	1364	NG1 di452 probe Oak House Production IQC	2	Forms
+CO-PRD1-FRM-253	1369	NG1 forward primer Oak House Production IQC	2	Forms
+CO-PRD1-LBL-043	1258	NG1 IC Detection Reagent Box Label - 7.068.002 - MOB-D-075	2	Label
+CO-PRD1-LBL-068	1665	NG1 IC Detection Reagent Box Label – 7.083.002 – MOB-D-083	0	Label
+CO-SUP-FRM-216	1307	NG1 IC Detection Reagent Pick List – 7.068.001B	4	Forms
+CO-PRD1-LBL-036	1251	NG1 IC Detection Reagent Vial Label - 7.068.002 - MOB-D-075	1	Label
+CO-PRD1-LBL-061	1658	NG1 IC Detection Reagent Vial Label – 7.083.002 – MOB-D-083	0	Label
+CO-PRD1-LBL-045	1260	NG1 NG2 IC Primer Passivation Reagent Box Label - 7.072.002 - MOB-D-079	2	Label
+CO-PRD1-LBL-069	1666	NG1 NG2 IC Primer Passivation Reagent Box Label – 7.087.002 – MOB-D-087	0	Label
+CO-PRD1-LBL-038	1253	NG1 NG2 IC Primer Passivation Reagent Vial Label - 7.072.002 - MOB-D-079	1	Label
+CO-PRD1-LBL-062	1659	NG1 NG2 IC Primer Passivation Reagent Vial Label – 7.087.002 – MOB-D-087	0	Label
+CO-SUP-FRM-218	1309	NG1 NG2 Primer Passivation Reagent Pick List – 7.072.001B	4	Forms
+CO-QC-QCP-054	1138	NG1 Plasmid Quantification - qPCR Test (Part No. 0346)	1	Quality Control Protocol
+CO-PRD1-FRM-254	1370	NG1 Reverse primer Oak House Production IQC	2	Forms
+CO-LAB-FRM-084	674	NG1 Synthetic Target Part No 0258	3	Forms
+CO-LAB-FRM-094	684	NG1 Taqman Probe HPLC GRADE Part no 0268	3	Forms
+CO-OPS-SOP-105	546	NG1_IC Detection Reagent	8	Standard Operating Procedure
+CO-LAB-FRM-022	326	NG2  di452 Probe from SGS	6	Forms
+CO-PRD1-FRM-227	1343	NG2 di452 probe Oak House production IQC	2	Forms
+CO-PRD1-FRM-255	1371	NG2 forward primer Oak House Production IQC	2	Forms
+CO-PRD1-LBL-044	1259	NG2 IC Detection Reagent Box Label - 7.069.002 - MOB-D-076	2	Label
+CO-PRD1-LBL-070	1667	NG2 IC Detection Reagent Box Label – 7.084.002 – MOB-D-084	0	Label
+CO-SUP-FRM-217	1308	NG2 IC Detection Reagent Pick List – 7.069.001B	4	Forms
+CO-PRD1-LBL-037	1252	NG2 IC Detection Reagent Vial Label  - 7.069.002 - MOB-D-076	1	Label
+CO-PRD1-LBL-063	1660	NG2 IC Detection Reagent Vial Label – 7.084.002 – MOB-D-084	0	Label
+CO-QC-QCP-053	1137	NG2 Plasmid Quantification - qPCR Test (Part No. 0347)	1	Quality Control Protocol
+CO-PRD1-FRM-256	1372	NG2 reverse primer Oak House Production IQC	2	Forms
+CO-LAB-FRM-085	675	NG2 Synthetic Target Part no 0259	3	Forms
+CO-LAB-FRM-095	685	NG2 Taqman probe HPLC GRADE Part No 0269	3	Forms
+CO-PRD1-PTL-123	1790	Nicelabel Software Validation Protocol & Report	0	Protocol
+CO-SUP-T-098	410	Non Approved Supplier SAP by D supplier information	4	Templates
+CO-CA-FRM-044	550	Non-binx-initiated study proposal	1	Forms
+CO-QA-SOP-003	70	Nonconforming Product Procedure	19	Standard Operating Procedure
+CO-OPS-SOP-126	275	NZ Source BSA Solution	4	Standard Operating Procedure
+CO-PRD1-PTL-102	1390	Oak House APC Schneider UPS Asset  1116 Validation Protocol	0	Protocol
+CO-PRD1-PTL-103	1391	Oak House APC Schneider UPS Asset  1117 Validation Protocol	0	Protocol
+CO-PRD1-PTL-104	1392	Oak House APC Schneider UPS Asset  1118 Validation Protocol	0	Protocol
+CO-PRD1-PTL-105	1393	Oak House APC Schneider UPS Asset  1176 Validation Protocol	0	Protocol
+CO-PRD1-PTL-106	1394	Oak House APC Schneider UPS Asset  1177 Validation Protocol	0	Protocol
+CO-SUP-T-171	1274	Oak House Commercial Invoice - Cartridge Reagent (-20°c)	2	Templates
+CO-SUP-T-182	1415	Oak House Commercial Invoice - Cartridge Reagent (2-8°c)	2	Templates
+CO-PRD1-SOP-265	981	Oak House Emergency Procedures	0	Standard Operating Procedure
+CO-PRD1-PTL-075	1097	Oak House Environmental Control System Validation Protocol	0	Protocol
+CO-PRD1-REG-035	1196	Oak House Equipment Service and Calibration Register	3	Registers
+CO-PRD1-PTL-090	1278	Oak House Haier DW-86L338J Freezer 1155 Validation Protocol	0	Protocol
+CO-SUP-LBL-073	1780	Oak House IQC Expiry Label Template	0	Label
+CO-PRD1-PTL-078	1198	Oak House Jenway 3510 pH Meter Asset 1143 Validation Protocol	1	Protocol
+CO-SUP-FRM-213	1276	Oak House Lab Replenishment Form	0	Forms
+CO-PRD1-PTL-093	1281	Oak House Labcold RLDF0519 Fridge 1161 Validation Protocol	0	Protocol
+CO-PRD1-PTL-091	1279	Oak House Labcold RLDF1519 Fridge 1157 Validation Protocol	0	Protocol
+CO-PRD1-PTL-092	1280	Oak House Labcold RLDF1519 Fridge 1159 Validation Protocol	0	Protocol
+CO-PRD1-PTL-097	1292	Oak House Labcold RLDF1519 Fridge 1207 Validation Protocol	0	Protocol
+CO-PRD1-PTL-095	1290	Oak House Labcold RLVF0417 Freezer 1162 Validation Protocol	0	Protocol
+CO-PRD1-PTL-094	1289	Oak House Labcold RLVF1517 Freezer 1158 Validation Protocol	0	Protocol
+CO-PRD1-PTL-096	1291	Oak House Labcold RLVF1517 Freezer 1183 Validation Protocol	0	Protocol
+CO-PRD1-PTL-098	1293	Oak House Labcold RLVF1517 Freezer 1208 Validation Protocol	0	Protocol
+CO-PRD1-T-199	1486	Oak House Manufacturing Overview SOP Template	0	Templates
+CO-PRD1-PTL-087	1235	Oak House Mettler Toledo ME2002T_00 Precision Balance Asset 1170 Validation Protocol	0	Protocol
+CO-PRD1-PTL-088	1236	Oak House Mettler Toledo ML104T_00 Analytical Balance Asset 1171 Validation Protocol	0	Protocol
+CO-PRD1-PTL-089	1237	Oak House Mettler Toledo ML104T_00 Analytical Balance Asset 1172 Validation Protocol	0	Protocol
+CO-PRD1-FRM-181	975	Oak House Monthly Production Facility Checklist	2	Forms
+CO-PRD1-PTL-099	1330	Oak House MSC1800 Production Enclosure Asset 1168 Validation Protocol	0	Protocol
+CO-PRD1-SOP-303	1156	Oak House Out of Hours Procedures 	0	Standard Operating Procedure
+CO-SUP-T-183	1416	Oak House Packing List - Cartridge Reagent (-20°c)	2	Templates
+CO-SUP-T-172	1275	Oak House Packing List - Cartridge Reagent (2-8°c)	2	Templates
+CO-PRD1-REG-036	1197	Oak House Pipette Register	0	Registers
+CO-PRD1-SOP-269	986	Oak House Pipette Use and Calibration SOP	4	Standard Operating Procedure
+CO-PRD1-T-160	973	Oak House Production Facility Cleaning Record	1	Templates
+CO-PRD1-COP-003	971	Oak House Production Facility Code of Practice	1	Code of Practice
+CO-PRD1-PTL-100	1332	Oak House Roto-Therm H2024-E Hybridisation Oven Asset 1113 Validation Protocol	0	Protocol
+CO-SUP-SOP-320	1227	Oak House Supply Chain Reagent Production Process Flow	6	Standard Operating Procedure
+CO-SUP-FRM-286	1629	Oak House Warehouse Monthly Cleaning Record	1	Forms
+CO-OPS-SP-006	1783	Open Clamp Instrument Requirement Specification 	0	Specification
+CO-LAB-SOP-177	612	Operating instruction for the QuantStudio 3D digital PCR system	1	Standard Operating Procedure
+CO-LAB-SOP-178	613	Operating Instructions for Signal Analyser	1	Standard Operating Procedure
+CO-LAB-SOP-022	338	Operation & Maintenance of Grant SUB Aqua Pro 5 (SAP5) unstirred Water Bath with Labarmor Beads	2	Standard Operating Procedure
+CO-PRD1-PTL-125	1793	OQ Protocol and Report for the ALX-734 Label Print Dispenser	0	Protocol
+CO-LAB-PTL-046	847	OQ protocol for binder incubator and humidity chamber	0	Protocol
+CO-PRD1-PTL-118	1743	OQ Protocol for the INTEGRA ASSIST PLUS in Oak House	0	Protocol
+CO-OPS-PTL-039	818	OQ Validation Protocol Blister Filling Rig	1	Protocol
+CO-OPS-SOP-364	1543	Order to Cash Process	0	Standard Operating Procedure
+CO-LAB-SOP-241	870	Ordering of New Reagents and Chemicals	0	Standard Operating Procedure
+CO-LAB-SOP-175	610	Out of Hours Power Loss and Temperature Monitoring	3	Standard Operating Procedure
+CO-SUP-SOP-324	1246	Packaging and Shipping Procedure for binx Cartridge Reagent	3	Standard Operating Procedure
+CO-OPS-PTL-043	821	PAN-D-267 Signal Analyzer Validation of functions for outputting V&V tables	1	Protocol
+CO-LAB-FRM-087	677	Part No 0261 CT Reverse Mod Primer from SGS DNA	7	Forms
+CO-LAB-FRM-089	679	Part No 0263 IC Reverse Primer from SGS DNA	6	Forms
+CO-LAB-FRM-090	680	Part No 0264 NG Target 1 Forward Primer from SGS DNA	6	Forms
+CO-LAB-FRM-091	681	Part No 0265 NG Target 1 RA Reverse Primer from SGS DNA	6	Forms
+CO-LAB-FRM-092	682	Part No 0266 NG Target 2 Forward Primer from SGS DNA	6	Forms
+CO-LAB-FRM-093	683	Part No 0267 NG Target 2 Reverse Primer from SGS DNA	6	Forms
+CO-LAB-LBL-006	885	Part No GRN Label	4	Label
+CO-LAB-REG-012	829	Part No Register	2	Registers
+CO-LAB-FRM-061	650	Part No. 0093 CT ME17 Synthetic target HPLC GRADE	6	Forms
+CO-LAB-FRM-069	659	Part No. 0118 IC Synthetic target HPLC GRADE	6	Forms
+CO-LAB-FRM-082	672	Part No. 0248 Pectobacterium atrosepticum chromosomal DNA in TE buffer	4	Forms
+CO-LAB-FRM-111	701	Part No. 0296 Chlamydia trachomatis serovar F ATCC VR-346	3	Forms
+CO-LAB-FRM-123	713	Part No. 0318  NATtrol Chlamydia trachomatis Positive Control	1	Forms
+CO-LAB-FRM-124	714	Part No. 0319 NATrol Neisseria gonorrhoeae Positive Control	2	Forms
+CO-LAB-FRM-136	726	Part No. 0339 NG2_di275_probe from SGS DNA	1	Forms
+CO-LAB-FRM-076	666	Part Number 0188 Vircell CT DNA Control	2	Forms
+CO-LAB-FRM-112	702	Part Number 0298 Vircell NG DNA Control	2	Forms
+CO-H&S-P-002	1533	PAT Policy	6	H&S Policy
+CO-PRD1-FRM-257	1373	Pectobacterium atrosepticum (IC) DNA buffer Oak House Production IQC	2	Forms
+CO-QA-T-143	457	Periodic Training Review Form	4	Templates
+CO-PRD1-FRM-258	1377	pH Buffer Bottle 10.01 Twin-neck Oak House Production IQC	2	Forms
+CO-PRD1-FRM-260	1379	pH Buffer Bottle 4.01 Twin-neck Oak House Production IQC	2	Forms
+CO-PRD1-FRM-259	1378	pH Buffer Bottle 7.00 Twin-neck Oak House Production IQC	2	Forms
+CO-QC-T-030	315	pH Meter Calibration Form	3	Templates
+CO-PRD1-FRM-211	1210	pH Meter Calibration form - 3 point	3	Forms
+CO-DES-T-005	290	Phase Review Record	2	Templates
+CO-IT-POL-030	1188	Physical Security Policy	1	Policy
+CO-LAB-SOP-184	619	Pilot Line Blister Filling and Sealing Standard Operating Procedure	3	Standard Operating Procedure
+CO-SUP-SOP-278	1101	Pilot Line Electronic Stock Control	8	Standard Operating Procedure
+CO-DES-T-084	396	Pilot Line Electronic Stock Register	5	Templates
+CO-LAB-LBL-023	903	Pilot Line Materials Label	1	Label
+CO-DES-PTL-007	464	Pilot Line Process & Equipment Validation	3	Protocol
+CO-DES-T-112	424	Pilot Line Use Log	6	Templates
+CO-LAB-LBL-008	887	Pipette Calibration Label	1	Label
+CO-PRD1-JA-081	1598	Pipette Handling -Job Aid	0	Job Aid
+CO-LAB-REG-013	830	Pipette Register	3	Registers
+CO-LAB-SOP-131	553	Pipette Use and Calibration SOP	13	Standard Operating Procedure
+CO-OPS-SOP-002	24	Planning for Process Validation	3	Standard Operating Procedure
+CO-OPS-SCR-003	1761	Pneumatic Test Cartridge Calibration Scripts	1	Script-io 
+CO-OPS-SOP-166	601	Pneumatics Test Rig Set up and Calibration	3	Standard Operating Procedure
+CO-SUP-POL-017	1105	Policy for Commercial Operations	4	Policy
+CO-QA-POL-013	579	Policy for Complaints and Vigilance	2	Policy
+CO-QA-POL-010	576	Policy for Control of Infrastructure Environment and Equipment	5	Policy
+CO-CS-POL-012	578	Policy for Customer Feedback	5	Policy
+CO-QA-POL-006	563	Policy for Document Control and Change Management	5	Policy
+CO-OPS-POL-037	1594	Policy for Production Specification Transfer to Contract Manufacturers	0	Policy
+CO-OPS-POL-008	574	Policy for Purchasing and Management of Suppliers	5	Policy
+CO-QA-POL-014	859	Policy for the Control of Non-Conforming Product and Corrective/Preventive Action	4	Policy
+CO-QA-POL-015	914	Policy for the Use of Electronic Signatures within binx health	0	Policy
+CO-IT-POL-038	1698	Policy for use of Chatbots and Artificial Intelligence tools within binx health processes 	0	Policy
+CO-QA-T-010	295	Policy Template	7	Templates
+CO-QA-T-189	1466	Post Market Performance Follow-up Plan Template	0	Templates
+CO-QA-T-190	1467	Post Market Performance Follow-up Report Template	0	Templates
+CO-QA-SOP-267	146	Post Market Surveillance	8	Standard Operating Procedure
+CO-QA-T-192	1469	Post Market Surveillance Plan Template	0	Templates
+CO-QA-T-193	1470	Post Market Surveillance Report Template	0	Templates
+CO-PRD1-FRM-223	1339	Potassium Chloride Oak House Production IQC	4	Forms
+CO-OPS-SOP-127	340	Potassium Phosphate Buffer	7	Standard Operating Procedure
+CO-PRD1-FRM-225	1341	Potassium phosphate dibasic Oak House Production IQC	4	Forms
+CO-PRD1-FRM-234	1350	Potassium phosphate monobasic Oak House Production IQC	4	Forms
+CO-PRD1-PTL-117	1740	PQ Protocol and Report for the Integra ASSIST PLUS in Oak House	0	Protocol
+CO-LAB-PTL-047	848	PQ Protocol for binder incubator and humidity chamber	0	Protocol
+CO-LAB-SOP-302	1136	Preparation and use of agarose gels	5	Standard Operating Procedure
+CO-LAB-SOP-301	1135	Preparation Microbiological Broth & Agar	5	Standard Operating Procedure
+CO-LAB-SOP-291	1125	Preparation of 10X and 1X TAE Buffer	5	Standard Operating Procedure
+CO-LAB-SOP-078	502	Preparation of Bacterial Stocks (Master & Working)	6	Standard Operating Procedure
+CO-OPS-SOP-085	509	Preparation of Chlamydia trachomatis 1 million Genome Equivalents/µL stocks	2	Standard Operating Procedure
+CO-OPS-SOP-086	510	Preparation of Chlamydia trachomatis 100 thousand Genome Equivalents/µL stocks	2	Standard Operating Procedure
+CO-OPS-SOP-190	636	Preparation of IC DNA in TE buffer 10ng/μl master stock aliquots	3	Standard Operating Procedure
+CO-OPS-SOP-087	511	Preparation of Neisseria gonorrhoeae 1 million Genome Equivalents/µL stocks	2	Standard Operating Procedure
+CO-OPS-SOP-088	512	Preparation of Neisseria gonorrhoeae 100 thousand Genome Equivalents/µL stocks	2	Standard Operating Procedure
+CO-LAB-SOP-300	1134	Preparation of Sub-circuit cards for voltammetric detection	5	Standard Operating Procedure
+CO-LAB-SOP-292	1126	Preparation of Tryptone Soya Broth (TSB) and Tryptone Soya Agar (TSA)	5	Standard Operating Procedure
+CO-OPS-SOP-089	513	Preparation of vaginal swab samples	4	Standard Operating Procedure
+CO-LAB-SOP-148	580	Procedure for Aliquoting and Batch Retaining Reagents	12	Standard Operating Procedure
+CO-SUP-SOP-384	17	Procedure for Commercial Storage and Distribution	3	Standard Operating Procedure
+CO-CS-SOP-248	920	Procedure For Customer Service	3	Standard Operating Procedure
+CO-SUP-SOP-386	19	Procedure for Inventory Control and IBP	2	Standard Operating Procedure
+CO-QC-SOP-286	1119	Procedure for the Release of io Instruments	4	Standard Operating Procedure
+CO-QC-SOP-094	537	Procedure to Control Chemical and Biological Spillages	5	Standard Operating Procedure
+CO-OPS-URS-020	969	Process Requirement Specification for CO-OPS-PTL-010	0	User Requirements Specification
+CO-OPS-SOP-188	623	Process Validation	4	Standard Operating Procedure
+CO-QC-PTL-062	1073	Process Validation of CO-QC-QCP-039: T7 Exonuclease Raw Material Heated io Detection Rig Test (Part no. 0225)	0	Protocol
+CO-QC-PTL-077	1193	Process Validation of CO-QC-QCP-069 and CO-QC-QCP-052. IC DNA Reagent and Raw Material Testing	0	Protocol
+CO-DES-T-083	395	product requirements Specification Template	3	Templates
+CO-QA-SOP-283	1108	Product Risk Management Procedure	4	Standard Operating Procedure
+CO-PRD1-JA-044	1376	Production suite air conditioning job aid	0	Job Aid
+CO-PMO-FRM-295	1641	Project Business Case	0	Forms
+CO-PMO-T-209	1596	Project Plan	2	Templates
+CO-DES-T-058	370	Project Planning Template	4	Templates
+CO-SAM-JA-048	1402	Promotional Materials Checklist	0	Job Aid
+CO-PRD1-JA-070	1564	Protecting Light Sensitive Reagents with Tin Foil at the Oak House Manufacturing Facility	0	Job Aid
+CO-SUP-SOP-068	481	Purchasing SOP	15	Standard Operating Procedure
+CO-QA-T-213	1610	QA Software Validation Protocol Template	0	Templates
+CO-QC-PTL-109	1571	QC CT/NG 2:2 Input Manufactured Under CO-OPS-SOP-189 Validation Protocol	1	Protocol
+CO-QC-JA-107	1801	QC CTNG Cartridge Processing Guide (CO-QC-QCP-056 and MOB-TR-032)	0	Job Aid
+CO-QC-T-144	458	QC io Mainternance Log	3	Templates
+CO-QC-T-120	432	QC Laboratory Cleaning Record	5	Templates
+CO-QC-FRM-049	624	QC Monthly Laboratory Checklist	0	Forms
+CO-QC-PTL-073	1086	QC Release of CT/NG Cartridge	1	Protocol
+CO-QC-QCP-062	1146	QC release procedure for the Io Reader	8	Quality Control Protocol
+CO-QC-LBL-031	1115	QC Retention Box Label	0	Label
+CO-QC-SOP-282	1106	QC Sample Handling and Retention Procedure	2	Standard Operating Procedure
+CO-QC-REG-034	1114	QC Sample Retention Register	3	Registers
+CO-QC-PTL-064	1076	QC testing and release of UNG raw material	2	Protocol
+CO-QC-T-082	394	qPCR QC Testing Data Analysis	14	Templates
+CO-QA-SOP-237	855	QT9 - Periodic Review and Making Documents Obsolete	1	Standard Operating Procedure
+CO-QA-SOP-244	909	QT9 Administration	3	Standard Operating Procedure
+CO-QA-JA-014	1158	QT9 Corrective Action Module Job Aid	1	Job Aid
+CO-QA-FRM-323	1772	QT9 Document Enhancement Request Form	0	Forms
+CO-QA-JA-013	1157	QT9 Feedback Module Job Aid	3	Job Aid
+CO-QA-JA-018	1175	QT9 Internal Audit Module Job Aid	2	Job Aid
+CO-QA-JA-059	1485	QT9 Material Review Board Module	1	Job Aid
+CO-QA-JA-015	1159	QT9 Nonconforming Product Job Aid	3	Job Aid
+CO-QA-JA-016	1160	QT9 Preventive Action Module Job Aid	1	Job Aid
+CO-QA-JA-021	1224	QT9 SCAR Module Job Aid	1	Job Aid
+CO-QA-T-146	471	QT9 SOP Template	2	Templates
+CO-QA-SOP-015	151	Qualification and Competence of Auditors	3	Standard Operating Procedure
+CO-QA-SOP-374	1574	Quality Assurance Process for Reviewing QMS Documentation	0	Standard Operating Procedure
+CO-QC-COP-001	625	Quality Control Laboratory Code of Practice	3	Code of Practice
+CO-QC-FRM-065	654	Quality Control Out of Specification Result Investigation Record Form	2	Forms
+CO-QC-SOP-012	655	Quality Control Out of Specification Results Procedure	2	Standard Operating Procedure
+CO-QC-POL-018	1107	Quality Control Policy	5	Policy
+CO-QC-SOP-171	606	Quality Control Rounding Procedure	3	Standard Operating Procedure
+CO-QC-JA-094	1711	Quality Control Scheduled Weekly Cleaning Job Aid	0	Job Aid
+CO-QA-POL-021	1113	Quality Manual	10	Policy
+CO-QA-SOP-012	148	Quality Objectives	9	Standard Operating Procedure
+CO-QA-POL-019	1111	Quality Policy	6	Policy
+CO-QA-SOP-028	470	Quality Records	11	Standard Operating Procedure
+CO-LAB-LBL-009	888	Quarantine - Failed calibration Label	2	Label
+CO-PRD1-LBL-056	1627	Quarantine Label - Oak House	0	Label
+CO-LAB-LBL-022	902	Quarantine Stock Item Label	1	Label
+CO-LAB-LBL-014	894	Quarantined material label	3	Label
+CO-QC-T-096	408	Quarterly Reagent Check Record	4	Templates
+CO-OPS-PTL-027	807	Rapid PCR Rig IQ Protocol	2	Protocol
+CO-OPS-PTL-011	626	Rapid PCR Rig OQ Procedure	2	Protocol
+CO-OPS-PTL-028	808	Rapid PCR Rig PQ Procedure	4	Protocol
+CO-OPS-PTL-010	588	Reader Installation Qualification Protocol	15	Protocol
+CO-OPS-SOP-009	271	Reader Peltier Refit procedure	3	Standard Operating Procedure
+CO-QC-T-095	407	Reagent Aliquot From	6	Templates
+CO-LAB-SOP-010	272	Reagent Deposition and Immobilisation (Pilot Line)	4	Standard Operating Procedure
+CO-QC-T-136	448	Reagent Design template	1	Templates
+CO-DES-T-140	454	Reagent Design Transfer Checklist	1	Templates
+CO-DES-SOP-372	41	Reagent Design Transfer process	2	Standard Operating Procedure
+CO-OPS-URS-018	948	Reagent Handling Processor for Scienion Dispense Equipment	0	User Requirements Specification
+CO-SUP-T-178	1304	Reagent Pick List Template	6	Templates
+CO-PRD1-POL-016	970	Reagent Production Policy	0	Policy
+CO-PRD1-FRM-191	999	Reagent Shipping Worksheet	2	Forms
+CO-LAB-SOP-180	615	Reconstitution of Lyophilised Materials	3	Standard Operating Procedure
+CO-REG-T-157	947	Regulatory Change Assessment Decision Tree Form	1	Templates
+CO-QC-QCP-056	1140	Release procedure for CT/NG cartridge	30	Quality Control Protocol
+CO-QA-T-215	1630	Report Template	0	Templates
+CO-IT-POL-031	1189	Responsible Disclosure Policy	1	Policy
+CO-QA-SOP-031	473	Revising and Introducing Documents in QT9	6	Standard Operating Procedure
+CO-QC-T-035	320	Rework Protocol Template	4	Templates
+CO-LAB-SOP-005	267	Rhychiger Heat Sealer	3	Standard Operating Procedure
+CO-H&S-RA-001	1513	Risk Assessment - binx Health Office and non-laboratory areas	6	H&S Risk Assessments
+CO-H&S-RA-013	1536	Risk Assessment - Fire - Derby Court and Unit 6	7	H&S Risk Assessments
+CO-H&S-RA-004	1516	Risk Assessment - io® reader / assay development tools	5	H&S Risk Assessments
+CO-H&S-RA-003	1515	Risk Assessment - Laboratory Areas (excluding Microbiology and Pilot line)	6	H&S Risk Assessments
+CO-H&S-RA-007	1519	Risk Assessment - Pilot line Laboratory area	5	H&S Risk Assessments
+CO-H&S-RA-006	1518	Risk Assessment - use of UV irradiation in the binx health Laboratories	5	H&S Risk Assessments
+CO-H&S-RA-008	1520	Risk Assessment for binx Health Employees	5	H&S Risk Assessments
+CO-H&S-RA-009	1521	Risk Assessment for use of Chemicals	4	H&S Risk Assessments
+CO-H&S-RA-002	1514	Risk Assessment for use of Microorganisms	7	H&S Risk Assessments
+CO-H&S-RA-010	1522	Risk Assessment for work-related stress	3	H&S Risk Assessments
+CO-DES-T-062	374	Risk Management Plan template	3	Templates
+CO-QA-POL-020	1112	Risk Management Policy	9	Policy
+CO-DES-T-064	376	Risk Management Report template	3	Templates
+CO-DES-T-063	375	Risk/benefit template	3	Templates
+CO-QA-SOP-345	144	Root Cause Analysis	4	Standard Operating Procedure
+CO-LAB-SOP-163	598	Running Cartridges on io Readers	10	Standard Operating Procedure
+CO-LAB-LBL-020	900	SAP Stock Item Label	2	Label
+CO-LAB-LBL-053	1583	SAP Stock Item Label (Green) 	0	Label
+CO-PRD1-FRM-263	1382	Sartorius Minisart NML hydrophilic sterile Syringe Filter with 0.2 µm surfactant-free Cellulose Acetate Membrane Male Luer Slip Oak House IQC	2	Forms
+CO-PRD1-FRM-261	1380	Sartorius Minisart™ NML Syringe Filters Sterile (0.45 µm) Male Luer Lock Oak House IQC	2	Forms
+CO-SUP-SOP-280	1103	Setting Expiry Dates for Incoming Materials	8	Standard Operating Procedure
+CO-QA-SOP-024	467	Sharepoint Administration	3	Standard Operating Procedure
+CO-SUP-LBL-051	1421	Shipping Contents Label	1	Label
+CO-PRD1-FRM-190	995	Shipping note	0	Forms
+CO-SUP-T-201	1488	Shipping Specification Template	0	Templates
+CO-SUP-SP-005	1490	Shipping Specification: CT/NG io Cartridge	1	Specification
+CO-SUP-SOP-363	1489	Shipping Specifications Procedure	0	Standard Operating Procedure
+CO-LAB-FRM-321	1751	Single Nucleotide C-di452 (Part No. 0420)	0	Forms
+CO-LAB-FRM-320	1750	Single Nucleotide G-di275 (Part No. 0421)	0	Forms
+CO-PRD1-PTL-122	1788	Site Acceptance Test (SAT) for the ALX-734 Label Print Dispenser	0	Protocol
+CO-SAM-T-205	1547	Slide Guide Template	0	Templates
+CO-SUP-JA-063	1555	Softbox TempCell F39 (13-48) Dry ice shipper packing instructions	0	Job Aid
+CO-SUP-JA-065	1557	Softbox TempCell MAX shipper packing instructions	0	Job Aid
+CO-SUP-JA-064	1556	Softbox TempCell PRO shipper packing instructions	0	Job Aid
+CO-DES-SOP-004	16	Software Development Procedure	4	Standard Operating Procedure
+CO-DES-T-125	437	Software Development Tool Approval	2	Templates
+CO-QC-T-023	308	Solution Preparation Form	3	Templates
+CO-LAB-SOP-136	559	Solution Preparation SOP	6	Standard Operating Procedure
+CO-LAB-LBL-011	890	Solutions labels	3	Label
+CO-LAB-SOP-290	1124	SOP for running clinical samples in io® instruments	4	Standard Operating Procedure
+CO-OPS-SOP-196	758	SOP to record the details of the manufacture of 75x PCR buffer	3	Standard Operating Procedure
+CO-DES-T-126	438	Soup Approval	2	Templates
+CO-QA-T-048	360	Specimen Signature Log	4	Templates
+CO-OPS-URS-036	1738	Spot Reagent mixing equipment for CT/NG Assay Cartridge manufacture at CMOs -Rotary Mixer URS	0	User Requirements Specification
+CO-OPS-URS-008	930	Sprint B+ leak tester- User Requirement Specification	0	User Requirements Specification
+CO-QA-SOP-076	498	Stakeholder Feedback and Product Complaints Handling Procedure	9	Standard Operating Procedure
+CO-QA-T-087	399	Standard / Guidance Review	4	Templates
+CO-LAB-SOP-289	1123	Standard Procedures for use in the Development of the CT/NG Assay	2	Standard Operating Procedure
+CO-LAB-SOP-150	582	Standard Use of Freezers	9	Standard Operating Procedure
+CO-PRD1-SOP-257	964	Standard Use of Oak House Freezers	1	Standard Operating Procedure
+CO-PRD1-SOP-259	967	Standard Use of Oak House Fridges	1	Standard Operating Procedure
+CO-LAB-SOP-294	1128	Standard Way of Making CT Dilutions	4	Standard Operating Procedure
+CO-PRD1-FRM-279	1568	Sterivex-GP Pressure Filter Unit IQC Form	1	Forms
+CO-LAB-REG-015	832	Stock Item Register	11	Registers
+CO-PRD1-LBL-050	1385	Stock Label - Oak House	3	Label
+CO-SUP-SOP-322	1244	Storage and Distribution - Oak House	2	Standard Operating Procedure
+CO-PRD1-LBL-029	984	Storage temperature labels	0	Label
+CO-QC-T-138	450	Summary technical Documentation (for assay)	2	Templates
+CO-QA-T-197	1475	Summary Technical Documentation (STED) Template	1	Templates
+CO-QA-SOP-077	500	Supplier Audit Procedure	10	Standard Operating Procedure
+CO-QA-REG-005	497	Supplier Concession Register	1	Registers
+CO-QA-SOP-011	147	Supplier Corrective Action Response Procedure	6	Standard Operating Procedure
+CO-SUP-SOP-069	487	Supplier Evaluation	10	Standard Operating Procedure
+CO-SUP-FRM-046	364	Supplier Questionnaire - Calibration/Equipment maintenance	4	Forms
+CO-SUP-FRM-042	365	Supplier Questionnaire - Chemical/Reagent/Microbiological	4	Forms
+CO-SUP-FRM-048	367	Supplier Questionnaire - Consultant/Services	4	Forms
+CO-SUP-FRM-047	366	Supplier Questionnaire - Hardware	4	Forms
+CO-QA-T-086	398	Supplier Re-assessment Approval form	4	Templates
+CO-SUP-SOP-070	488	Supplier Risk Assessment Approval and Monitoring Procedure	6	Standard Operating Procedure
+CO-QA-REG-025	845	Supplier Risk Assessment Monitoring List	5	Registers
+CO-SUP-T-236	1805	Supply Chain SOP Template	0	Templates
+CO-LAB-FRM-019	323	Synthetic Uracil containing Amplicon	3	Forms
+CO-OPS-SOP-033	475	T7 Diluent (NZ Source BSA) Solution	3	Standard Operating Procedure
+CO-PRD1-FRM-241	1357	T7 exonuclease Oak House Production IQC	2	Forms
+CO-LAB-FRM-026	519	T7 Gene 6 Exonuclease 1000U/µL	9	Forms
+CO-QC-T-105	417	T7 QC Testing Data Analysis	7	Templates
+CO-QC-PTL-061	1072	T7 Raw Material Spreadsheet Validation	0	Protocol
+CO-QC-QCP-039	587	T7 Raw Material Test	12	Quality Control Protocol
+CO-PRD1-FRM-226	1342	Taq-B Oak House Production IQC	3	Forms
+CO-QC-PTL-065	1077	Taq-B raw material and CT/NG Taq UNG Reagent Validation	2	Protocol
+CO-DES-PTL-003	460	Temperature controlled equipment	3	Protocol
+CO-PRD1-LBL-030	1055	Temperature only label	0	Label
+CO-QC-T-009	294	Template for IQC	6	Templates
+CO-PRD1-T-179	1333	Template for IQC for Oak House	1	Templates
+CO-LAB-T-148	569	Template for Laboratory Code of Practice	1	Templates
+CO-OPS-SOP-034	476	Test Method Validation	3	Standard Operating Procedure
+CO-QC-PTL-069	1082	Testing and Release of Raw Materials & Formulated Reagents	8	Protocol
+CO-PRD1-SOP-310	1208	The use of Calibrated Clocks/Timers	0	Standard Operating Procedure
+CO-PRD1-SOP-318	1222	The use of the calibrated temperature probe	0	Standard Operating Procedure
+CO-OPS-SOP-008	270	Thermal Test Rig Set Up and Calibration	4	Standard Operating Procedure
+CO-OPS-SCR-004	1762	ThermalDetectHold 	4	Script-io 
+CO-OPS-SCR-005	1763	ThermalPCRCycleTest	1	Script-io 
+CO-OPS-SCR-006	1764	ThermalPCRHoldTest	2	Script-io 
+CO-OPS-SCR-007	1765	ThermalSampleHoldTest	5	Script-io 
+CO-LAB-SOP-014	330	Thermo Orion Star pH meter	4	Standard Operating Procedure
+CO-IT-POL-033	1191	Third Party Management	1	Policy
+CO-OPS-SOP-172	607	Tool Changes of the Rhychiger Heat Sealer	3	Standard Operating Procedure
+CO-OPS-URS-007	929	TQC leak tester- User Requirement Specification	0	User Requirements Specification
+CO-HR-POL-007	573	Training Policy	5	Policy
+CO-QA-SOP-043	485	Training Procedure	9	Standard Operating Procedure
+CO-PRD1-JA-084	1611	Transfer materials between Oak House & Derby Court	0	Job Aid
+CO-PRD1-SOP-268	983	Transfer of reagent QC samples	3	Standard Operating Procedure
+CO-PRD1-FRM-235	1351	Trehalose dihydrate Oak House Production IQC	4	Forms
+CO-PRD1-FRM-236	1352	Triton X305 Oak House Production IQC	4	Forms
+CO-PRD1-FRM-237	1353	Trizma base Oak House production IQC	4	Forms
+CO-PRD1-FRM-238	1354	Trizma hydrochloride Oak House Production IQC	4	Forms
+CO-FIN-T-134	446	UK Trade Credit Application	2	Templates
+CO-OPS-LBL-028	908	UN3316 cartridge label - use Avery J8173 labels to print	1	Label
+CO-QC-QCP-070	1154	UNG 50 U/uL(Part no. 0240)	7	Quality Control Protocol
+CO-PRD1-FRM-228	1344	UNG Oak House Production IQC	3	Forms
+CO-PRD1-URS-022	1215	URS for a Hydridisation Oven (Benchmark Roto-Therm Plus H2024-E)	0	User Requirements Specification
+CO-QC-URS-030	1592	URS for electrode test method	0	User Requirements Specification
+CO-LAB-URS-029	1422	URS for Female Urine Clinical Study Database 	0	User Requirements Specification
+CO-LAB-URS-038	1749	URS for Heated Detection Rigs	2	User Requirements Specification
+CO-PRD1-URS-025	1266	URS for temp-controlled equipment for Oak House: Refrigerator Models: RLDF0519 and RLDF1519 (freestanding and under bench)  -20°C Freezer Models: RLVF0417 and RLVF1517 (freestanding and under bench) -80°C Freezer Model: DW-86L338	0	User Requirements Specification
+CO-OPS-URS-002	917	URS for Temperature Monitoring System	1	User Requirements Specification
+CO-QA-SOP-380	1603	US Registration and Regulatory Compliance	0	Standard Operating Procedure
+CO-FIN-T-167	1095	US Trade Credit Application	0	Templates
+CO-PRD1-SOP-254	959	Use & Cleaning of the Monmouth Scientific Model Guardian 1800 Production Enclosure in Oak House	1	Standard Operating Procedure
+CO-LAB-SOP-079	503	Use and Cleaning of Class II Microbiology Safety Cabinet	7	Standard Operating Procedure
+CO-SAM-JA-049	1403	Use of Acronyms in Marketing Materials	0	Job Aid
+CO-LAB-SOP-080	504	Use of Agilent Bioanalyzer DNA 1000 kits	6	Standard Operating Procedure
+CO-PRD1-SOP-252	952	Use of Benchmark Roto-Therm Plus Hybridisation oven	1	Standard Operating Procedure
+CO-QC-JA-011	1117	Use of CO-QC-T-118: Detection Reagent Analysis Spreadsheet	1	Job Aid
+CO-QC-JA-004	916	Use of CO-QC-T-155: CTNG QC Cartridge Analysis Module	0	Job Aid
+CO-LAB-SOP-045	1607	Use of Dry Bath System with Metal Block	0	Standard Operating Procedure
+CO-SUP-JA-055	1419	Use of Elpro data loggers	0	Job Aid
+CO-SUP-JA-087	1653	Use of Elpro datalogger at CMO for binx Health io CTNG Cartridge - QC samples and datalogger placement for Bulk US shipments	1	Job Aid
+CO-LAB-SOP-169	604	Use of Fermant Pouch Sealer	3	Standard Operating Procedure
+CO-PRD1-SOP-308	1179	Use of IKA Digital Roller Mixer	0	Standard Operating Procedure
+CO-PRD1-SOP-260	972	Use of Logmore dataloggers	0	Standard Operating Procedure
+CO-PRD1-SOP-305	1164	Use of ME2002T/00 and ML104T/00 balances in the Oak House Production Facility	1	Standard Operating Procedure
+CO-PRD1-SOP-313	1214	Use of Membrane Filters in the binx Reagent Manufacturing Facility 	1	Standard Operating Procedure
+CO-PRD1-SOP-258	966	Use of Oak House N2400-3010 Magnetic Stirrer	0	Standard Operating Procedure
+CO-LAB-SOP-159	594	Use of Rotor-Gene Q	4	Standard Operating Procedure
+CO-SAM-SOP-352	1425	Use of Sales and Market Access Master Decks for External Presentations	0	Standard Operating Procedure
+CO-QA-SOP-026	469	Use of Sharepoint	6	Standard Operating Procedure
+CO-QC-SOP-021	337	Use of Stuart SRT6D Roller Mixer	4	Standard Operating Procedure
+CO-LAB-SOP-138	561	Use of Temperature and Humidity Loggers	4	Standard Operating Procedure
+CO-LAB-SOP-015	331	Use of the ALC PK121 centrifuges (refrigerated and non-refrigerated)	3	Standard Operating Procedure
+CO-LAB-SOP-004	266	Use of the Bolt Mini Gel Tank for protein Electrophoresis	3	Standard Operating Procedure
+CO-PRD1-SOP-395	1734	Use of the Datalogic Barcode Scanner	0	Standard Operating Procedure
+CO-LAB-SOP-102	543	Use of the Grant XB2 Ultrasonic Bath	4	Standard Operating Procedure
+CO-LAB-SOP-020	336	Use of the Hulme Martin Pmpulse heat Sealer	2	Standard Operating Procedure
+CO-PRD1-SOP-396	1735	Use of the Integra ASSIST PLUS 	0	Standard Operating Procedure
+CO-LAB-SOP-017	333	Use of the Jenway Spectrophotometer	3	Standard Operating Procedure
+CO-PRD1-SOP-398	1775	Use of the Label Print Dispenser	0	Standard Operating Procedure
+CO-LAB-SOP-019	335	Use of the LMS Programmable Incubator	3	Standard Operating Procedure
+CO-QA-JA-006	932	Use of the Management Review Module in QT9	2	Job Aid
+CO-LAB-SOP-183	618	Use of the Microcentrifuge 24	1	Standard Operating Procedure
+CO-LAB-SOP-158	593	Use of the NanoDrop ND2000 Spectrophotometer	5	Standard Operating Procedure
+CO-PRD1-SOP-271	996	Use of the Pacplus Impulse Heat Sealer	0	Standard Operating Procedure
+CO-LAB-SOP-016	332	Use of the Peqlab thermal cyclers	4	Standard Operating Procedure
+CO-LAB-SOP-129	551	Use of the Priorclave Autoclave	8	Standard Operating Procedure
+CO-LAB-SOP-082	506	Use of the Rotary Vane Anemometer	2	Standard Operating Procedure
+CO-PRD1-SOP-311	1211	Use of the Rotary Vane Anemometer in Oak House	0	Standard Operating Procedure
+CO-QC-SOP-185	620	Use of the SB3 Rotator	2	Standard Operating Procedure
+CO-LAB-SOP-181	616	Use of the Thermomixer HC block	1	Standard Operating Procedure
+CO-PRD1-SOP-309	1194	Use of the Uninterruptible Power Supply	0	Standard Operating Procedure
+CO-OPS-SOP-186	621	Use of the VPUMP Vacuum pump	2	Standard Operating Procedure
+CO-LAB-SOP-153	585	Use of UV Cabinets	7	Standard Operating Procedure
+CO-QA-T-158	949	User Requirement Specification (URS) template	1	Templates
+CO-OPS-URS-019	956	User Requirement Specification for a Balance 	1	User Requirements Specification
+CO-OPS-URS-015	942	User requirement specification for a cooled incubator	0	User Requirements Specification
+CO-OPS-URS-014	941	User requirement specification for a filter integrity tester	0	User Requirements Specification
+CO-OPS-URS-012	936	User Requirement Specification for a Production Enclosure	0	User Requirements Specification
+CO-PRD1-URS-026	1267	User Requirement Specification for a Wireless Temperature and Humidity Monitoring System for Oak House Production and Storage Facility	0	User Requirements Specification
+CO-OPS-URS-011	935	User Requirement Specification for back up power supply 	0	User Requirements Specification
+CO-SUP-URS-017	946	User Requirement Specification for ByD for binx Reagent Manufacturing Facility	0	User Requirements Specification
+CO-OPS-URS-013	937	User requirement specification for class 2 microbiological safety cabinet	0	User Requirements Specification
+CO-OPS-URS-009	933	User Requirement Specification for pH/mV/°C Meter	1	User Requirements Specification
+CO-OPS-URS-010	934	User Requirement Specification for temperature-controlled equipment	0	User Requirements Specification
+CO-PRD1-URS-021	1161	User Requirement Specification for the binx Cartridge Reagent Manufacturing Lab UK	2	User Requirements Specification
+CO-OPS-URS-006	928	User Requirement Specification for the vT off-line flow and leak test equipment	0	User Requirements Specification
+CO-PRD1-URS-027	1302	User Requirements Specification for a Monmouth Scientific Model Guardian 1800 production enclosure	0	User Requirements Specification
+CO-PRD1-URS-034	1725	User Requirements Specification for the Oak House Barcode Scanner	0	User Requirements Specification
+CO-PRD1-URS-033	1704	User Requirements Specification for the Oak House Dispensing Machine	0	User Requirements Specification
+CO-PRD1-URS-032	1703	User Requirements Specification for the Oak House Labelling Machine	0	User Requirements Specification
+CO-OPS-PTL-108	1567	VAL2023-06 NetSuite Test Specification_QT9	1	Protocol
+CO-OPS-PTL-015	761	Validation 2-8 Refrigerator QC Lab	1	Protocol
+CO-OPS-PTL-014	760	Validation -80 Chest Freezer Micro lab	2	Protocol
+CO-OPS-PTL-013	759	Validation -80 Freezer QC Lab	1	Protocol
+CO-DES-T-065	377	Validation Master Plan (or Plan) template	5	Templates
+CO-DES-T-066	378	Validation Matrix template	2	Templates
+CO-OPS-PTL-019	799	Validation of Autolab Type III	2	Protocol
+CO-OPS-SOP-032	474	Validation of Automated Equipment and Quality System Software	3	Standard Operating Procedure
+CO-PRD1-PTL-101	1374	Validation of Oak House CT/NG reagent process	1	Protocol
+CO-LAB-SOP-003	265	Validation of Temperature Controlled Equipment	3	Standard Operating Procedure
+CO-DES-PTL-004	461	Validation Protocol - Class II Microbiology Safety Cabinet	3	Protocol
+CO-OPS-PTL-030	810	Validation Protocol – Heated Detection Rig PQ	7	Protocol
+CO-OPS-PTL-018	798	Validation Protocol – UV/Vis Nanodrop Spectrophotometer	2	Protocol
+CO-OPS-PTL-022	802	Validation Protocol - V&V Laboratory Facilities	1	Protocol
+CO-QC-PTL-016	796	Validation Protocol -20 freezer/QC lab asset 0330	1	Protocol
+CO-OPS-PTL-021	801	Validation Protocol for Rotorgene	4	Protocol
+CO-OPS-PTL-020	800	Validation Protocol Temperature controlled storage/incubation	3	Protocol
+CO-DES-T-025	310	Validation Protocol template	8	Templates
+CO-OPS-PTL-036	815	Validation Protocol: 21011-MET012 Thermal - PCR Cycle Results Template Master	2	Protocol
+CO-OPS-PTL-017	797	Validation Protocol: Thermal cycler IQ/OQ/PQ	4	Protocol
+CO-DES-T-114	426	Validation Summary Report	2	Templates
+CO-LAB-SOP-137	560	Variable Temperature Apparatus Monitoring	8	Standard Operating Procedure
+CO-PRD1-SOP-256	963	Velp Scientific WIZARD IR Infrared Vortex Mixer SOP	0	Standard Operating Procedure
+CO-CA-POL-009	575	Verification and Validation Policy	4	Policy
+CO-OPS-SOP-192	638	Verification Testing Process SOP	3	Standard Operating Procedure
+CO-LAB-PTL-186	1423	Verification Testing Protocol for Female Urine Database	0	Protocol
+CO-DES-T-060	372	Verification Testing Protocol template	8	Templates
+CO-DES-T-061	373	Verification Testing Report template	7	Templates
+CO-PRD1-PTL-115	1695	Vial Inspection Protocol	0	Protocol
+CO-PRD1-REG-043	1776	VIALAB Pipette Program Register	0	Registers
+CO-QA-SOP-326	73	Vigilance and Medical Reporting Procedure	7	Standard Operating Procedure
+CO-QA-T-106	418	Vigilance Form	3	Templates
+CO-QA-REG-022	841	Vigilance Register	2	Registers
+CO-OPS-PTL-049	925	vT flow and leak tester- FAT protocol 	0	Protocol
+CO-LAB-FRM-206	1225	Water/Eultion Buffer  aliquot form 	0	Forms
+CO-OPS-POL-011	577	WEEE Policy	4	Policy
+CO-OPS-SOP-165	600	Windows Software Update	1	Standard Operating Procedure
+CO-LAB-SOP-097	540	Wireless Temperature and Humidity Monitoring	15	Standard Operating Procedure
+CO-PRD1-FRM-243	1359	y-Aminobutyric acid (GABA) Oak House Production IQC	4	Forms
