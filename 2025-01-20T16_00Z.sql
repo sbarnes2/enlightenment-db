@@ -1,38 +1,46 @@
 --
+-- PostgreSQL database cluster dump
+--
+
+SET default_transaction_read_only = off;
+
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+
+--
+-- Drop databases (except postgres and template1)
+--
+
+DROP DATABASE IF EXISTS "enlightenment_db_instance";
+DROP DATABASE IF EXISTS "import";
+DROP DATABASE IF EXISTS "importdb";
+DROP DATABASE IF EXISTS "training";
+DROP DATABASE IF EXISTS "training_jdmr";
+
+
+
+
+--
+--
+
+
+--
+--
+
+--
+-- Database "enlightenment_db_instance" dump
+--
+
+--
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 16.4 (Debian 16.4-1.pgdg120+2)
--- Dumped by pg_dump version 17.2
+-- Dumped from database version 16.6 (Debian 16.6-1.pgdg120+1)
+-- Dumped by pg_dump version 16.6 (Debian 16.6-1.pgdg120+1)
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
 SET idle_in_transaction_session_timeout = 0;
-
-SET client_encoding = 'UTF8';
-SET standard_conforming_strings = on;
-SELECT pg_catalog.set_config('search_path', '', false);
-SET check_function_bodies = false;
-SET xmloption = content;
-SET client_min_messages = warning;
-SET row_security = off;
-
-DROP DATABASE IF EXISTS training;
---
--- Name: training; Type: DATABASE; Schema: -; Owner: binxenlightenmentdb
---
-
-CREATE DATABASE training WITH TEMPLATE = template0 ENCODING = 'UTF8' LOCALE_PROVIDER = libc LOCALE = 'en_US.UTF8';
-
-
-ALTER DATABASE training OWNER TO binxenlightenmentdb;
-
-\connect training
-
-SET statement_timeout = 0;
-SET lock_timeout = 0;
-SET idle_in_transaction_session_timeout = 0;
-SET transaction_timeout = 0;
 SET client_encoding = 'UTF8';
 SET standard_conforming_strings = on;
 SELECT pg_catalog.set_config('search_path', '', false);
@@ -42,11 +50,224 @@ SET client_min_messages = warning;
 SET row_security = off;
 
 --
--- Name: log_transaction(integer, integer, integer, character varying); Type: PROCEDURE; Schema: public; Owner: binxenlightenmentdb
+-- Name: enlightenment_db_instance; Type: DATABASE; Schema: -; Owner: -
 --
 
-CREATE PROCEDURE public.log_transaction(IN transaction_user integer, IN for_user integer, IN transaction_type integer, IN transaction_data character varying)
-    LANGUAGE plpgsql
+CREATE DATABASE "enlightenment_db_instance" WITH TEMPLATE = template0 ENCODING = 'UTF8' LOCALE_PROVIDER = libc LOCALE = 'en_US.UTF8';
+
+
+\connect "enlightenment_db_instance"
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- Name: enlightenment_db_instance; Type: DATABASE PROPERTIES; Schema: -; Owner: -
+--
+
+ALTER DATABASE "enlightenment_db_instance" SET "TimeZone" TO 'utc';
+
+
+\connect "enlightenment_db_instance"
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- Name: public; Type: SCHEMA; Schema: -; Owner: -
+--
+
+-- *not* creating schema, since initdb creates it
+
+
+--
+-- Name: SCHEMA "public"; Type: COMMENT; Schema: -; Owner: -
+--
+
+COMMENT ON SCHEMA "public" IS 'standard public schema';
+
+
+--
+-- PostgreSQL database dump complete
+--
+
+--
+-- Database "import" dump
+--
+
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 16.6 (Debian 16.6-1.pgdg120+1)
+-- Dumped by pg_dump version 16.6 (Debian 16.6-1.pgdg120+1)
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- Name: import; Type: DATABASE; Schema: -; Owner: -
+--
+
+CREATE DATABASE "import" WITH TEMPLATE = template0 ENCODING = 'UTF8' LOCALE_PROVIDER = libc LOCALE = 'en_US.UTF8';
+
+
+\connect "import"
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- Name: SCHEMA "public"; Type: COMMENT; Schema: -; Owner: -
+--
+
+COMMENT ON SCHEMA "public" IS 'standard public schema';
+
+
+--
+-- PostgreSQL database dump complete
+--
+
+--
+-- Database "importdb" dump
+--
+
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 16.6 (Debian 16.6-1.pgdg120+1)
+-- Dumped by pg_dump version 16.6 (Debian 16.6-1.pgdg120+1)
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- Name: importdb; Type: DATABASE; Schema: -; Owner: -
+--
+
+CREATE DATABASE "importdb" WITH TEMPLATE = template0 ENCODING = 'UTF8' LOCALE_PROVIDER = libc LOCALE = 'en_US.UTF8';
+
+
+\connect "importdb"
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- Name: SCHEMA "public"; Type: COMMENT; Schema: -; Owner: -
+--
+
+COMMENT ON SCHEMA "public" IS 'standard public schema';
+
+
+--
+-- PostgreSQL database dump complete
+--
+
+--
+-- Database "training" dump
+--
+
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 16.6 (Debian 16.6-1.pgdg120+1)
+-- Dumped by pg_dump version 16.6 (Debian 16.6-1.pgdg120+1)
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- Name: training; Type: DATABASE; Schema: -; Owner: -
+--
+
+CREATE DATABASE "training" WITH TEMPLATE = template0 ENCODING = 'UTF8' LOCALE_PROVIDER = libc LOCALE = 'en_US.UTF8';
+
+
+\connect "training"
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- Name: SCHEMA "public"; Type: COMMENT; Schema: -; Owner: -
+--
+
+COMMENT ON SCHEMA "public" IS 'standard public schema';
+
+
+--
+-- Name: log_transaction(integer, integer, integer, character varying); Type: PROCEDURE; Schema: public; Owner: -
+--
+
+CREATE PROCEDURE "public"."log_transaction"(IN "transaction_user" integer, IN "for_user" integer, IN "transaction_type" integer, IN "transaction_data" character varying)
+    LANGUAGE "plpgsql"
     AS $$
 BEGIN
     INSERT INTO transaction_log (transaction_user_id,target_userid,transaction_type_id,transaction_data)
@@ -55,180 +276,160 @@ END
 $$;
 
 
-ALTER PROCEDURE public.log_transaction(IN transaction_user integer, IN for_user integer, IN transaction_type integer, IN transaction_data character varying) OWNER TO binxenlightenmentdb;
-
 SET default_tablespace = '';
 
-SET default_table_access_method = heap;
+SET default_table_access_method = "heap";
 
 --
--- Name: training_record; Type: TABLE; Schema: public; Owner: binxenlightenmentdb
+-- Name: training_record; Type: TABLE; Schema: public; Owner: -
 --
 
-CREATE TABLE public.training_record (
-    id integer NOT NULL,
-    doc_id integer NOT NULL,
-    risk_level integer NOT NULL,
-    revision integer NOT NULL,
-    userid integer NOT NULL,
-    run_date timestamp with time zone DEFAULT CURRENT_TIMESTAMP,
-    needs_verification boolean DEFAULT false,
-    trained boolean DEFAULT false,
-    verified boolean DEFAULT false,
-    verified_by integer DEFAULT 0 NOT NULL,
-    current_escalation_level integer DEFAULT 0 NOT NULL,
-    date_verified date,
-    old_revision integer DEFAULT 0,
-    training_complete_date timestamp without time zone
+CREATE TABLE "public"."training_record" (
+    "id" integer NOT NULL,
+    "doc_id" integer NOT NULL,
+    "risk_level" integer NOT NULL,
+    "revision" integer NOT NULL,
+    "userid" integer NOT NULL,
+    "run_date" timestamp with time zone DEFAULT CURRENT_TIMESTAMP,
+    "needs_verification" boolean DEFAULT false,
+    "trained" boolean DEFAULT false,
+    "verified" boolean DEFAULT false,
+    "verified_by" integer DEFAULT 0 NOT NULL,
+    "current_escalation_level" integer DEFAULT 0 NOT NULL,
+    "date_verified" "date",
+    "old_revision" integer DEFAULT 0,
+    "training_complete_date" timestamp without time zone
 );
 
 
-ALTER TABLE public.training_record OWNER TO binxenlightenmentdb;
-
 --
--- Name: current_training_history_view; Type: VIEW; Schema: public; Owner: binxenlightenmentdb
+-- Name: current_training_history_view; Type: VIEW; Schema: public; Owner: -
 --
 
-CREATE VIEW public.current_training_history_view AS
- SELECT t1.doc_id,
-    t1.risk_level,
-    t1.revision,
-    t1.userid,
-    t1.run_date,
-    t1.needs_verification,
-    t1.trained,
-    t1.verified,
-    t1.verified_by,
-    t1.current_escalation_level,
-    t1.date_verified,
-    t1.old_revision,
-    t1.training_complete_date
-   FROM (public.training_record t1
-     JOIN ( SELECT training_record.doc_id,
-            training_record.userid,
-            max(training_record.training_complete_date) AS maxtrain
-           FROM public.training_record
-          GROUP BY training_record.userid, training_record.doc_id) t ON (((t1.training_complete_date = t.maxtrain) AND (t1.doc_id = t.doc_id) AND (t1.userid = t.userid))));
+CREATE VIEW "public"."current_training_history_view" AS
+ SELECT "t1"."doc_id",
+    "t1"."risk_level",
+    "t1"."revision",
+    "t1"."userid",
+    "t1"."run_date",
+    "t1"."needs_verification",
+    "t1"."trained",
+    "t1"."verified",
+    "t1"."verified_by",
+    "t1"."current_escalation_level",
+    "t1"."date_verified",
+    "t1"."old_revision",
+    "t1"."training_complete_date"
+   FROM ("public"."training_record" "t1"
+     JOIN ( SELECT "training_record"."doc_id",
+            "training_record"."userid",
+            "max"("training_record"."training_complete_date") AS "maxtrain"
+           FROM "public"."training_record"
+          GROUP BY "training_record"."userid", "training_record"."doc_id") "t" ON ((("t1"."training_complete_date" = "t"."maxtrain") AND ("t1"."doc_id" = "t"."doc_id") AND ("t1"."userid" = "t"."userid"))));
 
-
-ALTER VIEW public.current_training_history_view OWNER TO binxenlightenmentdb;
 
 --
--- Name: current_userstate_raw; Type: TABLE; Schema: public; Owner: binxenlightenmentdb
+-- Name: current_userstate_raw; Type: TABLE; Schema: public; Owner: -
 --
 
-CREATE TABLE public.current_userstate_raw (
-    name character varying(100) NOT NULL,
-    documentcode character varying(100) NOT NULL,
-    revision character varying(10),
-    trained character varying(10) NOT NULL,
-    date character varying(100)
+CREATE TABLE "public"."current_userstate_raw" (
+    "name" character varying(100) NOT NULL,
+    "documentcode" character varying(100) NOT NULL,
+    "revision" character varying(10),
+    "trained" character varying(10) NOT NULL,
+    "date" character varying(100)
 );
 
 
-ALTER TABLE public.current_userstate_raw OWNER TO binxenlightenmentdb;
-
 --
--- Name: currentstate_raw_mid; Type: TABLE; Schema: public; Owner: binxenlightenmentdb
+-- Name: currentstate_raw_mid; Type: TABLE; Schema: public; Owner: -
 --
 
-CREATE TABLE public.currentstate_raw_mid (
-    name character varying(100) NOT NULL,
-    documentcode character varying(100) NOT NULL,
-    revision character varying(10),
-    trained character varying(10) NOT NULL,
-    date character varying(100),
-    user_id integer,
-    doc_id integer,
-    date_as_date date
+CREATE TABLE "public"."currentstate_raw_mid" (
+    "name" character varying(100) NOT NULL,
+    "documentcode" character varying(100) NOT NULL,
+    "revision" character varying(10),
+    "trained" character varying(10) NOT NULL,
+    "date" character varying(100),
+    "user_id" integer,
+    "doc_id" integer,
+    "date_as_date" "date"
 );
 
 
-ALTER TABLE public.currentstate_raw_mid OWNER TO binxenlightenmentdb;
-
 --
--- Name: document_risk_raw; Type: TABLE; Schema: public; Owner: binxenlightenmentdb
+-- Name: document_risk_raw; Type: TABLE; Schema: public; Owner: -
 --
 
-CREATE TABLE public.document_risk_raw (
-    documentcode character varying(50),
-    risklevel character varying(10),
-    risk boolean
+CREATE TABLE "public"."document_risk_raw" (
+    "documentcode" character varying(50),
+    "risklevel" character varying(10),
+    "risk" boolean
 );
 
 
-ALTER TABLE public.document_risk_raw OWNER TO binxenlightenmentdb;
-
 --
--- Name: document_role_team; Type: TABLE; Schema: public; Owner: binxenlightenmentdb
+-- Name: document_role_team; Type: TABLE; Schema: public; Owner: -
 --
 
-CREATE TABLE public.document_role_team (
-    doc_id character varying(10),
-    documentcode character varying(50),
-    job_id bigint,
-    jobrole character varying(150),
-    teamid bigint,
-    teamname character varying(150)
+CREATE TABLE "public"."document_role_team" (
+    "doc_id" character varying(10),
+    "documentcode" character varying(50),
+    "job_id" bigint,
+    "jobrole" character varying(150),
+    "teamid" bigint,
+    "teamname" character varying(150)
 );
 
 
-ALTER TABLE public.document_role_team OWNER TO binxenlightenmentdb;
-
 --
--- Name: document_role_team_raw; Type: TABLE; Schema: public; Owner: binxenlightenmentdb
+-- Name: document_role_team_raw; Type: TABLE; Schema: public; Owner: -
 --
 
-CREATE TABLE public.document_role_team_raw (
-    doc_id character varying(10),
-    documentcode character varying(50),
-    job_id bigint,
-    jobrole character varying(150),
-    teamid bigint,
-    teamname character varying(150)
+CREATE TABLE "public"."document_role_team_raw" (
+    "doc_id" character varying(10),
+    "documentcode" character varying(50),
+    "job_id" bigint,
+    "jobrole" character varying(150),
+    "teamid" bigint,
+    "teamname" character varying(150)
 );
 
 
-ALTER TABLE public.document_role_team_raw OWNER TO binxenlightenmentdb;
-
 --
--- Name: documentdepartments_raw; Type: TABLE; Schema: public; Owner: binxenlightenmentdb
+-- Name: documentdepartments_raw; Type: TABLE; Schema: public; Owner: -
 --
 
-CREATE TABLE public.documentdepartments_raw (
-    documentcode character varying(50),
-    jobrole character varying(100),
-    teamname character varying(100)
+CREATE TABLE "public"."documentdepartments_raw" (
+    "documentcode" character varying(50),
+    "jobrole" character varying(100),
+    "teamname" character varying(100)
 );
 
 
-ALTER TABLE public.documentdepartments_raw OWNER TO binxenlightenmentdb;
-
 --
--- Name: documents; Type: TABLE; Schema: public; Owner: binxenlightenmentdb
+-- Name: documents; Type: TABLE; Schema: public; Owner: -
 --
 
-CREATE TABLE public.documents (
-    id integer NOT NULL,
-    doc_id character varying(100),
-    documentname character varying(250) NOT NULL,
-    rev character varying(50) NOT NULL,
-    documentcode character varying(50) NOT NULL,
-    documenttype character varying(50) NOT NULL,
-    risklevel character varying(50) DEFAULT 0 NOT NULL,
-    active boolean DEFAULT true,
-    dateloaded date
+CREATE TABLE "public"."documents" (
+    "id" integer NOT NULL,
+    "doc_id" character varying(100),
+    "documentname" character varying(250) NOT NULL,
+    "rev" character varying(50) NOT NULL,
+    "documentcode" character varying(50) NOT NULL,
+    "documenttype" character varying(50) NOT NULL,
+    "risklevel" character varying(50) DEFAULT 0 NOT NULL,
+    "active" boolean DEFAULT true,
+    "dateloaded" "date"
 );
 
 
-ALTER TABLE public.documents OWNER TO binxenlightenmentdb;
-
 --
--- Name: documents_id_seq1; Type: SEQUENCE; Schema: public; Owner: binxenlightenmentdb
+-- Name: documents_id_seq1; Type: SEQUENCE; Schema: public; Owner: -
 --
 
-ALTER TABLE public.documents ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY (
-    SEQUENCE NAME public.documents_id_seq1
+ALTER TABLE "public"."documents" ALTER COLUMN "id" ADD GENERATED ALWAYS AS IDENTITY (
+    SEQUENCE NAME "public"."documents_id_seq1"
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -238,208 +439,188 @@ ALTER TABLE public.documents ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY (
 
 
 --
--- Name: documents_old; Type: TABLE; Schema: public; Owner: binxenlightenmentdb
+-- Name: documents_old; Type: TABLE; Schema: public; Owner: -
 --
 
-CREATE TABLE public.documents_old (
-    id integer NOT NULL,
-    doc_id character varying(100),
-    documentname character varying(250) NOT NULL,
-    rev character varying(50) NOT NULL,
-    documentcode character varying(50) NOT NULL,
-    documenttype character varying(50) NOT NULL,
-    risklevel character varying(50) NOT NULL,
-    active boolean DEFAULT true,
-    dateloaded date
+CREATE TABLE "public"."documents_old" (
+    "id" integer NOT NULL,
+    "doc_id" character varying(100),
+    "documentname" character varying(250) NOT NULL,
+    "rev" character varying(50) NOT NULL,
+    "documentcode" character varying(50) NOT NULL,
+    "documenttype" character varying(50) NOT NULL,
+    "risklevel" character varying(50) NOT NULL,
+    "active" boolean DEFAULT true,
+    "dateloaded" "date"
 );
 
 
-ALTER TABLE public.documents_old OWNER TO binxenlightenmentdb;
-
 --
--- Name: documents_raw; Type: TABLE; Schema: public; Owner: binxenlightenmentdb
+-- Name: documents_raw; Type: TABLE; Schema: public; Owner: -
 --
 
-CREATE TABLE public.documents_raw (
-    doc_id character varying(100),
-    documentcode character varying(50) NOT NULL,
-    documentname character varying(250) NOT NULL,
-    rev character varying(50) NOT NULL
+CREATE TABLE "public"."documents_raw" (
+    "doc_id" character varying(100),
+    "documentcode" character varying(50) NOT NULL,
+    "documentname" character varying(250) NOT NULL,
+    "rev" character varying(50) NOT NULL
 );
 
 
-ALTER TABLE public.documents_raw OWNER TO binxenlightenmentdb;
-
 --
--- Name: job_documents; Type: TABLE; Schema: public; Owner: binxenlightenmentdb
+-- Name: job_documents; Type: TABLE; Schema: public; Owner: -
 --
 
-CREATE TABLE public.job_documents (
-    id integer NOT NULL,
-    doc_id integer NOT NULL,
-    job_id integer NOT NULL,
-    active boolean DEFAULT true
+CREATE TABLE "public"."job_documents" (
+    "id" integer NOT NULL,
+    "doc_id" integer NOT NULL,
+    "job_id" integer NOT NULL,
+    "active" boolean DEFAULT true
 );
 
 
-ALTER TABLE public.job_documents OWNER TO binxenlightenmentdb;
-
 --
--- Name: job_titles; Type: TABLE; Schema: public; Owner: binxenlightenmentdb
+-- Name: job_titles; Type: TABLE; Schema: public; Owner: -
 --
 
-CREATE TABLE public.job_titles (
-    id integer NOT NULL,
-    team_id integer,
-    name character varying(150),
-    active boolean DEFAULT true NOT NULL
+CREATE TABLE "public"."job_titles" (
+    "id" integer NOT NULL,
+    "team_id" integer,
+    "name" character varying(150),
+    "active" boolean DEFAULT true NOT NULL
 );
 
 
-ALTER TABLE public.job_titles OWNER TO binxenlightenmentdb;
-
 --
--- Name: team_members; Type: TABLE; Schema: public; Owner: binxenlightenmentdb
+-- Name: team_members; Type: TABLE; Schema: public; Owner: -
 --
 
-CREATE TABLE public.team_members (
-    id bigint NOT NULL,
-    user_id integer NOT NULL,
-    user_is_manager boolean NOT NULL,
-    team_id integer
+CREATE TABLE "public"."team_members" (
+    "id" bigint NOT NULL,
+    "user_id" integer NOT NULL,
+    "user_is_manager" boolean NOT NULL,
+    "team_id" integer
 );
 
 
-ALTER TABLE public.team_members OWNER TO binxenlightenmentdb;
-
 --
--- Name: teams; Type: TABLE; Schema: public; Owner: binxenlightenmentdb
+-- Name: teams; Type: TABLE; Schema: public; Owner: -
 --
 
-CREATE TABLE public.teams (
-    id integer NOT NULL,
-    name character varying(150) NOT NULL,
-    manager_id integer
+CREATE TABLE "public"."teams" (
+    "id" integer NOT NULL,
+    "name" character varying(150) NOT NULL,
+    "manager_id" integer
 );
 
 
-ALTER TABLE public.teams OWNER TO binxenlightenmentdb;
-
 --
--- Name: user_jobtitle; Type: TABLE; Schema: public; Owner: binxenlightenmentdb
+-- Name: user_jobtitle; Type: TABLE; Schema: public; Owner: -
 --
 
-CREATE TABLE public.user_jobtitle (
-    id integer NOT NULL,
-    user_id integer NOT NULL,
-    job_title_id integer NOT NULL
+CREATE TABLE "public"."user_jobtitle" (
+    "id" integer NOT NULL,
+    "user_id" integer NOT NULL,
+    "job_title_id" integer NOT NULL
 );
 
 
-ALTER TABLE public.user_jobtitle OWNER TO binxenlightenmentdb;
-
 --
--- Name: users; Type: TABLE; Schema: public; Owner: binxenlightenmentdb
+-- Name: users; Type: TABLE; Schema: public; Owner: -
 --
 
-CREATE TABLE public.users (
-    id integer NOT NULL,
-    username character varying(100),
-    email_address character varying(100),
-    firstname character varying(100),
-    surname character varying(100),
-    active boolean DEFAULT true,
-    is_admin boolean DEFAULT false NOT NULL,
-    is_manager boolean DEFAULT false NOT NULL,
-    role character varying(20) DEFAULT 'user'::character varying,
-    primary_title_id integer,
-    reports_to integer,
-    manages_team_id integer,
-    location integer DEFAULT 2,
-    md5 character varying(50)
+CREATE TABLE "public"."users" (
+    "id" integer NOT NULL,
+    "username" character varying(100),
+    "email_address" character varying(100),
+    "firstname" character varying(100),
+    "surname" character varying(100),
+    "active" boolean DEFAULT true,
+    "is_admin" boolean DEFAULT false NOT NULL,
+    "is_manager" boolean DEFAULT false NOT NULL,
+    "role" character varying(20) DEFAULT 'user'::character varying,
+    "primary_title_id" integer,
+    "reports_to" integer,
+    "manages_team_id" integer,
+    "location" integer DEFAULT 2,
+    "md5" character varying(50)
 );
 
 
-ALTER TABLE public.users OWNER TO binxenlightenmentdb;
-
 --
--- Name: hungergames; Type: VIEW; Schema: public; Owner: binxenlightenmentdb
+-- Name: hungergames; Type: VIEW; Schema: public; Owner: -
 --
 
-CREATE VIEW public.hungergames AS
- SELECT sub.id AS userid,
-    u.username,
-    tm.team_id,
-    t.name,
-    count(*) AS required_docs,
-    count(sub.trained) AS trained,
-    to_char((((count((sub.trained <> true)))::double precision / (count(sub.id))::double precision) * (100)::double precision), 'FM9999999999.00'::text) AS score
-   FROM (((( SELECT DISTINCT u_1.id,
-            u_1.username,
-            jt.name AS job_title,
-            jt.team_id AS teamid,
-            d.doc_id,
-            d.documentcode,
-            d.documentname,
-            d.rev AS currentdocrevision,
-            COALESCE(th.revision, 0) AS usercurrentrevision,
-            ((d.rev)::integer = th.revision) AS trained
-           FROM ((((((public.job_titles jt
-             JOIN public.user_jobtitle uj ON ((uj.job_title_id = jt.id)))
-             JOIN public.job_documents jd ON ((jt.id = jd.job_id)))
-             JOIN public.documents d ON ((jd.doc_id = (d.doc_id)::integer)))
-             JOIN public.users u_1 ON (((u_1.id = uj.user_id) AND (u_1.active = true))))
-             LEFT JOIN public.current_training_history_view th ON (((th.doc_id = (d.doc_id)::integer) AND (th.userid = uj.user_id) AND ((d.rev)::integer = th.revision))))
-             JOIN public.teams t_1 ON ((t_1.id = jt.team_id)))) sub
-     JOIN public.users u ON ((u.id = sub.id)))
-     JOIN public.team_members tm ON ((u.id = tm.user_id)))
-     JOIN public.teams t ON ((t.id = tm.team_id)))
-  GROUP BY sub.id, u.username, tm.team_id, t.name
-  ORDER BY sub.id;
+CREATE VIEW "public"."hungergames" AS
+ SELECT "sub"."id" AS "userid",
+    "u"."username",
+    "tm"."team_id",
+    "t"."name",
+    "count"(*) AS "required_docs",
+    "count"("sub"."trained") AS "trained",
+    "to_char"(((("count"(("sub"."trained" <> true)))::double precision / ("count"("sub"."id"))::double precision) * (100)::double precision), 'FM9999999999.00'::"text") AS "score"
+   FROM (((( SELECT DISTINCT "u_1"."id",
+            "u_1"."username",
+            "jt"."name" AS "job_title",
+            "jt"."team_id" AS "teamid",
+            "d"."doc_id",
+            "d"."documentcode",
+            "d"."documentname",
+            "d"."rev" AS "currentdocrevision",
+            COALESCE("th"."revision", 0) AS "usercurrentrevision",
+            (("d"."rev")::integer = "th"."revision") AS "trained"
+           FROM (((((("public"."job_titles" "jt"
+             JOIN "public"."user_jobtitle" "uj" ON (("uj"."job_title_id" = "jt"."id")))
+             JOIN "public"."job_documents" "jd" ON (("jt"."id" = "jd"."job_id")))
+             JOIN "public"."documents" "d" ON (("jd"."doc_id" = ("d"."doc_id")::integer)))
+             JOIN "public"."users" "u_1" ON ((("u_1"."id" = "uj"."user_id") AND ("u_1"."active" = true))))
+             LEFT JOIN "public"."current_training_history_view" "th" ON ((("th"."doc_id" = ("d"."doc_id")::integer) AND ("th"."userid" = "uj"."user_id") AND (("d"."rev")::integer = "th"."revision"))))
+             JOIN "public"."teams" "t_1" ON (("t_1"."id" = "jt"."team_id")))) "sub"
+     JOIN "public"."users" "u" ON (("u"."id" = "sub"."id")))
+     JOIN "public"."team_members" "tm" ON (("u"."id" = "tm"."user_id")))
+     JOIN "public"."teams" "t" ON (("t"."id" = "tm"."team_id")))
+  GROUP BY "sub"."id", "u"."username", "tm"."team_id", "t"."name"
+  ORDER BY "sub"."id";
 
-
-ALTER VIEW public.hungergames OWNER TO binxenlightenmentdb;
 
 --
--- Name: hungergames_team; Type: VIEW; Schema: public; Owner: binxenlightenmentdb
+-- Name: hungergames_team; Type: VIEW; Schema: public; Owner: -
 --
 
-CREATE VIEW public.hungergames_team AS
- SELECT tm.team_id,
-    t.name,
-    to_char((((count((sub.trained <> true)))::double precision / (count(sub.id))::double precision) * (100)::double precision), 'FM9999999999.00'::text) AS score,
-    (((count((sub.trained <> true)))::double precision / (count(sub.id))::double precision) * (100)::double precision) AS sort
-   FROM (((( SELECT DISTINCT u_1.id,
-            u_1.username,
-            jt.name AS job_title,
-            jt.team_id AS teamid,
-            d.doc_id,
-            d.documentcode,
-            d.documentname,
-            d.rev AS currentdocrevision,
-            COALESCE(th.revision, 0) AS usercurrentrevision,
-            ((d.rev)::integer = th.revision) AS trained
-           FROM ((((((public.job_titles jt
-             JOIN public.user_jobtitle uj ON ((uj.job_title_id = jt.id)))
-             JOIN public.job_documents jd ON ((jt.id = jd.job_id)))
-             JOIN public.documents d ON ((jd.doc_id = (d.doc_id)::integer)))
-             JOIN public.users u_1 ON (((u_1.id = uj.user_id) AND (u_1.active = true))))
-             LEFT JOIN public.current_training_history_view th ON (((th.doc_id = (d.doc_id)::integer) AND (th.userid = uj.user_id) AND ((d.rev)::integer = th.revision))))
-             JOIN public.teams t_1 ON ((t_1.id = jt.team_id)))) sub
-     JOIN public.users u ON ((u.id = sub.id)))
-     JOIN public.team_members tm ON ((u.id = tm.user_id)))
-     JOIN public.teams t ON ((t.id = tm.team_id)))
-  GROUP BY tm.team_id, t.name
-  ORDER BY (((count((sub.trained <> true)))::double precision / (count(sub.id))::double precision) * (100)::double precision) DESC;
+CREATE VIEW "public"."hungergames_team" AS
+ SELECT "tm"."team_id",
+    "t"."name",
+    "to_char"(((("count"(("sub"."trained" <> true)))::double precision / ("count"("sub"."id"))::double precision) * (100)::double precision), 'FM9999999999.00'::"text") AS "score",
+    ((("count"(("sub"."trained" <> true)))::double precision / ("count"("sub"."id"))::double precision) * (100)::double precision) AS "sort"
+   FROM (((( SELECT DISTINCT "u_1"."id",
+            "u_1"."username",
+            "jt"."name" AS "job_title",
+            "jt"."team_id" AS "teamid",
+            "d"."doc_id",
+            "d"."documentcode",
+            "d"."documentname",
+            "d"."rev" AS "currentdocrevision",
+            COALESCE("th"."revision", 0) AS "usercurrentrevision",
+            (("d"."rev")::integer = "th"."revision") AS "trained"
+           FROM (((((("public"."job_titles" "jt"
+             JOIN "public"."user_jobtitle" "uj" ON (("uj"."job_title_id" = "jt"."id")))
+             JOIN "public"."job_documents" "jd" ON (("jt"."id" = "jd"."job_id")))
+             JOIN "public"."documents" "d" ON (("jd"."doc_id" = ("d"."doc_id")::integer)))
+             JOIN "public"."users" "u_1" ON ((("u_1"."id" = "uj"."user_id") AND ("u_1"."active" = true))))
+             LEFT JOIN "public"."current_training_history_view" "th" ON ((("th"."doc_id" = ("d"."doc_id")::integer) AND ("th"."userid" = "uj"."user_id") AND (("d"."rev")::integer = "th"."revision"))))
+             JOIN "public"."teams" "t_1" ON (("t_1"."id" = "jt"."team_id")))) "sub"
+     JOIN "public"."users" "u" ON (("u"."id" = "sub"."id")))
+     JOIN "public"."team_members" "tm" ON (("u"."id" = "tm"."user_id")))
+     JOIN "public"."teams" "t" ON (("t"."id" = "tm"."team_id")))
+  GROUP BY "tm"."team_id", "t"."name"
+  ORDER BY ((("count"(("sub"."trained" <> true)))::double precision / ("count"("sub"."id"))::double precision) * (100)::double precision) DESC;
 
-
-ALTER VIEW public.hungergames_team OWNER TO binxenlightenmentdb;
 
 --
--- Name: job_documents_id_seq1; Type: SEQUENCE; Schema: public; Owner: binxenlightenmentdb
+-- Name: job_documents_id_seq1; Type: SEQUENCE; Schema: public; Owner: -
 --
 
-CREATE SEQUENCE public.job_documents_id_seq1
+CREATE SEQUENCE "public"."job_documents_id_seq1"
     AS integer
     START WITH 1
     INCREMENT BY 1
@@ -448,20 +629,18 @@ CREATE SEQUENCE public.job_documents_id_seq1
     CACHE 1;
 
 
-ALTER SEQUENCE public.job_documents_id_seq1 OWNER TO binxenlightenmentdb;
-
 --
--- Name: job_documents_id_seq1; Type: SEQUENCE OWNED BY; Schema: public; Owner: binxenlightenmentdb
+-- Name: job_documents_id_seq1; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
-ALTER SEQUENCE public.job_documents_id_seq1 OWNED BY public.job_documents.id;
+ALTER SEQUENCE "public"."job_documents_id_seq1" OWNED BY "public"."job_documents"."id";
 
 
 --
--- Name: job_titles_id_seq1; Type: SEQUENCE; Schema: public; Owner: binxenlightenmentdb
+-- Name: job_titles_id_seq1; Type: SEQUENCE; Schema: public; Owner: -
 --
 
-CREATE SEQUENCE public.job_titles_id_seq1
+CREATE SEQUENCE "public"."job_titles_id_seq1"
     AS integer
     START WITH 1
     INCREMENT BY 1
@@ -470,33 +649,29 @@ CREATE SEQUENCE public.job_titles_id_seq1
     CACHE 1;
 
 
-ALTER SEQUENCE public.job_titles_id_seq1 OWNER TO binxenlightenmentdb;
-
 --
--- Name: job_titles_id_seq1; Type: SEQUENCE OWNED BY; Schema: public; Owner: binxenlightenmentdb
+-- Name: job_titles_id_seq1; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
-ALTER SEQUENCE public.job_titles_id_seq1 OWNED BY public.job_titles.id;
+ALTER SEQUENCE "public"."job_titles_id_seq1" OWNED BY "public"."job_titles"."id";
 
 
 --
--- Name: location; Type: TABLE; Schema: public; Owner: binxenlightenmentdb
+-- Name: location; Type: TABLE; Schema: public; Owner: -
 --
 
-CREATE TABLE public.location (
-    id integer NOT NULL,
-    location_name character varying(50)
+CREATE TABLE "public"."location" (
+    "id" integer NOT NULL,
+    "location_name" character varying(50)
 );
 
 
-ALTER TABLE public.location OWNER TO binxenlightenmentdb;
-
 --
--- Name: location_id_seq; Type: SEQUENCE; Schema: public; Owner: binxenlightenmentdb
+-- Name: location_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
-ALTER TABLE public.location ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY (
-    SEQUENCE NAME public.location_id_seq
+ALTER TABLE "public"."location" ALTER COLUMN "id" ADD GENERATED ALWAYS AS IDENTITY (
+    SEQUENCE NAME "public"."location_id_seq"
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -506,37 +681,35 @@ ALTER TABLE public.location ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY (
 
 
 --
--- Name: qsreg201_export; Type: VIEW; Schema: public; Owner: binxenlightenmentdb
+-- Name: qsreg201_export; Type: VIEW; Schema: public; Owner: -
 --
 
-CREATE VIEW public.qsreg201_export AS
- SELECT DISTINCT u.id,
-    u.username,
-    jt.name AS job_title,
-    d.doc_id,
-    d.documentcode,
-    d.documentname,
-    d.rev AS currentdocrevision,
-    COALESCE(th.revision, 0) AS usercurrentrevision,
-    th.training_complete_date AS trained_date
-   FROM ((((((public.job_titles jt
-     JOIN public.user_jobtitle uj ON ((uj.job_title_id = jt.id)))
-     JOIN public.job_documents jd ON ((jt.id = jd.job_id)))
-     JOIN public.documents d ON ((jd.doc_id = (d.doc_id)::integer)))
-     JOIN public.users u ON (((u.id = uj.user_id) AND (u.active = true))))
-     LEFT JOIN public.training_record th ON (((th.doc_id = (d.doc_id)::integer) AND (th.userid = uj.user_id))))
-     JOIN public.teams t ON ((t.id = jt.team_id)))
-  ORDER BY u.id;
+CREATE VIEW "public"."qsreg201_export" AS
+ SELECT DISTINCT "u"."id",
+    "u"."username",
+    "jt"."name" AS "job_title",
+    "d"."doc_id",
+    "d"."documentcode",
+    "d"."documentname",
+    "d"."rev" AS "currentdocrevision",
+    COALESCE("th"."revision", 0) AS "usercurrentrevision",
+    "th"."training_complete_date" AS "trained_date"
+   FROM (((((("public"."job_titles" "jt"
+     JOIN "public"."user_jobtitle" "uj" ON (("uj"."job_title_id" = "jt"."id")))
+     JOIN "public"."job_documents" "jd" ON (("jt"."id" = "jd"."job_id")))
+     JOIN "public"."documents" "d" ON (("jd"."doc_id" = ("d"."doc_id")::integer)))
+     JOIN "public"."users" "u" ON ((("u"."id" = "uj"."user_id") AND ("u"."active" = true))))
+     LEFT JOIN "public"."training_record" "th" ON ((("th"."doc_id" = ("d"."doc_id")::integer) AND ("th"."userid" = "uj"."user_id"))))
+     JOIN "public"."teams" "t" ON (("t"."id" = "jt"."team_id")))
+  ORDER BY "u"."id";
 
-
-ALTER VIEW public.qsreg201_export OWNER TO binxenlightenmentdb;
 
 --
--- Name: team_members_id_seq; Type: SEQUENCE; Schema: public; Owner: binxenlightenmentdb
+-- Name: team_members_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
-ALTER TABLE public.team_members ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY (
-    SEQUENCE NAME public.team_members_id_seq
+ALTER TABLE "public"."team_members" ALTER COLUMN "id" ADD GENERATED ALWAYS AS IDENTITY (
+    SEQUENCE NAME "public"."team_members_id_seq"
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -546,10 +719,10 @@ ALTER TABLE public.team_members ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY
 
 
 --
--- Name: teams_id_seq1; Type: SEQUENCE; Schema: public; Owner: binxenlightenmentdb
+-- Name: teams_id_seq1; Type: SEQUENCE; Schema: public; Owner: -
 --
 
-CREATE SEQUENCE public.teams_id_seq1
+CREATE SEQUENCE "public"."teams_id_seq1"
     AS integer
     START WITH 1
     INCREMENT BY 1
@@ -558,45 +731,41 @@ CREATE SEQUENCE public.teams_id_seq1
     CACHE 1;
 
 
-ALTER SEQUENCE public.teams_id_seq1 OWNER TO binxenlightenmentdb;
-
 --
--- Name: teams_id_seq1; Type: SEQUENCE OWNED BY; Schema: public; Owner: binxenlightenmentdb
+-- Name: teams_id_seq1; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
-ALTER SEQUENCE public.teams_id_seq1 OWNED BY public.teams.id;
+ALTER SEQUENCE "public"."teams_id_seq1" OWNED BY "public"."teams"."id";
 
 
 --
--- Name: training_record_old; Type: TABLE; Schema: public; Owner: binxenlightenmentdb
+-- Name: training_record_old; Type: TABLE; Schema: public; Owner: -
 --
 
-CREATE TABLE public.training_record_old (
-    id integer NOT NULL,
-    doc_id integer NOT NULL,
-    risk_level integer NOT NULL,
-    revision integer NOT NULL,
-    userid integer NOT NULL,
-    run_date timestamp with time zone DEFAULT CURRENT_TIMESTAMP,
-    needs_verification boolean DEFAULT false,
-    trained boolean DEFAULT false,
-    verified boolean DEFAULT false,
-    verified_by integer DEFAULT 0 NOT NULL,
-    current_escalation_level integer DEFAULT 0 NOT NULL,
-    date_verified date,
-    old_revision integer DEFAULT 0,
-    training_complete_date timestamp without time zone
+CREATE TABLE "public"."training_record_old" (
+    "id" integer NOT NULL,
+    "doc_id" integer NOT NULL,
+    "risk_level" integer NOT NULL,
+    "revision" integer NOT NULL,
+    "userid" integer NOT NULL,
+    "run_date" timestamp with time zone DEFAULT CURRENT_TIMESTAMP,
+    "needs_verification" boolean DEFAULT false,
+    "trained" boolean DEFAULT false,
+    "verified" boolean DEFAULT false,
+    "verified_by" integer DEFAULT 0 NOT NULL,
+    "current_escalation_level" integer DEFAULT 0 NOT NULL,
+    "date_verified" "date",
+    "old_revision" integer DEFAULT 0,
+    "training_complete_date" timestamp without time zone
 );
 
 
-ALTER TABLE public.training_record_old OWNER TO binxenlightenmentdb;
-
 --
--- Name: training_record_id_seq; Type: SEQUENCE; Schema: public; Owner: binxenlightenmentdb
+-- Name: training_record_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
-ALTER TABLE public.training_record_old ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY (
-    SEQUENCE NAME public.training_record_id_seq
+ALTER TABLE "public"."training_record_old" ALTER COLUMN "id" ADD GENERATED ALWAYS AS IDENTITY (
+    SEQUENCE NAME "public"."training_record_id_seq"
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -606,35 +775,33 @@ ALTER TABLE public.training_record_old ALTER COLUMN id ADD GENERATED ALWAYS AS I
 
 
 --
--- Name: training_record_mistake; Type: TABLE; Schema: public; Owner: binxenlightenmentdb
+-- Name: training_record_mistake; Type: TABLE; Schema: public; Owner: -
 --
 
-CREATE TABLE public.training_record_mistake (
-    id bigint NOT NULL,
-    doc_id integer NOT NULL,
-    risk_level integer NOT NULL,
-    revision integer NOT NULL,
-    userid integer NOT NULL,
-    run_date timestamp with time zone DEFAULT CURRENT_TIMESTAMP,
-    needs_verification boolean DEFAULT false,
-    trained boolean DEFAULT false,
-    verified boolean DEFAULT false,
-    verified_by integer DEFAULT 0 NOT NULL,
-    current_escalation_level integer DEFAULT 0 NOT NULL,
-    date_verified date,
-    old_revision integer DEFAULT 0,
-    training_complete_date timestamp without time zone
+CREATE TABLE "public"."training_record_mistake" (
+    "id" bigint NOT NULL,
+    "doc_id" integer NOT NULL,
+    "risk_level" integer NOT NULL,
+    "revision" integer NOT NULL,
+    "userid" integer NOT NULL,
+    "run_date" timestamp with time zone DEFAULT CURRENT_TIMESTAMP,
+    "needs_verification" boolean DEFAULT false,
+    "trained" boolean DEFAULT false,
+    "verified" boolean DEFAULT false,
+    "verified_by" integer DEFAULT 0 NOT NULL,
+    "current_escalation_level" integer DEFAULT 0 NOT NULL,
+    "date_verified" "date",
+    "old_revision" integer DEFAULT 0,
+    "training_complete_date" timestamp without time zone
 );
 
 
-ALTER TABLE public.training_record_mistake OWNER TO binxenlightenmentdb;
-
 --
--- Name: training_record_id_seq1; Type: SEQUENCE; Schema: public; Owner: binxenlightenmentdb
+-- Name: training_record_id_seq1; Type: SEQUENCE; Schema: public; Owner: -
 --
 
-ALTER TABLE public.training_record_mistake ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY (
-    SEQUENCE NAME public.training_record_id_seq1
+ALTER TABLE "public"."training_record_mistake" ALTER COLUMN "id" ADD GENERATED ALWAYS AS IDENTITY (
+    SEQUENCE NAME "public"."training_record_id_seq1"
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -644,10 +811,10 @@ ALTER TABLE public.training_record_mistake ALTER COLUMN id ADD GENERATED ALWAYS 
 
 
 --
--- Name: training_record_id_seq2; Type: SEQUENCE; Schema: public; Owner: binxenlightenmentdb
+-- Name: training_record_id_seq2; Type: SEQUENCE; Schema: public; Owner: -
 --
 
-CREATE SEQUENCE public.training_record_id_seq2
+CREATE SEQUENCE "public"."training_record_id_seq2"
     AS integer
     START WITH 1
     INCREMENT BY 1
@@ -656,39 +823,35 @@ CREATE SEQUENCE public.training_record_id_seq2
     CACHE 1;
 
 
-ALTER SEQUENCE public.training_record_id_seq2 OWNER TO binxenlightenmentdb;
-
 --
--- Name: training_record_id_seq2; Type: SEQUENCE OWNED BY; Schema: public; Owner: binxenlightenmentdb
+-- Name: training_record_id_seq2; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
-ALTER SEQUENCE public.training_record_id_seq2 OWNED BY public.training_record.id;
+ALTER SEQUENCE "public"."training_record_id_seq2" OWNED BY "public"."training_record"."id";
 
 
 --
--- Name: transaction_detail; Type: TABLE; Schema: public; Owner: binxenlightenmentdb
+-- Name: transaction_detail; Type: TABLE; Schema: public; Owner: -
 --
 
-CREATE TABLE public.transaction_detail (
-    id bigint NOT NULL,
-    transaction_id integer NOT NULL,
-    object_type integer NOT NULL,
-    affected_doc_id integer DEFAULT 0,
-    affected_doc_revision_id integer DEFAULT 0,
-    affected_team_id integer DEFAULT 0,
-    affected_role_id integer DEFAULT 0,
-    affected_user_id integer DEFAULT 0
+CREATE TABLE "public"."transaction_detail" (
+    "id" bigint NOT NULL,
+    "transaction_id" integer NOT NULL,
+    "object_type" integer NOT NULL,
+    "affected_doc_id" integer DEFAULT 0,
+    "affected_doc_revision_id" integer DEFAULT 0,
+    "affected_team_id" integer DEFAULT 0,
+    "affected_role_id" integer DEFAULT 0,
+    "affected_user_id" integer DEFAULT 0
 );
 
 
-ALTER TABLE public.transaction_detail OWNER TO binxenlightenmentdb;
-
 --
--- Name: transaction_detail_id_seq; Type: SEQUENCE; Schema: public; Owner: binxenlightenmentdb
+-- Name: transaction_detail_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
-ALTER TABLE public.transaction_detail ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY (
-    SEQUENCE NAME public.transaction_detail_id_seq
+ALTER TABLE "public"."transaction_detail" ALTER COLUMN "id" ADD GENERATED ALWAYS AS IDENTITY (
+    SEQUENCE NAME "public"."transaction_detail_id_seq"
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -698,26 +861,24 @@ ALTER TABLE public.transaction_detail ALTER COLUMN id ADD GENERATED ALWAYS AS ID
 
 
 --
--- Name: transaction_log; Type: TABLE; Schema: public; Owner: binxenlightenmentdb
+-- Name: transaction_log; Type: TABLE; Schema: public; Owner: -
 --
 
-CREATE TABLE public.transaction_log (
-    id integer NOT NULL,
-    transaction_user_id integer NOT NULL,
-    target_userid integer NOT NULL,
-    transaction_type_id integer NOT NULL,
-    transaction_data character varying(250),
-    date timestamp with time zone DEFAULT CURRENT_TIMESTAMP
+CREATE TABLE "public"."transaction_log" (
+    "id" integer NOT NULL,
+    "transaction_user_id" integer NOT NULL,
+    "target_userid" integer NOT NULL,
+    "transaction_type_id" integer NOT NULL,
+    "transaction_data" character varying(250),
+    "date" timestamp with time zone DEFAULT CURRENT_TIMESTAMP
 );
 
 
-ALTER TABLE public.transaction_log OWNER TO binxenlightenmentdb;
-
 --
--- Name: transaction_log_id_seq1; Type: SEQUENCE; Schema: public; Owner: binxenlightenmentdb
+-- Name: transaction_log_id_seq1; Type: SEQUENCE; Schema: public; Owner: -
 --
 
-CREATE SEQUENCE public.transaction_log_id_seq1
+CREATE SEQUENCE "public"."transaction_log_id_seq1"
     AS integer
     START WITH 1
     INCREMENT BY 1
@@ -726,33 +887,29 @@ CREATE SEQUENCE public.transaction_log_id_seq1
     CACHE 1;
 
 
-ALTER SEQUENCE public.transaction_log_id_seq1 OWNER TO binxenlightenmentdb;
-
 --
--- Name: transaction_log_id_seq1; Type: SEQUENCE OWNED BY; Schema: public; Owner: binxenlightenmentdb
+-- Name: transaction_log_id_seq1; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
-ALTER SEQUENCE public.transaction_log_id_seq1 OWNED BY public.transaction_log.id;
+ALTER SEQUENCE "public"."transaction_log_id_seq1" OWNED BY "public"."transaction_log"."id";
 
 
 --
--- Name: transaction_object_type; Type: TABLE; Schema: public; Owner: binxenlightenmentdb
+-- Name: transaction_object_type; Type: TABLE; Schema: public; Owner: -
 --
 
-CREATE TABLE public.transaction_object_type (
-    id bigint NOT NULL,
-    name character varying(30)
+CREATE TABLE "public"."transaction_object_type" (
+    "id" bigint NOT NULL,
+    "name" character varying(30)
 );
 
 
-ALTER TABLE public.transaction_object_type OWNER TO binxenlightenmentdb;
-
 --
--- Name: transaction_object_type_id_seq; Type: SEQUENCE; Schema: public; Owner: binxenlightenmentdb
+-- Name: transaction_object_type_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
-ALTER TABLE public.transaction_object_type ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY (
-    SEQUENCE NAME public.transaction_object_type_id_seq
+ALTER TABLE "public"."transaction_object_type" ALTER COLUMN "id" ADD GENERATED ALWAYS AS IDENTITY (
+    SEQUENCE NAME "public"."transaction_object_type_id_seq"
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -762,24 +919,22 @@ ALTER TABLE public.transaction_object_type ALTER COLUMN id ADD GENERATED ALWAYS 
 
 
 --
--- Name: transaction_type; Type: TABLE; Schema: public; Owner: binxenlightenmentdb
+-- Name: transaction_type; Type: TABLE; Schema: public; Owner: -
 --
 
-CREATE TABLE public.transaction_type (
-    id integer NOT NULL,
-    type_name character varying(50) NOT NULL,
-    type_text character varying(250)
+CREATE TABLE "public"."transaction_type" (
+    "id" integer NOT NULL,
+    "type_name" character varying(50) NOT NULL,
+    "type_text" character varying(250)
 );
 
 
-ALTER TABLE public.transaction_type OWNER TO binxenlightenmentdb;
-
 --
--- Name: transaction_type_id_seq; Type: SEQUENCE; Schema: public; Owner: binxenlightenmentdb
+-- Name: transaction_type_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
-ALTER TABLE public.transaction_type ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY (
-    SEQUENCE NAME public.transaction_type_id_seq
+ALTER TABLE "public"."transaction_type" ALTER COLUMN "id" ADD GENERATED ALWAYS AS IDENTITY (
+    SEQUENCE NAME "public"."transaction_type_id_seq"
     START WITH 1
     INCREMENT BY 1
     NO MINVALUE
@@ -789,22 +944,20 @@ ALTER TABLE public.transaction_type ALTER COLUMN id ADD GENERATED ALWAYS AS IDEN
 
 
 --
--- Name: transaction_type_object_type; Type: TABLE; Schema: public; Owner: binxenlightenmentdb
+-- Name: transaction_type_object_type; Type: TABLE; Schema: public; Owner: -
 --
 
-CREATE TABLE public.transaction_type_object_type (
-    transaction_type_id integer,
-    transaction_object_type_id integer
+CREATE TABLE "public"."transaction_type_object_type" (
+    "transaction_type_id" integer,
+    "transaction_object_type_id" integer
 );
 
 
-ALTER TABLE public.transaction_type_object_type OWNER TO binxenlightenmentdb;
-
 --
--- Name: user_jobtitle_id_seq1; Type: SEQUENCE; Schema: public; Owner: binxenlightenmentdb
+-- Name: user_jobtitle_id_seq1; Type: SEQUENCE; Schema: public; Owner: -
 --
 
-CREATE SEQUENCE public.user_jobtitle_id_seq1
+CREATE SEQUENCE "public"."user_jobtitle_id_seq1"
     AS integer
     START WITH 1
     INCREMENT BY 1
@@ -813,54 +966,48 @@ CREATE SEQUENCE public.user_jobtitle_id_seq1
     CACHE 1;
 
 
-ALTER SEQUENCE public.user_jobtitle_id_seq1 OWNER TO binxenlightenmentdb;
-
 --
--- Name: user_jobtitle_id_seq1; Type: SEQUENCE OWNED BY; Schema: public; Owner: binxenlightenmentdb
+-- Name: user_jobtitle_id_seq1; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
-ALTER SEQUENCE public.user_jobtitle_id_seq1 OWNED BY public.user_jobtitle.id;
+ALTER SEQUENCE "public"."user_jobtitle_id_seq1" OWNED BY "public"."user_jobtitle"."id";
 
 
 --
--- Name: user_raw; Type: TABLE; Schema: public; Owner: binxenlightenmentdb
+-- Name: user_raw; Type: TABLE; Schema: public; Owner: -
 --
 
-CREATE TABLE public.user_raw (
-    lastname character varying(50),
-    firstname character varying(50),
-    emailaddress character varying(150)
+CREATE TABLE "public"."user_raw" (
+    "lastname" character varying(50),
+    "firstname" character varying(50),
+    "emailaddress" character varying(150)
 );
 
 
-ALTER TABLE public.user_raw OWNER TO binxenlightenmentdb;
-
 --
--- Name: user_relationship_raw; Type: TABLE; Schema: public; Owner: binxenlightenmentdb
+-- Name: user_relationship_raw; Type: TABLE; Schema: public; Owner: -
 --
 
-CREATE TABLE public.user_relationship_raw (
-    lastname character varying(50),
-    firstname character varying(50),
-    manageremail character varying(100),
-    directreportemail character varying(50),
-    member_of character varying(50),
-    manager_of character varying(50),
-    businesstitle character varying(150),
-    jobrolesforemployee character varying(150),
-    user_id integer,
-    job_id integer,
-    team_id integer
+CREATE TABLE "public"."user_relationship_raw" (
+    "lastname" character varying(50),
+    "firstname" character varying(50),
+    "manageremail" character varying(100),
+    "directreportemail" character varying(50),
+    "member_of" character varying(50),
+    "manager_of" character varying(50),
+    "businesstitle" character varying(150),
+    "jobrolesforemployee" character varying(150),
+    "user_id" integer,
+    "job_id" integer,
+    "team_id" integer
 );
 
 
-ALTER TABLE public.user_relationship_raw OWNER TO binxenlightenmentdb;
-
 --
--- Name: users_id_seq1; Type: SEQUENCE; Schema: public; Owner: binxenlightenmentdb
+-- Name: users_id_seq1; Type: SEQUENCE; Schema: public; Owner: -
 --
 
-CREATE SEQUENCE public.users_id_seq1
+CREATE SEQUENCE "public"."users_id_seq1"
     AS integer
     START WITH 1
     INCREMENT BY 1
@@ -869,69 +1016,67 @@ CREATE SEQUENCE public.users_id_seq1
     CACHE 1;
 
 
-ALTER SEQUENCE public.users_id_seq1 OWNER TO binxenlightenmentdb;
-
 --
--- Name: users_id_seq1; Type: SEQUENCE OWNED BY; Schema: public; Owner: binxenlightenmentdb
+-- Name: users_id_seq1; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
-ALTER SEQUENCE public.users_id_seq1 OWNED BY public.users.id;
+ALTER SEQUENCE "public"."users_id_seq1" OWNED BY "public"."users"."id";
 
 
 --
--- Name: job_documents id; Type: DEFAULT; Schema: public; Owner: binxenlightenmentdb
+-- Name: job_documents id; Type: DEFAULT; Schema: public; Owner: -
 --
 
-ALTER TABLE ONLY public.job_documents ALTER COLUMN id SET DEFAULT nextval('public.job_documents_id_seq1'::regclass);
-
-
---
--- Name: job_titles id; Type: DEFAULT; Schema: public; Owner: binxenlightenmentdb
---
-
-ALTER TABLE ONLY public.job_titles ALTER COLUMN id SET DEFAULT nextval('public.job_titles_id_seq1'::regclass);
+ALTER TABLE ONLY "public"."job_documents" ALTER COLUMN "id" SET DEFAULT "nextval"('"public"."job_documents_id_seq1"'::"regclass");
 
 
 --
--- Name: teams id; Type: DEFAULT; Schema: public; Owner: binxenlightenmentdb
+-- Name: job_titles id; Type: DEFAULT; Schema: public; Owner: -
 --
 
-ALTER TABLE ONLY public.teams ALTER COLUMN id SET DEFAULT nextval('public.teams_id_seq1'::regclass);
-
-
---
--- Name: training_record id; Type: DEFAULT; Schema: public; Owner: binxenlightenmentdb
---
-
-ALTER TABLE ONLY public.training_record ALTER COLUMN id SET DEFAULT nextval('public.training_record_id_seq2'::regclass);
+ALTER TABLE ONLY "public"."job_titles" ALTER COLUMN "id" SET DEFAULT "nextval"('"public"."job_titles_id_seq1"'::"regclass");
 
 
 --
--- Name: transaction_log id; Type: DEFAULT; Schema: public; Owner: binxenlightenmentdb
+-- Name: teams id; Type: DEFAULT; Schema: public; Owner: -
 --
 
-ALTER TABLE ONLY public.transaction_log ALTER COLUMN id SET DEFAULT nextval('public.transaction_log_id_seq1'::regclass);
-
-
---
--- Name: user_jobtitle id; Type: DEFAULT; Schema: public; Owner: binxenlightenmentdb
---
-
-ALTER TABLE ONLY public.user_jobtitle ALTER COLUMN id SET DEFAULT nextval('public.user_jobtitle_id_seq1'::regclass);
+ALTER TABLE ONLY "public"."teams" ALTER COLUMN "id" SET DEFAULT "nextval"('"public"."teams_id_seq1"'::"regclass");
 
 
 --
--- Name: users id; Type: DEFAULT; Schema: public; Owner: binxenlightenmentdb
+-- Name: training_record id; Type: DEFAULT; Schema: public; Owner: -
 --
 
-ALTER TABLE ONLY public.users ALTER COLUMN id SET DEFAULT nextval('public.users_id_seq1'::regclass);
+ALTER TABLE ONLY "public"."training_record" ALTER COLUMN "id" SET DEFAULT "nextval"('"public"."training_record_id_seq2"'::"regclass");
 
 
 --
--- Data for Name: current_userstate_raw; Type: TABLE DATA; Schema: public; Owner: binxenlightenmentdb
+-- Name: transaction_log id; Type: DEFAULT; Schema: public; Owner: -
 --
 
-COPY public.current_userstate_raw (name, documentcode, revision, trained, date) FROM stdin;
+ALTER TABLE ONLY "public"."transaction_log" ALTER COLUMN "id" SET DEFAULT "nextval"('"public"."transaction_log_id_seq1"'::"regclass");
+
+
+--
+-- Name: user_jobtitle id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY "public"."user_jobtitle" ALTER COLUMN "id" SET DEFAULT "nextval"('"public"."user_jobtitle_id_seq1"'::"regclass");
+
+
+--
+-- Name: users id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY "public"."users" ALTER COLUMN "id" SET DEFAULT "nextval"('"public"."users_id_seq1"'::"regclass");
+
+
+--
+-- Data for Name: current_userstate_raw; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY "public"."current_userstate_raw" ("name", "documentcode", "revision", "trained", "date") FROM stdin;
 Jeff Luber	CO-CS-POL-012	5	Y	2024/01/14
 Jeff Luber	CO-HR-POL-007	3	Y	2024/01/14
 Jeff Luber	CO-IT-POL-022	0	Y	2023/08/10
@@ -7028,18 +7173,18 @@ Nick Hitchins	CO-H&S-RA-008	0	N	\N
 
 
 --
--- Data for Name: currentstate_raw_mid; Type: TABLE DATA; Schema: public; Owner: binxenlightenmentdb
+-- Data for Name: currentstate_raw_mid; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.currentstate_raw_mid (name, documentcode, revision, trained, date, user_id, doc_id, date_as_date) FROM stdin;
+COPY "public"."currentstate_raw_mid" ("name", "documentcode", "revision", "trained", "date", "user_id", "doc_id", "date_as_date") FROM stdin;
 \.
 
 
 --
--- Data for Name: document_risk_raw; Type: TABLE DATA; Schema: public; Owner: binxenlightenmentdb
+-- Data for Name: document_risk_raw; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.document_risk_raw (documentcode, risklevel, risk) FROM stdin;
+COPY "public"."document_risk_raw" ("documentcode", "risklevel", "risk") FROM stdin;
 CO-CA-POL-009	LOW	f
 CO-CA-SOP-081	LOW	f
 CO-CS-POL-012	LOW	f
@@ -7394,10 +7539,10 @@ CO-OPS-SOP-186	LOW	f
 
 
 --
--- Data for Name: document_role_team; Type: TABLE DATA; Schema: public; Owner: binxenlightenmentdb
+-- Data for Name: document_role_team; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.document_role_team (doc_id, documentcode, job_id, jobrole, teamid, teamname) FROM stdin;
+COPY "public"."document_role_team" ("doc_id", "documentcode", "job_id", "jobrole", "teamid", "teamname") FROM stdin;
 -1	DocumentCode	-1	JobRole	-1	TeamName
 1476	CO-CS-SOP-358	-1	Global Customer Support (Core)	78	Global Customer Support
 1105	CO-SUP-POL-017	-1	Global Customer Support (Core)	78	Global Customer Support
@@ -9536,10 +9681,10 @@ COPY public.document_role_team (doc_id, documentcode, job_id, jobrole, teamid, t
 
 
 --
--- Data for Name: document_role_team_raw; Type: TABLE DATA; Schema: public; Owner: binxenlightenmentdb
+-- Data for Name: document_role_team_raw; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.document_role_team_raw (doc_id, documentcode, job_id, jobrole, teamid, teamname) FROM stdin;
+COPY "public"."document_role_team_raw" ("doc_id", "documentcode", "job_id", "jobrole", "teamid", "teamname") FROM stdin;
 1476	CO-CS-SOP-358	144	Global Customer Support (Core)	78	Global Customer Support
 1105	CO-SUP-POL-017	144	Global Customer Support (Core)	78	Global Customer Support
 1586	CO-OPS-SOP-377	144	Global Customer Support (Core)	78	Global Customer Support
@@ -11676,10 +11821,10 @@ COPY public.document_role_team_raw (doc_id, documentcode, job_id, jobrole, teami
 
 
 --
--- Data for Name: documentdepartments_raw; Type: TABLE DATA; Schema: public; Owner: binxenlightenmentdb
+-- Data for Name: documentdepartments_raw; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.documentdepartments_raw (documentcode, jobrole, teamname) FROM stdin;
+COPY "public"."documentdepartments_raw" ("documentcode", "jobrole", "teamname") FROM stdin;
 DocumentCode	JobRole	TeamName
 CO-CS-SOP-358	Global Customer Support (Core)	Global Customer Support
 CO-SUP-POL-017	Global Customer Support (Core)	Global Customer Support
@@ -13818,10 +13963,10 @@ CO-H&S-COSHH-014	Oak House	Oak House
 
 
 --
--- Data for Name: documents; Type: TABLE DATA; Schema: public; Owner: binxenlightenmentdb
+-- Data for Name: documents; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.documents (id, doc_id, documentname, rev, documentcode, documenttype, risklevel, active, dateloaded) FROM stdin;
+COPY "public"."documents" ("id", "doc_id", "documentname", "rev", "documentcode", "documenttype", "risklevel", "active", "dateloaded") FROM stdin;
 374	926	 Factory Acceptance Test (FAT)  TQC in-line leak test equipment	0	CO-OPS-PTL-050	Protocol	0	f	2024-11-03
 1348	926	 Factory Acceptance Test (FAT)  TQC in-line leak test equipment	0	CO-OPS-PTL-050	Protocol	0	f	2024-11-12
 379	698	CT di452 Probe from SGS’ Part No. 0289	5	CO-LAB-FRM-108	Forms	0	f	2024-11-03
@@ -14842,10 +14987,10 @@ COPY public.documents (id, doc_id, documentname, rev, documentcode, documenttype
 
 
 --
--- Data for Name: documents_old; Type: TABLE DATA; Schema: public; Owner: binxenlightenmentdb
+-- Data for Name: documents_old; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.documents_old (id, doc_id, documentname, rev, documentcode, documenttype, risklevel, active, dateloaded) FROM stdin;
+COPY "public"."documents_old" ("id", "doc_id", "documentname", "rev", "documentcode", "documenttype", "risklevel", "active", "dateloaded") FROM stdin;
 374	926	 Factory Acceptance Test (FAT)  TQC in-line leak test equipment	0	CO-OPS-PTL-050	Protocol	0	f	2024-11-03
 1348	926	 Factory Acceptance Test (FAT)  TQC in-line leak test equipment	0	CO-OPS-PTL-050	Protocol	0	f	2024-11-12
 375	1781	Enlightenment Notifier Validation and Verification Protocol	0	CO-QA-PTL-120	Protocol	0	f	2024-11-03
@@ -15865,10 +16010,10 @@ COPY public.documents_old (id, doc_id, documentname, rev, documentcode, document
 
 
 --
--- Data for Name: documents_raw; Type: TABLE DATA; Schema: public; Owner: binxenlightenmentdb
+-- Data for Name: documents_raw; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.documents_raw (doc_id, documentcode, documentname, rev) FROM stdin;
+COPY "public"."documents_raw" ("doc_id", "documentcode", "documentname", "rev") FROM stdin;
 926	CO-OPS-PTL-050	 Factory Acceptance Test (FAT)  TQC in-line leak test equipment	0
 1170	CO-PRD1-FRM-200	Manufacture of CT/IC Primer Passivation Reagent – 7.071.002 & 7.086.002– (MOB-D-078 & MOB-D-086)	6
 884	CO-LAB-LBL-005	 Non-Part Numbered Material Label	5
@@ -16774,10 +16919,10 @@ COPY public.documents_raw (doc_id, documentcode, documentname, rev) FROM stdin;
 
 
 --
--- Data for Name: job_documents; Type: TABLE DATA; Schema: public; Owner: binxenlightenmentdb
+-- Data for Name: job_documents; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.job_documents (id, doc_id, job_id, active) FROM stdin;
+COPY "public"."job_documents" ("id", "doc_id", "job_id", "active") FROM stdin;
 1	268	173	t
 2	1531	165	t
 3	1515	156	t
@@ -17917,10 +18062,10 @@ COPY public.job_documents (id, doc_id, job_id, active) FROM stdin;
 
 
 --
--- Data for Name: job_titles; Type: TABLE DATA; Schema: public; Owner: binxenlightenmentdb
+-- Data for Name: job_titles; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.job_titles (id, team_id, name, active) FROM stdin;
+COPY "public"."job_titles" ("id", "team_id", "name", "active") FROM stdin;
 198	91	VP of Sales	t
 199	82	Chairman of the Board	t
 200	69		f
@@ -18077,20 +18222,20 @@ COPY public.job_titles (id, team_id, name, active) FROM stdin;
 
 
 --
--- Data for Name: location; Type: TABLE DATA; Schema: public; Owner: binxenlightenmentdb
+-- Data for Name: location; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.location (id, location_name) FROM stdin;
+COPY "public"."location" ("id", "location_name") FROM stdin;
 1	UK
 2	US
 \.
 
 
 --
--- Data for Name: team_members; Type: TABLE DATA; Schema: public; Owner: binxenlightenmentdb
+-- Data for Name: team_members; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.team_members (id, user_id, user_is_manager, team_id) FROM stdin;
+COPY "public"."team_members" ("id", "user_id", "user_is_manager", "team_id") FROM stdin;
 2	59	f	76
 3	34	f	75
 5	5	f	86
@@ -18178,10 +18323,10 @@ COPY public.team_members (id, user_id, user_is_manager, team_id) FROM stdin;
 
 
 --
--- Data for Name: teams; Type: TABLE DATA; Schema: public; Owner: binxenlightenmentdb
+-- Data for Name: teams; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.teams (id, name, manager_id) FROM stdin;
+COPY "public"."teams" ("id", "name", "manager_id") FROM stdin;
 85	Manufacturing Process Improvements	18
 77	QC and Technical Product	57
 76	Supply Chain and Logistics	3
@@ -18211,10 +18356,10 @@ COPY public.teams (id, name, manager_id) FROM stdin;
 
 
 --
--- Data for Name: training_record; Type: TABLE DATA; Schema: public; Owner: binxenlightenmentdb
+-- Data for Name: training_record; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date, needs_verification, trained, verified, verified_by, current_escalation_level, date_verified, old_revision, training_complete_date) FROM stdin;
+COPY "public"."training_record" ("id", "doc_id", "risk_level", "revision", "userid", "run_date", "needs_verification", "trained", "verified", "verified_by", "current_escalation_level", "date_verified", "old_revision", "training_complete_date") FROM stdin;
 2	575	0	4	26	2024-11-05 16:23:33.182911+00	f	t	f	0	0	\N	0	2023-11-06 00:00:00
 3	575	0	4	59	2024-11-05 16:23:33.182911+00	f	t	f	0	0	\N	0	2024-02-20 00:00:00
 4	575	0	4	63	2024-11-05 16:23:33.182911+00	f	t	f	0	0	\N	0	2023-11-08 00:00:00
@@ -18348,7 +18493,6 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 7084	1526	0	9	1	\N	f	t	f	0	0	\N	0	2024-11-21 12:51:07.63824
 6047	613	1	1	1	\N	t	t	t	25	0	2024-11-21	0	2024-11-05 16:46:10.699792
 7120	579	0	2	29	\N	f	t	f	0	0	\N	0	2024-11-22 14:35:04.217989
-7210	281	1	8	74	\N	t	t	f	0	0	\N	0	2024-11-25 11:54:00.721515
 7369	69	0	6	1	\N	f	t	f	0	0	\N	0	2024-11-26 14:28:25.025805
 7443	770	0	4	74	\N	f	t	f	0	0	\N	0	2024-11-27 08:03:06.083881
 7479	1542	0	3	76	2024-11-05 00:03:33+00	f	t	f	0	0	\N	2	2024-11-27 08:53:03.984389
@@ -18364,7 +18508,6 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 7656	284	0	3	67	\N	f	t	f	0	0	\N	0	2024-11-27 15:45:50.699346
 7657	284	0	3	67	\N	f	t	f	0	0	\N	0	2024-11-27 15:45:50.881814
 7658	278	0	3	13	\N	f	t	f	0	0	\N	0	2024-11-27 15:45:58.412338
-7757	514	1	3	74	\N	t	t	f	0	0	\N	0	2024-11-28 08:04:11.926105
 7789	475	0	3	46	\N	f	t	f	0	0	\N	0	2024-11-28 08:45:34.854252
 7274	1507	1	6	76	\N	t	t	t	29	0	2024-11-28	0	2024-11-26 09:06:44.415039
 7708	280	1	5	76	\N	t	t	t	29	0	2024-11-28	0	2024-11-27 16:13:25.091228
@@ -18378,6 +18521,7 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 7988	547	1	7	78	\N	t	t	t	29	0	2024-11-29	0	2024-11-29 10:12:46.175147
 8027	771	0	2	57	\N	f	t	f	0	0	\N	0	2024-11-29 11:35:13.596756
 8056	475	0	3	65	\N	f	t	f	0	0	\N	0	2024-11-29 13:58:00.19832
+7757	514	1	3	74	\N	t	t	t	46	0	2025-01-16	0	2024-11-28 08:04:11.926105
 8122	338	0	2	62	\N	f	t	f	0	0	\N	0	2024-12-02 08:21:13.068128
 7938	511	1	2	13	\N	t	t	t	62	0	2024-12-02	0	2024-11-28 15:13:31.679165
 8170	344	0	2	62	\N	f	t	f	0	0	\N	0	2024-12-03 10:08:34.413866
@@ -18397,7 +18541,6 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 8305	470	0	11	70	2024-11-05 00:03:33+00	f	t	f	0	0	\N	10	2024-12-04 13:30:21.042858
 8308	1512	1	1	30	\N	t	t	t	31	0	2024-12-09	0	2024-12-04 14:29:16.451184
 8140	557	1	3	43	\N	t	t	t	3	0	2024-12-09	0	2024-12-02 13:31:07.776987
-6049	485	1	9	8	2024-11-05 00:03:33+00	t	t	f	0	0	\N	8	2024-11-05 20:18:28.456785
 6106	1137	0	1	34	\N	f	t	f	0	0	\N	0	2024-11-06 08:43:08.378443
 6107	1138	0	1	34	\N	f	t	f	0	0	\N	0	2024-11-06 08:43:12.071254
 182	483	0	0	30	2024-11-05 16:23:33.182911+00	f	f	f	0	0	\N	0	\N
@@ -18443,7 +18586,6 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 6432	17	0	3	61	\N	f	t	f	0	0	\N	0	2024-11-11 11:21:16.929442
 6367	1122	1	7	9	\N	t	t	t	62	0	2024-11-11	0	2024-11-07 15:38:50.679963
 6478	1183	0	1	6	\N	f	t	f	0	0	\N	0	2024-11-12 13:23:59.030069
-6526	487	1	10	8	\N	t	t	f	0	0	\N	0	2024-11-13 14:13:02.51252
 6629	485	0	9	29	2024-11-05 00:03:33+00	f	t	f	0	0	\N	7	2024-11-14 08:56:27.942408
 6679	764	0	7	53	\N	f	t	f	0	0	\N	0	2024-11-14 10:32:38.245002
 6724	470	0	11	68	2024-11-05 00:03:33+00	f	t	f	0	0	\N	10	2024-11-14 20:00:07.032051
@@ -18475,6 +18617,7 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 7865	575	0	4	10	\N	f	t	f	0	0	\N	0	2024-11-28 11:23:15.668794
 7889	562	0	17	42	2024-11-05 00:03:33+00	f	t	f	0	0	\N	16	2024-11-28 11:39:09.921759
 7915	1535	0	1	10	\N	f	t	f	0	0	\N	0	2024-11-28 12:45:02.665089
+6049	485	1	9	8	2024-11-05 00:03:33+00	t	t	t	37	0	2025-01-20	8	2024-11-05 20:18:28.456785
 7940	572	0	5	7	\N	f	t	f	0	0	\N	0	2024-11-28 15:15:15.245462
 6877	583	1	10	55	\N	t	t	t	42	0	2024-11-28	0	2024-11-18 11:36:50.774218
 7790	476	1	3	46	\N	t	t	t	35	0	2024-11-28	0	2024-11-28 08:57:32.746511
@@ -18488,6 +18631,7 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 8062	514	1	3	65	\N	t	t	t	35	0	2024-12-04	0	2024-11-29 13:58:23.639008
 8060	512	1	2	65	\N	t	t	t	35	0	2024-12-04	0	2024-11-29 13:58:14.274736
 8028	584	1	4	65	2024-11-05 00:03:33+00	t	t	t	35	0	2024-12-04	3	2024-11-29 12:37:26.26971
+6526	487	1	10	8	\N	t	t	t	37	0	2025-01-20	0	2024-11-13 14:13:02.51252
 8744	268	0	3	78	\N	f	t	f	0	0	\N	2	2024-12-17 11:16:16.139778
 6108	1139	0	1	34	\N	f	t	f	0	0	\N	0	2024-11-06 08:43:13.958027
 6110	1518	0	5	34	\N	f	t	f	0	0	\N	0	2024-11-06 08:43:26.946801
@@ -18610,7 +18754,6 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 6433	574	0	5	61	\N	f	t	f	0	0	\N	0	2024-11-11 11:25:52.913081
 6368	1145	1	7	9	\N	t	t	t	62	0	2024-11-11	0	2024-11-07 15:46:27.9748
 6479	1184	0	1	6	\N	f	t	f	0	0	\N	0	2024-11-12 13:25:07.599107
-6527	488	1	6	8	\N	t	t	f	0	0	\N	0	2024-11-13 14:15:49.573426
 6630	1535	0	1	29	\N	f	t	f	0	0	\N	0	2024-11-14 08:57:29.100422
 6680	1128	0	4	53	\N	f	t	f	0	0	\N	0	2024-11-14 10:42:50.455347
 6725	472	0	3	68	\N	f	t	f	0	0	\N	0	2024-11-14 20:00:09.770603
@@ -18657,7 +18800,8 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 7660	282	0	3	13	\N	f	t	f	0	0	\N	0	2024-11-27 15:47:57.175389
 7711	555	0	8	76	\N	f	t	f	0	0	\N	0	2024-11-27 16:15:05.358506
 7712	556	0	7	76	\N	f	t	f	0	0	\N	0	2024-11-27 16:15:06.805533
-7759	546	1	8	74	\N	t	t	f	0	0	\N	0	2024-11-28 08:05:21.973533
+7759	546	1	8	74	\N	t	t	t	46	0	2025-01-16	0	2024-11-28 08:05:21.973533
+6527	488	1	6	8	\N	t	t	t	37	0	2025-01-20	0	2024-11-13 14:15:49.573426
 7276	1509	1	7	76	\N	t	t	t	29	0	2024-11-28	0	2024-11-26 09:12:10.584411
 7834	852	0	3	46	\N	f	t	f	0	0	\N	0	2024-11-28 09:23:36.48358
 7835	852	0	3	46	\N	f	t	f	0	0	\N	0	2024-11-28 09:23:36.698314
@@ -18705,7 +18849,6 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 7661	340	0	7	67	\N	f	t	f	0	0	\N	0	2024-11-27 15:47:59.055065
 7662	340	0	7	67	\N	f	t	f	0	0	\N	0	2024-11-27 15:47:59.477684
 7663	770	0	4	9	\N	f	t	f	0	0	\N	0	2024-11-27 15:48:02.377378
-7760	547	1	7	74	\N	t	t	f	0	0	\N	0	2024-11-28 08:06:11.527019
 7713	762	1	10	76	\N	t	t	t	29	0	2024-11-28	0	2024-11-27 16:15:26.902714
 7836	152	0	4	42	2024-11-05 00:03:33+00	f	t	f	0	0	\N	3	2024-11-28 09:24:33.221765
 7867	268	0	2	10	\N	f	t	f	0	0	\N	0	2024-11-28 11:26:03.900206
@@ -18749,6 +18892,7 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 8331	1181	0	1	30	\N	f	t	f	0	0	\N	0	2024-12-04 14:56:44.395855
 7891	1525	1	11	42	2024-11-05 00:03:33+00	t	t	t	31	0	2024-12-09	9	2024-11-28 11:44:26.973654
 7794	613	1	1	39	\N	t	t	t	31	0	2024-12-09	0	2024-11-28 08:59:23.539711
+7760	547	1	7	74	\N	t	t	t	46	0	2025-01-16	0	2024-11-28 08:06:11.527019
 8325	622	1	5	30	\N	t	t	t	31	0	2024-12-09	0	2024-12-04 14:29:35.865764
 8324	613	1	1	30	\N	t	t	t	31	0	2024-12-09	0	2024-12-04 14:29:35.258544
 8323	609	1	3	30	\N	t	t	t	31	0	2024-12-09	0	2024-12-04 14:29:34.656009
@@ -20598,7 +20742,6 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 6687	620	0	2	53	\N	f	t	f	0	0	\N	0	2024-11-14 11:17:42.644537
 6735	1543	0	0	28	\N	f	t	f	0	0	\N	0	2024-11-15 09:25:28.061459
 6736	1543	0	0	28	\N	f	t	f	0	0	\N	0	2024-11-15 09:25:28.141297
-6791	481	1	15	64	\N	t	t	f	0	0	\N	0	2024-11-15 16:52:53.64565
 6839	472	0	3	2	\N	f	t	f	0	0	\N	0	2024-11-15 18:57:39.98057
 6887	1125	0	5	53	\N	f	t	f	0	0	\N	4	2024-11-18 16:23:28.424252
 2375	268	0	2	26	2024-11-05 16:23:33.182911+00	f	t	f	0	0	\N	0	2021-10-04 00:00:00
@@ -20865,7 +21008,6 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 7614	152	0	4	67	\N	f	t	f	0	0	\N	0	2024-11-27 15:29:25.325319
 7677	283	0	3	13	\N	f	t	f	0	0	\N	0	2024-11-27 15:50:11.26847
 7719	277	0	3	57	\N	f	t	f	0	0	\N	0	2024-11-27 16:20:11.06218
-7765	628	1	16	74	\N	t	t	f	0	0	\N	0	2024-11-28 08:11:48.999405
 7843	144	0	4	48	\N	f	t	f	0	0	\N	0	2024-11-28 09:36:32.796315
 7871	278	0	3	10	\N	f	t	f	0	0	\N	0	2024-11-28 11:28:40.187288
 7921	572	0	5	42	\N	f	t	f	0	0	\N	0	2024-11-28 13:24:49.619668
@@ -20908,6 +21050,7 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 8068	547	1	7	65	\N	t	t	t	35	0	2024-12-04	0	2024-11-29 13:59:40.891838
 7615	1525	1	11	29	2024-11-05 00:03:33+00	t	t	t	20	0	2024-12-17	9	2024-11-27 15:29:37.321792
 8755	638	1	4	43	\N	t	t	t	3	0	2025-01-08	3	2024-12-17 11:41:48.05183
+7765	628	1	16	74	\N	t	t	t	46	0	2025-01-16	0	2024-11-28 08:11:48.999405
 6064	1113	0	10	24	\N	f	t	f	0	0	\N	0	2024-11-05 22:00:10.089038
 6127	1137	0	1	13	\N	f	t	f	0	0	\N	0	2024-11-06 09:25:45.760435
 6128	1138	0	1	13	\N	f	t	f	0	0	\N	0	2024-11-06 09:25:46.153581
@@ -21524,7 +21667,6 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 8759	1518	0	6	67	\N	f	t	f	0	0	\N	5	2024-12-17 14:51:34.592349
 8761	1722	0	0	67	\N	f	t	f	0	0	\N	0	2024-12-17 14:51:43.124469
 7724	755	0	5	13	\N	f	t	f	0	0	\N	0	2024-11-27 16:23:31.347203
-7770	762	1	10	74	\N	t	t	f	0	0	\N	0	2024-11-28 08:17:47.888499
 3277	477	0	4	14	2024-11-05 16:23:33.182911+00	f	t	f	0	0	\N	0	2024-08-23 00:00:00
 3278	477	0	4	7	2024-11-05 16:23:33.182911+00	f	t	f	0	0	\N	0	2024-08-22 00:00:00
 3279	477	0	4	27	2024-11-05 16:23:33.182911+00	f	t	f	0	0	\N	0	2024-09-24 00:00:00
@@ -21543,6 +21685,7 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 8037	24	1	3	65	\N	t	t	t	35	0	2024-12-04	0	2024-11-29 13:52:31.800399
 7137	489	1	15	35	2024-11-05 00:03:33+00	t	t	t	20	0	2024-12-17	14	2024-11-25 10:50:20.101116
 7550	488	1	6	31	\N	t	t	t	20	0	2024-12-17	0	2024-11-27 14:39:43.725982
+7770	762	1	10	74	\N	t	t	t	46	0	2025-01-16	0	2024-11-28 08:17:47.888499
 3281	477	0	4	31	2024-11-05 16:23:33.182911+00	f	t	f	0	0	\N	0	2024-10-02 00:00:00
 3282	477	0	3	42	2024-11-05 16:23:33.182911+00	f	t	f	0	0	\N	0	2022-12-15 00:00:00
 3283	477	0	3	49	2024-11-05 16:23:33.182911+00	f	t	f	0	0	\N	0	2023-02-15 00:00:00
@@ -21595,9 +21738,6 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 6752	485	0	9	28	2024-11-05 00:03:33+00	f	t	f	0	0	\N	8	2024-11-15 11:13:06.456511
 6807	563	0	5	47	2024-11-05 00:03:33+00	f	t	f	0	0	\N	4	2024-11-15 18:17:41.879251
 6850	1527	0	6	71	\N	f	t	f	0	0	\N	5	2024-11-15 20:26:24.430411
-6900	1528	1	6	70	\N	t	t	f	0	0	\N	0	2024-11-18 18:28:11.296799
-6941	1532	1	10	70	\N	t	t	f	0	0	\N	0	2024-11-19 16:52:17.251728
-6981	481	1	15	70	\N	t	t	f	0	0	\N	0	2024-11-20 18:11:38.343783
 7023	1183	0	1	29	2024-11-05 00:03:33+00	f	t	f	0	0	\N	0	2024-11-21 09:11:56.68732
 7064	483	0	6	1	\N	f	t	f	0	0	\N	0	2024-11-21 12:18:21.406873
 7139	1530	0	1	35	\N	f	t	f	0	0	\N	0	2024-11-25 10:50:35.805988
@@ -21635,6 +21775,9 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 7629	594	1	4	67	\N	t	t	t	62	0	2024-12-02	0	2024-11-27 15:31:52.269367
 7289	971	1	1	3	\N	t	t	t	20	0	2024-12-17	0	2024-11-26 13:25:02.725009
 8763	1834	1	0	67	\N	t	t	t	62	0	2024-12-20	0	2024-12-17 14:51:49.166248
+6900	1528	1	6	70	\N	t	t	t	37	0	2025-01-20	0	2024-11-18 18:28:11.296799
+6941	1532	1	10	70	\N	t	t	t	37	0	2025-01-20	0	2024-11-19 16:52:17.251728
+6981	481	1	15	70	\N	t	t	t	37	0	2025-01-20	0	2024-11-20 18:11:38.343783
 6191	1581	0	0	9	\N	f	t	f	0	0	\N	0	2024-11-07 08:19:54.089899
 6254	473	0	6	7	2024-11-05 00:03:33+00	f	t	f	0	0	\N	5	2024-11-07 09:50:43.04196
 6142	485	1	9	61	2024-11-05 00:03:33+00	t	t	t	57	0	2024-11-07	8	2024-11-06 10:38:51.35959
@@ -23094,7 +23237,6 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 6663	1505	1	6	35	\N	t	t	t	20	0	2024-11-22	0	2024-11-14 09:25:55.792706
 6510	1563	1	1	29	\N	t	t	t	20	0	2024-11-22	0	2024-11-13 13:11:19.044856
 6993	765	1	8	74	\N	t	t	t	46	0	2024-11-25	0	2024-11-21 08:27:53.880259
-7196	266	1	3	74	\N	t	t	f	0	0	\N	0	2024-11-25 11:50:30.918636
 7262	338	0	2	18	\N	f	t	f	0	0	\N	0	2024-11-26 08:54:05.962254
 7296	1572	0	0	35	\N	f	t	f	0	0	\N	0	2024-11-26 13:50:59.458903
 7426	1514	0	7	76	\N	f	t	f	0	0	\N	0	2024-11-26 16:12:15.6808
@@ -23162,6 +23304,7 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 7953	345	1	3	57	\N	t	t	t	20	0	2024-12-17	0	2024-11-28 17:25:45.076264
 8082	584	1	4	1	\N	t	t	t	25	0	2024-12-19	0	2024-11-29 14:42:55.360787
 7108	487	1	10	1	2024-11-05 00:03:33+00	t	t	t	25	0	2024-12-19	7	2024-11-22 11:45:40.324016
+7196	266	1	3	74	\N	t	t	t	46	0	2025-01-16	0	2024-11-25 11:50:30.918636
 6090	1534	0	2	9	\N	f	t	f	0	0	\N	0	2024-11-06 08:01:00.234732
 6153	1519	0	5	9	\N	f	t	f	0	0	\N	0	2024-11-06 13:23:30.546505
 6206	602	0	5	34	\N	f	t	f	0	0	\N	0	2024-11-07 09:10:11.897874
@@ -23171,9 +23314,7 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 6266	488	1	6	13	\N	t	t	t	62	0	2024-11-07	0	2024-11-07 11:06:01.220352
 6418	1101	0	8	61	\N	f	t	f	0	0	\N	0	2024-11-08 14:13:32.370894
 6464	473	0	6	51	2024-11-05 00:03:33+00	f	t	f	0	0	\N	4	2024-11-11 20:25:30.137473
-6613	487	1	10	64	\N	t	t	f	0	0	\N	0	2024-11-13 21:53:59.756279
 4890	517	1	0	30	2024-11-05 16:23:33.182911+00	t	f	f	0	0	\N	0	\N
-6614	488	1	6	64	\N	t	t	f	0	0	\N	0	2024-11-13 21:54:02.546685
 6664	1510	0	6	35	\N	f	t	f	0	0	\N	0	2024-11-14 09:27:03.5531
 6711	1734	0	0	53	\N	f	t	f	0	0	\N	0	2024-11-14 16:03:23.232909
 6765	591	1	10	78	\N	t	t	t	29	0	2024-11-15	0	2024-11-15 11:50:24.66412
@@ -23181,6 +23322,7 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 6910	486	0	5	36	\N	f	t	f	0	0	\N	0	2024-11-18 18:49:30.439292
 6994	852	0	3	74	\N	f	t	f	0	0	\N	0	2024-11-21 08:32:06.938045
 6952	1511	1	5	78	\N	t	t	t	29	0	2024-11-21	4	2024-11-20 11:23:10.527002
+6613	487	1	10	64	\N	t	t	t	37	0	2025-01-20	0	2024-11-13 21:53:59.756279
 4903	539	0	5	27	2024-11-05 16:23:33.182911+00	f	t	f	0	0	\N	0	2023-05-17 00:00:00
 4904	539	0	5	73	2024-11-05 16:23:33.182911+00	f	t	f	0	0	\N	0	2023-09-30 00:00:00
 4905	539	0	5	59	2024-11-05 16:23:33.182911+00	f	t	f	0	0	\N	0	2024-02-23 00:00:00
@@ -23244,6 +23386,7 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 6862	1511	1	5	29	2024-11-05 00:03:33+00	t	t	t	20	0	2024-11-22	4	2024-11-17 21:20:59.775492
 6511	974	1	7	29	\N	t	t	t	20	0	2024-11-22	0	2024-11-13 13:11:31.403278
 7109	562	0	17	1	2024-11-05 00:03:33+00	f	t	f	0	0	\N	16	2024-11-22 11:49:26.776064
+6614	488	1	6	64	\N	t	t	t	37	0	2025-01-20	0	2024-11-13 21:54:02.546685
 7152	282	0	3	53	\N	f	t	f	0	0	\N	0	2024-11-25 11:09:40.681671
 7297	473	0	6	1	2024-11-05 00:03:33+00	f	t	f	0	0	\N	4	2024-11-26 14:19:36.215905
 7427	1515	0	6	76	\N	f	t	f	0	0	\N	0	2024-11-26 16:16:21.584505
@@ -24023,9 +24166,7 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 7354	485	0	9	50	2024-11-05 00:03:33+00	f	t	f	0	0	\N	8	2024-11-26 14:23:08.192631
 5727	1119	1	0	25	2024-11-05 16:23:33.182911+00	t	f	f	0	0	\N	0	\N
 7355	1524	0	2	50	\N	f	t	f	0	0	\N	0	2024-11-26 14:23:11.187711
-7432	339	1	9	74	\N	t	t	f	0	0	\N	0	2024-11-27 08:00:22.998569
 7437	344	0	2	74	\N	f	t	f	0	0	\N	0	2024-11-27 08:00:29.544472
-7438	345	1	3	74	\N	t	t	f	0	0	\N	0	2024-11-27 08:00:30.579754
 7439	346	0	4	74	\N	f	t	f	0	0	\N	0	2024-11-27 08:00:31.353748
 7529	1182	0	1	48	2024-11-05 00:03:33+00	f	t	f	0	0	\N	0	2024-11-27 13:48:22.332398
 7204	763	1	6	53	\N	t	t	t	18	0	2024-11-27	0	2024-11-25 11:52:35.499447
@@ -24067,6 +24208,8 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 7782	344	0	2	46	\N	f	t	f	0	0	\N	0	2024-11-28 08:43:16.612422
 7783	344	0	2	46	\N	f	t	f	0	0	\N	2	2024-11-28 08:43:18.074731
 7704	510	1	2	9	\N	t	t	t	62	0	2024-12-02	0	2024-11-27 16:07:22.472786
+7432	339	1	9	74	\N	t	t	t	46	0	2025-01-16	0	2024-11-27 08:00:22.998569
+7438	345	1	3	74	\N	t	t	t	46	0	2025-01-16	0	2024-11-27 08:00:30.579754
 5764	245	0	6	27	2024-11-05 16:23:33.182911+00	f	t	f	0	0	\N	0	2024-05-08 00:00:00
 5765	245	0	6	70	2024-11-05 16:23:33.182911+00	f	t	f	0	0	\N	0	2024-06-24 00:00:00
 5766	245	0	4	56	2024-11-05 16:23:33.182911+00	f	t	f	0	0	\N	0	2023-03-07 00:00:00
@@ -24197,7 +24340,6 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 7649	285	0	3	67	\N	f	t	f	0	0	\N	0	2024-11-27 15:43:10.55337
 7650	285	0	3	67	\N	f	t	f	0	0	\N	0	2024-11-27 15:43:10.681648
 7705	344	0	2	13	\N	f	t	f	0	0	\N	0	2024-11-27 16:07:39.868102
-7754	511	1	2	74	\N	t	t	f	0	0	\N	0	2024-11-28 08:02:32.403512
 7784	344	0	2	46	\N	f	t	f	0	0	\N	2	2024-11-28 08:43:18.281825
 7826	620	0	2	46	\N	f	t	f	0	0	\N	0	2024-11-28 09:18:09.57196
 7827	620	0	2	46	\N	f	t	f	0	0	\N	0	2024-11-28 09:18:09.749004
@@ -24301,14 +24443,12 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 6223	332	1	4	57	\N	t	t	t	20	0	2024-11-22	0	2024-11-07 09:20:05.572202
 6224	332	1	4	57	\N	t	t	t	20	0	2024-11-22	0	2024-11-07 09:20:07.982952
 7117	1524	0	2	29	\N	f	t	f	0	0	\N	0	2024-11-22 14:31:50.521986
-7208	279	1	5	74	\N	t	t	f	0	0	\N	0	2024-11-25 11:53:19.97048
 7271	764	0	7	18	\N	f	t	f	0	0	\N	0	2024-11-26 09:05:52.478964
 7272	852	0	3	18	\N	f	t	f	0	0	\N	0	2024-11-26 09:05:54.793547
 7364	1538	0	3	50	2024-11-05 00:03:33+00	f	t	f	0	0	\N	2	2024-11-26 14:24:09.164547
 7365	1539	0	4	50	2024-11-05 00:03:33+00	f	t	f	0	0	\N	2	2024-11-26 14:24:09.661475
 7366	1542	0	3	50	2024-11-05 00:03:33+00	f	t	f	0	0	\N	2	2024-11-26 14:24:10.444796
 7367	1734	0	0	50	\N	f	t	f	0	0	\N	0	2024-11-26 14:24:11.043033
-7441	509	1	2	74	\N	t	t	f	0	0	\N	0	2024-11-27 08:01:13.193017
 7477	1539	0	4	76	2024-11-05 00:03:33+00	f	t	f	0	0	\N	2	2024-11-27 08:49:52.146985
 7165	345	1	3	53	\N	t	t	t	18	0	2024-11-27	0	2024-11-25 11:19:25.107797
 7531	1183	0	1	48	2024-11-05 00:03:33+00	f	t	f	0	0	\N	0	2024-11-27 14:04:05.402517
@@ -24316,7 +24456,6 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 7573	275	0	4	9	\N	f	t	f	0	0	\N	0	2024-11-27 14:57:53.534745
 7651	755	0	5	9	\N	f	t	f	0	0	\N	0	2024-11-27 15:45:30.813109
 7706	69	0	6	48	\N	f	t	f	0	0	\N	0	2024-11-27 16:10:30.642691
-7755	512	1	2	74	\N	t	t	f	0	0	\N	0	2024-11-28 08:02:58.31822
 7828	621	0	2	46	\N	f	t	f	0	0	\N	0	2024-11-28 09:20:44.79639
 7829	621	0	2	46	\N	f	t	f	0	0	\N	0	2024-11-28 09:20:44.924491
 7862	1539	0	4	10	2024-11-05 00:03:33+00	f	t	f	0	0	\N	3	2024-11-28 11:21:42.915737
@@ -24345,6 +24484,9 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 8168	342	0	8	62	\N	f	t	f	0	0	\N	0	2024-12-03 10:02:45.561814
 7960	1512	1	1	65	\N	t	t	t	35	0	2024-12-04	0	2024-11-29 07:57:10.534853
 8154	474	1	3	65	\N	t	t	t	35	0	2024-12-04	0	2024-12-03 07:34:25.995707
+7208	279	1	5	74	\N	t	t	t	46	0	2025-01-16	0	2024-11-25 11:53:19.97048
+7441	509	1	2	74	\N	t	t	t	46	0	2025-01-16	0	2024-11-27 08:01:13.193017
+7755	512	1	2	74	\N	t	t	t	46	0	2025-01-16	0	2024-11-28 08:02:58.31822
 6029	1245	0	1	43	2024-11-05 16:23:33.182911+00	f	t	f	0	0	\N	0	2024-03-06 00:00:00
 6103	548	1	22	78	\N	t	t	t	29	0	2024-11-06	0	2024-11-06 08:38:18.81063
 6167	1524	0	1	9	\N	f	t	f	0	0	\N	0	2024-11-06 14:15:32.201522
@@ -26510,7 +26652,6 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 7118	498	0	9	29	\N	f	t	f	0	0	\N	0	2024-11-22 14:33:42.278326
 7119	578	0	5	29	\N	f	t	f	0	0	\N	0	2024-11-22 14:34:02.066683
 7166	475	0	3	53	\N	f	t	f	0	0	\N	0	2024-11-25 11:19:47.459099
-7209	280	1	5	74	\N	t	t	f	0	0	\N	0	2024-11-25 11:53:43.684126
 7368	1775	0	0	50	\N	f	t	f	0	0	\N	0	2024-11-26 14:24:35.426516
 7442	771	0	2	74	\N	f	t	f	0	0	\N	0	2024-11-27 08:02:13.860521
 7478	1540	0	3	76	2024-11-05 00:03:33+00	f	t	f	0	0	\N	2	2024-11-27 08:51:11.100006
@@ -26520,7 +26661,6 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 7652	282	0	3	67	\N	f	t	f	0	0	\N	0	2024-11-27 15:45:47.194165
 7653	282	0	3	67	\N	f	t	f	0	0	\N	0	2024-11-27 15:45:47.424784
 7654	283	0	3	67	\N	f	t	f	0	0	\N	0	2024-11-27 15:45:49.457005
-7756	513	1	4	74	\N	t	t	f	0	0	\N	0	2024-11-28 08:03:20.273583
 7787	346	0	4	46	\N	f	t	f	0	0	\N	0	2024-11-28 08:44:37.406446
 7788	346	0	4	46	\N	f	t	f	0	0	\N	0	2024-11-28 08:44:37.721462
 7273	1506	1	6	76	\N	t	t	t	29	0	2024-11-28	0	2024-11-26 09:06:21.572819
@@ -26548,6 +26688,7 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 8181	556	0	7	62	\N	f	t	f	0	0	\N	0	2024-12-03 10:35:37.377893
 8055	345	1	3	65	\N	t	t	t	35	0	2024-12-04	0	2024-11-29 13:57:52.358867
 8155	476	1	3	65	\N	t	t	t	35	0	2024-12-04	0	2024-12-03 07:40:54.91487
+7756	513	1	4	74	\N	t	t	t	46	0	2025-01-16	0	2024-11-28 08:03:20.273583
 8332	1182	0	1	30	\N	f	t	f	0	0	\N	0	2024-12-04 14:56:45.280333
 8333	1183	0	1	30	\N	f	t	f	0	0	\N	0	2024-12-04 14:56:46.534484
 8334	1184	0	1	30	\N	f	t	f	0	0	\N	0	2024-12-04 14:56:47.194006
@@ -26636,7 +26777,6 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 8416	574	0	5	70	\N	f	t	f	0	0	\N	0	2024-12-05 16:07:32.431603
 8417	578	0	5	70	\N	f	t	f	0	0	\N	0	2024-12-05 16:10:52.522207
 8418	859	0	4	70	\N	f	t	f	0	0	\N	0	2024-12-05 16:15:32.62031
-8419	487	1	10	70	\N	t	t	f	0	0	\N	0	2024-12-05 16:18:45.075814
 8405	488	1	6	42	\N	t	t	t	31	0	2024-12-09	0	2024-12-05 11:03:59.964016
 8383	613	1	1	42	\N	t	t	t	31	0	2024-12-09	0	2024-12-05 09:43:07.967762
 8350	1108	1	4	59	\N	t	t	t	3	0	2024-12-09	0	2024-12-04 21:26:05.128519
@@ -26807,7 +26947,6 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 8914	1808	0	0	46	\N	f	t	f	0	0	\N	0	2024-12-19 08:28:25.793372
 8915	1134	1	6	46	2024-11-05 00:03:33+00	t	t	f	0	0	\N	5	2024-12-19 08:29:59.08966
 8916	1134	1	6	46	2024-11-05 00:03:33+00	t	t	f	0	0	\N	5	2024-12-19 08:29:59.149051
-8918	510	1	3	74	\N	t	t	f	0	0	\N	2	2024-12-19 08:33:11.038123
 8919	755	0	6	74	\N	f	t	f	0	0	\N	5	2024-12-19 08:34:18.541834
 8920	1808	0	0	50	\N	f	t	f	0	0	\N	0	2024-12-19 08:38:00.735278
 7850	1109	1	7	48	\N	t	t	t	25	0	2024-12-19	0	2024-11-28 11:00:50.766079
@@ -26829,6 +26968,7 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 8793	1525	1	11	30	\N	t	t	t	31	0	2024-12-19	0	2024-12-17 16:38:45.257237
 8796	1528	1	6	30	\N	t	t	t	31	0	2024-12-19	0	2024-12-17 16:38:47.011395
 8804	1532	1	10	30	\N	t	t	t	31	0	2024-12-19	0	2024-12-17 16:38:52.846454
+8918	510	1	3	74	\N	t	t	t	46	0	2025-01-16	2	2024-12-19 08:33:11.038123
 8517	21	0	3	75	\N	f	t	f	0	0	\N	0	2024-12-06 18:52:31.878072
 8518	1111	0	6	75	\N	f	t	f	0	0	\N	0	2024-12-06 18:52:34.095543
 8520	469	0	6	75	\N	f	t	f	0	0	\N	0	2024-12-06 18:59:33.055977
@@ -26837,7 +26977,6 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 8523	485	0	9	75	\N	f	t	f	0	0	\N	0	2024-12-06 18:59:41.610705
 8524	498	0	9	75	\N	f	t	f	0	0	\N	0	2024-12-06 18:59:56.257195
 8525	481	1	15	75	\N	t	t	f	0	0	\N	0	2024-12-06 19:00:02.693502
-8526	488	1	6	70	\N	t	t	f	0	0	\N	0	2024-12-06 21:53:13.643424
 8527	473	0	6	70	2024-11-05 00:03:33+00	f	t	f	0	0	\N	4	2024-12-06 21:53:16.481232
 8529	1518	0	6	9	\N	f	t	f	0	0	\N	5	2024-12-09 08:19:47.866625
 8530	1518	0	6	74	2024-11-05 00:03:33+00	f	t	f	0	0	\N	5	2024-12-09 08:20:18.115431
@@ -26920,11 +27059,10 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 8561	638	1	4	31	2024-11-05 00:03:33+00	t	t	t	20	0	2024-12-17	3	2024-12-09 13:19:22.322139
 8800	481	1	15	30	\N	t	t	t	31	0	2024-12-19	0	2024-12-17 16:38:50.461308
 8596	552	1	3	62	2024-11-05 00:03:33+00	t	t	t	57	0	2025-01-06	2	2024-12-09 14:52:48.482586
+8526	488	1	6	70	\N	t	t	t	37	0	2025-01-20	0	2024-12-06 21:53:13.643424
 8605	70	0	19	70	\N	f	t	f	0	0	\N	0	2024-12-09 19:29:20.372212
 8606	468	0	11	70	\N	f	t	f	0	0	\N	0	2024-12-09 19:32:42.076553
 8607	152	0	4	70	\N	f	t	f	0	0	\N	0	2024-12-09 19:34:12.474637
-8609	1834	1	0	74	\N	t	t	f	0	0	\N	0	2024-12-10 08:18:15.770884
-8610	552	1	3	74	2024-11-05 00:03:33+00	t	t	f	0	0	\N	2	2024-12-10 08:22:50.249076
 8611	275	0	5	74	\N	f	t	f	0	0	\N	4	2024-12-10 08:23:22.52655
 8612	1518	0	6	35	2024-11-05 00:03:33+00	f	t	f	0	0	\N	5	2024-12-10 08:43:40.293763
 8613	1517	0	5	61	\N	f	t	f	0	0	\N	4	2024-12-10 08:54:45.786375
@@ -26948,9 +27086,7 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 8632	152	0	4	38	\N	f	t	f	0	0	\N	0	2024-12-10 15:29:46.339999
 8633	541	0	7	38	\N	f	t	f	0	0	\N	0	2024-12-10 15:29:48.052098
 8634	70	0	19	38	\N	f	t	f	0	0	\N	19	2024-12-10 15:29:49.61555
-8635	638	1	4	74	2024-11-05 00:03:33+00	t	t	f	0	0	\N	3	2024-12-10 15:56:47.428649
 8595	1140	1	31	14	2024-11-05 00:03:33+00	t	t	t	27	0	2024-12-10	30	2024-12-09 14:52:46.108267
-8636	763	1	7	74	\N	t	t	f	0	0	\N	6	2024-12-10 15:59:09.968437
 8639	914	0	0	71	\N	f	t	f	0	0	\N	0	2024-12-10 16:22:46.629383
 8640	144	0	4	71	\N	f	t	f	0	0	\N	0	2024-12-10 16:22:53.591432
 8641	147	0	6	71	\N	f	t	f	0	0	\N	0	2024-12-10 16:26:57.721028
@@ -27012,6 +27148,9 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 8616	1140	1	31	62	2024-11-05 00:03:33+00	t	t	t	57	0	2025-01-06	30	2024-12-10 11:41:35.493959
 8692	1134	1	6	62	2024-11-05 00:03:33+00	t	t	t	57	0	2025-01-06	5	2024-12-16 16:23:01.624715
 8614	1834	1	0	62	\N	t	t	t	57	0	2025-01-06	0	2024-12-10 11:41:10.095142
+8609	1834	1	0	74	\N	t	t	t	46	0	2025-01-16	0	2024-12-10 08:18:15.770884
+8610	552	1	3	74	2024-11-05 00:03:33+00	t	t	t	46	0	2025-01-16	2	2024-12-10 08:22:50.249076
+8636	763	1	7	74	\N	t	t	t	46	0	2025-01-16	6	2024-12-10 15:59:09.968437
 8694	1111	0	6	81	\N	f	t	f	0	0	\N	6	2024-12-16 21:31:36.542862
 8695	1111	0	6	81	\N	f	t	f	0	0	\N	6	2024-12-16 21:44:15.529814
 8696	1111	0	6	81	\N	f	t	f	0	0	\N	6	2024-12-16 21:44:22.084689
@@ -27025,7 +27164,6 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 7947	636	1	3	57	\N	t	t	t	20	0	2024-12-17	0	2024-11-28 16:09:41.518129
 7548	74	1	5	31	\N	t	t	t	20	0	2024-12-17	0	2024-11-27 14:38:55.323815
 8677	638	1	4	63	2024-11-05 00:03:33+00	t	t	t	20	0	2024-12-17	3	2024-12-13 08:42:13.038037
-8702	1140	1	31	20	2024-11-05 00:03:33+00	t	t	f	0	0	\N	28	2024-12-17 09:46:19.099559
 8703	1180	0	1	20	2024-11-05 00:03:33+00	f	t	f	0	0	\N	0	2024-12-17 09:46:52.061625
 8704	1184	0	1	20	2024-11-05 00:03:33+00	f	t	f	0	0	\N	0	2024-12-17 09:47:00.46564
 8705	1185	0	1	20	2024-11-05 00:03:33+00	f	t	f	0	0	\N	0	2024-12-17 09:47:02.549655
@@ -27042,22 +27180,17 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 8716	486	0	5	20	\N	f	t	f	0	0	\N	0	2024-12-17 09:47:43.508866
 8717	498	0	9	20	\N	f	t	f	0	0	\N	0	2024-12-17 09:47:46.000691
 8718	1524	0	2	20	\N	f	t	f	0	0	\N	0	2024-12-17 09:47:55.21802
-8719	1525	1	11	20	2024-11-05 00:03:33+00	t	t	f	0	0	\N	10	2024-12-17 09:48:00.931005
 8720	1526	0	9	20	2024-11-05 00:03:33+00	f	t	f	0	0	\N	8	2024-12-17 09:48:04.470576
 8721	1527	0	6	20	2024-11-05 00:03:33+00	f	t	f	0	0	\N	5	2024-12-17 09:48:06.469257
 8722	1529	0	2	20	\N	f	t	f	0	0	\N	0	2024-12-17 09:48:08.201479
 8723	1530	0	1	20	\N	f	t	f	0	0	\N	0	2024-12-17 09:48:10.184722
 8724	1535	0	1	20	\N	f	t	f	0	0	\N	0	2024-12-17 09:48:12.230095
 8725	572	0	5	20	\N	f	t	f	0	0	\N	0	2024-12-17 09:48:13.318295
-8726	487	1	10	20	\N	t	t	f	0	0	\N	0	2024-12-17 09:48:20.10353
-8727	488	1	6	20	\N	t	t	f	0	0	\N	0	2024-12-17 09:48:22.755852
 8728	66	0	8	20	\N	f	t	f	0	0	\N	0	2024-12-17 09:48:26.64966
 8729	473	0	6	20	\N	f	t	f	0	0	\N	0	2024-12-17 09:48:28.528015
 8730	65	0	19	20	\N	f	t	f	0	0	\N	0	2024-12-17 09:48:29.993097
 8731	562	0	17	20	\N	f	t	f	0	0	\N	0	2024-12-17 09:48:32.39771
 8732	855	0	1	20	\N	f	t	f	0	0	\N	0	2024-12-17 09:48:34.372346
-8733	1110	1	7	20	\N	t	t	f	0	0	\N	0	2024-12-17 09:48:38.20431
-8734	1109	1	7	20	\N	t	t	f	0	0	\N	0	2024-12-17 09:48:39.734088
 8737	1514	0	8	78	\N	f	t	f	0	0	\N	7	2024-12-17 10:13:15.006958
 8738	1518	0	6	78	2024-11-05 00:03:33+00	f	t	f	0	0	\N	5	2024-12-17 10:28:52.395333
 8739	1722	0	0	78	\N	f	t	f	0	0	\N	0	2024-12-17 10:29:48.756915
@@ -27073,7 +27206,6 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 8834	1722	0	0	50	\N	f	t	f	0	0	\N	0	2024-12-18 14:42:15.373601
 8844	70	0	19	4	2024-11-05 00:03:33+00	f	t	f	0	0	\N	18	2024-12-18 16:01:04.956952
 8846	1808	0	0	18	\N	f	t	f	0	0	\N	0	2024-12-18 16:07:26.457725
-8850	1134	1	6	74	2024-11-05 00:03:33+00	t	t	f	0	0	\N	5	2024-12-18 16:26:41.464046
 8852	152	0	4	4	2024-11-05 00:03:33+00	f	t	f	0	0	\N	2	2024-12-18 16:39:28.186365
 8854	66	0	8	4	2024-11-05 00:03:33+00	f	t	f	0	0	\N	7	2024-12-18 16:53:14.423231
 8856	69	0	6	4	2024-11-05 00:03:33+00	f	t	f	0	0	\N	5	2024-12-18 17:01:31.477356
@@ -27104,6 +27236,12 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 8735	1176	1	3	78	2024-11-05 00:03:33+00	t	t	t	29	0	2024-12-20	2	2024-12-17 09:50:33.367993
 8736	1233	1	5	78	\N	t	t	t	29	0	2024-12-20	4	2024-12-17 10:04:47.523653
 8741	1834	1	0	78	\N	t	t	t	29	0	2024-12-20	0	2024-12-17 11:11:25.907704
+8734	1109	1	7	20	\N	t	t	t	37	0	2025-01-20	0	2024-12-17 09:48:39.734088
+8733	1110	1	7	20	\N	t	t	t	37	0	2025-01-20	0	2024-12-17 09:48:38.20431
+8702	1140	1	31	20	2024-11-05 00:03:33+00	t	t	t	37	0	2025-01-20	28	2024-12-17 09:46:19.099559
+8719	1525	1	11	20	2024-11-05 00:03:33+00	t	t	t	37	0	2025-01-20	10	2024-12-17 09:48:00.931005
+8726	487	1	10	20	\N	t	t	t	37	0	2025-01-20	0	2024-12-17 09:48:20.10353
+8727	488	1	6	20	\N	t	t	t	37	0	2025-01-20	0	2024-12-17 09:48:22.755852
 8822	1823	1	0	48	\N	t	t	t	25	0	2024-12-19	0	2024-12-18 07:41:10.102683
 8823	1834	1	0	48	\N	t	t	t	25	0	2024-12-19	0	2024-12-18 07:41:13.790577
 7481	265	1	3	48	\N	t	t	t	25	0	2024-12-19	0	2024-11-27 09:58:02.430751
@@ -27354,7 +27492,6 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 9155	545	1	8	23	\N	t	t	f	0	0	\N	7	2025-01-13 10:29:02.906726
 9156	555	0	9	23	\N	f	t	f	0	0	\N	8	2025-01-13 10:30:41.723996
 9157	636	1	4	23	\N	t	t	f	0	0	\N	3	2025-01-13 10:31:00.879336
-9159	559	1	7	74	2024-11-05 00:03:33+00	t	t	f	0	0	\N	6	2025-01-13 10:37:27.929917
 9164	603	0	5	50	2024-11-05 00:03:33+00	f	t	f	0	0	\N	4	2025-01-13 10:47:07.177379
 9165	277	0	4	50	\N	f	t	f	0	0	\N	3	2025-01-13 10:47:13.227914
 9166	283	0	4	50	\N	f	t	f	0	0	\N	3	2025-01-13 10:47:15.285135
@@ -27366,6 +27503,7 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 9132	545	1	8	53	\N	t	t	t	18	0	2025-01-15	7	2025-01-13 10:18:12.827147
 9135	559	1	7	53	2024-11-05 00:03:33+00	t	t	t	18	0	2025-01-15	6	2025-01-13 10:20:42.727284
 9134	636	1	4	53	\N	t	t	t	18	0	2025-01-15	3	2025-01-13 10:18:18.425543
+9159	559	1	7	74	2024-11-05 00:03:33+00	t	t	t	46	0	2025-01-16	6	2025-01-13 10:37:27.929917
 9171	555	0	9	50	\N	f	t	f	0	0	\N	8	2025-01-13 10:47:29.480817
 9173	559	1	7	46	2024-11-05 00:03:33+00	t	t	f	0	0	\N	6	2025-01-13 10:55:50.956618
 9174	1102	0	5	86	\N	f	t	f	0	0	\N	0	2025-01-13 10:55:51.149077
@@ -27380,12 +27518,10 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 9183	545	1	8	46	\N	t	t	f	0	0	\N	7	2025-01-13 11:13:57.47431
 9184	341	0	7	74	\N	f	t	f	0	0	\N	6	2025-01-13 11:14:28.515914
 9185	344	0	3	74	\N	f	t	f	0	0	\N	2	2025-01-13 11:18:56.220276
-9186	545	1	8	74	\N	t	t	f	0	0	\N	7	2025-01-13 11:23:12.68484
 9187	344	0	3	46	\N	f	t	f	0	0	\N	2	2025-01-13 11:27:49.271066
 9188	555	0	9	74	\N	f	t	f	0	0	\N	8	2025-01-13 11:29:13.561377
 9189	341	0	7	46	\N	f	t	f	0	0	\N	6	2025-01-13 11:31:49.506023
 9190	340	0	8	46	\N	f	t	f	0	0	\N	7	2025-01-13 11:37:07.249797
-9191	636	1	4	74	\N	t	t	f	0	0	\N	3	2025-01-13 11:37:32.746125
 9192	283	0	4	46	\N	f	t	f	0	0	\N	3	2025-01-13 11:39:15.352075
 9193	277	0	4	46	\N	f	t	f	0	0	\N	3	2025-01-13 11:43:59.326994
 9194	603	0	5	46	2024-11-05 00:03:33+00	f	t	f	0	0	\N	4	2025-01-13 12:04:01.060152
@@ -27417,7 +27553,6 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 9220	476	1	3	12	\N	t	t	f	0	0	\N	0	2025-01-14 11:29:59.407657
 9221	573	0	5	69	2024-11-05 00:03:33+00	f	t	f	0	0	\N	4	2025-01-14 14:05:07.193114
 9222	1819	0	0	70	\N	f	t	f	0	0	\N	0	2025-01-14 14:38:33.05886
-9223	636	1	4	78	\N	t	t	f	0	0	\N	3	2025-01-14 16:29:29.157353
 9224	1820	0	0	49	\N	f	t	f	0	0	\N	0	2025-01-15 10:29:21.664808
 9225	1820	0	0	49	\N	f	t	f	0	0	\N	0	2025-01-15 10:29:22.745641
 9226	559	1	7	18	2024-11-05 00:03:33+00	t	t	f	0	0	\N	6	2025-01-15 13:12:33.457903
@@ -27435,14 +27570,74 @@ COPY public.training_record (id, doc_id, risk_level, revision, userid, run_date,
 8973	638	1	4	30	\N	t	t	t	31	0	2025-01-15	3	2024-12-23 17:07:54.076982
 8974	638	1	4	30	\N	t	t	t	31	0	2025-01-15	3	2024-12-23 17:07:54.226839
 8975	638	1	4	30	\N	t	t	t	31	0	2025-01-15	3	2024-12-23 17:07:54.410576
+8850	1134	1	6	74	2024-11-05 00:03:33+00	t	t	t	46	0	2025-01-16	5	2024-12-18 16:26:41.464046
+7209	280	1	5	74	\N	t	t	t	46	0	2025-01-16	0	2024-11-25 11:53:43.684126
+7210	281	1	8	74	\N	t	t	t	46	0	2025-01-16	0	2024-11-25 11:54:00.721515
+7754	511	1	2	74	\N	t	t	t	46	0	2025-01-16	0	2024-11-28 08:02:32.403512
+9186	545	1	8	74	\N	t	t	t	46	0	2025-01-16	7	2025-01-13 11:23:12.68484
+9191	636	1	4	74	\N	t	t	t	46	0	2025-01-16	3	2025-01-13 11:37:32.746125
+8635	638	1	4	74	2024-11-05 00:03:33+00	t	t	t	46	0	2025-01-16	3	2024-12-10 15:56:47.428649
+9223	636	1	4	78	\N	t	t	t	29	0	2025-01-16	3	2025-01-14 16:29:29.157353
+9230	277	0	4	10	\N	f	t	f	0	0	\N	3	2025-01-16 10:27:03.075713
+9231	283	0	4	10	\N	f	t	f	0	0	\N	3	2025-01-16 10:37:47.556297
+9232	470	0	11	76	2024-11-05 00:03:33+00	f	t	f	0	0	\N	10	2025-01-16 11:04:07.886406
+9233	1182	0	1	86	\N	f	t	f	0	0	\N	0	2025-01-16 11:05:14.699967
+9234	1183	0	1	86	\N	f	t	f	0	0	\N	0	2025-01-16 11:17:22.876907
+9235	340	0	8	10	\N	f	t	f	0	0	\N	7	2025-01-16 11:18:42.141339
+9236	1184	0	1	86	\N	f	t	f	0	0	\N	0	2025-01-16 11:32:36.356689
+9237	277	0	4	76	\N	f	t	f	0	0	\N	3	2025-01-16 11:33:45.100743
+9238	341	0	7	10	\N	f	t	f	0	0	\N	6	2025-01-16 11:38:44.438388
+9239	1185	0	1	86	\N	f	t	f	0	0	\N	0	2025-01-16 12:08:09.633284
+9240	1186	0	1	86	\N	f	t	f	0	0	\N	0	2025-01-16 12:10:22.620389
+9241	344	0	3	10	\N	f	t	f	0	0	\N	2	2025-01-16 12:39:35.635762
+9242	277	0	4	78	\N	f	t	f	0	0	\N	3	2025-01-16 13:44:15.578025
+9243	283	0	4	78	\N	f	t	f	0	0	\N	3	2025-01-16 13:52:49.327002
+9244	340	0	8	78	\N	f	t	f	0	0	\N	7	2025-01-16 13:54:32.494649
+9245	636	1	4	10	\N	t	t	f	0	0	\N	3	2025-01-16 13:56:21.804763
+9246	341	0	7	78	\N	f	t	f	0	0	\N	6	2025-01-16 14:00:06.716396
+9247	344	0	3	78	\N	f	t	f	0	0	\N	2	2025-01-16 14:05:57.559562
+9248	545	1	8	78	\N	t	t	f	0	0	\N	7	2025-01-16 14:22:19.988065
+9249	1187	0	1	86	\N	f	t	f	0	0	\N	0	2025-01-16 14:32:03.706228
+9250	1188	0	1	86	\N	f	t	f	0	0	\N	0	2025-01-16 14:32:43.887095
+9251	1188	0	1	86	\N	f	t	f	0	0	\N	1	2025-01-16 14:32:45.606043
+9252	283	0	4	76	\N	f	t	f	0	0	\N	3	2025-01-16 14:57:37.642256
+9253	340	0	8	76	\N	f	t	f	0	0	\N	7	2025-01-16 15:11:53.762814
+9254	1134	1	6	9	2024-11-05 00:03:33+00	t	t	f	0	0	\N	5	2025-01-16 15:13:17.778453
+9255	545	1	8	10	\N	t	t	f	0	0	\N	7	2025-01-16 15:13:28.494999
+9256	552	1	3	9	2024-11-05 00:03:33+00	t	t	f	0	0	\N	2	2025-01-16 15:13:59.220251
+9257	555	0	9	78	\N	f	t	f	0	0	\N	8	2025-01-16 15:14:00.256093
+9258	555	0	9	10	\N	f	t	f	0	0	\N	8	2025-01-16 15:39:02.993886
+9259	341	0	7	76	\N	f	t	f	0	0	\N	6	2025-01-16 15:39:13.371082
+9260	344	0	3	76	\N	f	t	f	0	0	\N	2	2025-01-16 16:23:19.885626
+9261	545	1	8	76	\N	t	t	f	0	0	\N	7	2025-01-16 16:45:21.370328
+9262	555	0	9	76	\N	f	t	f	0	0	\N	8	2025-01-17 09:37:09.430975
+9263	636	1	4	76	\N	t	t	f	0	0	\N	3	2025-01-17 09:52:03.822207
+9264	1189	0	1	86	\N	f	t	f	0	0	\N	0	2025-01-17 10:17:52.725001
+9265	1190	0	1	86	\N	f	t	f	0	0	\N	0	2025-01-17 12:22:45.440787
+9266	1191	0	1	86	\N	f	t	f	0	0	\N	0	2025-01-17 14:14:18.428507
+9267	148	0	9	86	\N	f	t	f	0	0	\N	0	2025-01-17 14:19:44.928441
+9268	1698	0	0	86	\N	f	t	f	0	0	\N	0	2025-01-17 14:24:41.070999
+9269	559	1	7	65	2024-11-05 00:03:33+00	t	t	f	0	0	\N	6	2025-01-20 10:07:34.460983
+9270	603	0	5	65	2024-11-05 00:03:33+00	f	t	f	0	0	\N	4	2025-01-20 10:57:46.667564
+9271	277	0	4	65	\N	f	t	f	0	0	\N	3	2025-01-20 11:10:43.694791
+9272	283	0	4	65	\N	f	t	f	0	0	\N	3	2025-01-20 11:13:24.989795
+9273	340	0	8	65	\N	f	t	f	0	0	\N	7	2025-01-20 11:15:25.252416
+9274	341	0	7	65	\N	f	t	f	0	0	\N	6	2025-01-20 11:16:30.063105
+9275	344	0	3	65	\N	f	t	f	0	0	\N	2	2025-01-20 11:18:11.855588
+9276	545	1	8	65	\N	t	t	f	0	0	\N	7	2025-01-20 11:20:04.616433
+9277	636	1	4	65	\N	t	t	f	0	0	\N	3	2025-01-20 11:23:30.066205
+9278	555	0	9	65	\N	f	t	f	0	0	\N	8	2025-01-20 11:25:15.864195
+8419	487	1	10	70	\N	t	t	t	37	0	2025-01-20	0	2024-12-05 16:18:45.075814
+6791	481	1	15	64	\N	t	t	t	37	0	2025-01-20	0	2024-11-15 16:52:53.64565
+9279	470	0	11	86	\N	f	t	f	0	0	\N	0	2025-01-20 14:44:26.090077
 \.
 
 
 --
--- Data for Name: training_record_mistake; Type: TABLE DATA; Schema: public; Owner: binxenlightenmentdb
+-- Data for Name: training_record_mistake; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.training_record_mistake (id, doc_id, risk_level, revision, userid, run_date, needs_verification, trained, verified, verified_by, current_escalation_level, date_verified, old_revision, training_complete_date) FROM stdin;
+COPY "public"."training_record_mistake" ("id", "doc_id", "risk_level", "revision", "userid", "run_date", "needs_verification", "trained", "verified", "verified_by", "current_escalation_level", "date_verified", "old_revision", "training_complete_date") FROM stdin;
 3293	575	0	4	30	2024-11-04 16:49:04.026918+00	f	f	f	0	0	\N	4	\N
 3294	575	0	4	62	2024-11-04 16:49:04.026918+00	f	t	f	0	0	\N	4	2024-08-23 00:00:00
 3295	575	0	4	63	2024-11-04 16:49:04.026918+00	f	t	f	0	0	\N	4	2023-11-08 00:00:00
@@ -33498,10 +33693,10 @@ COPY public.training_record_mistake (id, doc_id, risk_level, revision, userid, r
 
 
 --
--- Data for Name: training_record_old; Type: TABLE DATA; Schema: public; Owner: binxenlightenmentdb
+-- Data for Name: training_record_old; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.training_record_old (id, doc_id, risk_level, revision, userid, run_date, needs_verification, trained, verified, verified_by, current_escalation_level, date_verified, old_revision, training_complete_date) FROM stdin;
+COPY "public"."training_record_old" ("id", "doc_id", "risk_level", "revision", "userid", "run_date", "needs_verification", "trained", "verified", "verified_by", "current_escalation_level", "date_verified", "old_revision", "training_complete_date") FROM stdin;
 823	1187	0	0	102	2024-04-07 13:56:01.924068+00	f	t	f	0	0	\N	0	2024-01-01 00:00:00
 909	486	0	5	21	2024-04-18 15:16:28.123032+00	f	t	f	0	0	\N	0	2024-04-18 15:16:28.123032
 937	595	0	2	35	2024-04-18 15:25:53.381183+00	f	t	f	0	0	\N	2	2024-04-18 15:25:53.381183
@@ -34607,18 +34802,18 @@ COPY public.training_record_old (id, doc_id, risk_level, revision, userid, run_d
 
 
 --
--- Data for Name: transaction_detail; Type: TABLE DATA; Schema: public; Owner: binxenlightenmentdb
+-- Data for Name: transaction_detail; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.transaction_detail (id, transaction_id, object_type, affected_doc_id, affected_doc_revision_id, affected_team_id, affected_role_id, affected_user_id) FROM stdin;
+COPY "public"."transaction_detail" ("id", "transaction_id", "object_type", "affected_doc_id", "affected_doc_revision_id", "affected_team_id", "affected_role_id", "affected_user_id") FROM stdin;
 \.
 
 
 --
--- Data for Name: transaction_log; Type: TABLE DATA; Schema: public; Owner: binxenlightenmentdb
+-- Data for Name: transaction_log; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.transaction_log (id, transaction_user_id, target_userid, transaction_type_id, transaction_data, date) FROM stdin;
+COPY "public"."transaction_log" ("id", "transaction_user_id", "target_userid", "transaction_type_id", "transaction_data", "date") FROM stdin;
 7	1	0	20	{"sessionuserid":1,"jobid":176,"docid":"1532"}	2024-11-05 10:56:07.729671+00
 8	14	77	11	{"sessionuserid":14,"team_id":"91","user_id":77}	2024-11-05 13:55:19.488361+00
 9	14	66	11	{"sessionuserid":14,"team_id":"91","user_id":66}	2024-11-05 13:55:24.117722+00
@@ -39036,14 +39231,106 @@ COPY public.transaction_log (id, transaction_user_id, target_userid, transaction
 4446	31	30	27	{"sessionUser":31,"doc_id":"638","userid":30,"revision":"4"}	2025-01-15 16:23:06.749064+00
 4447	31	42	27	{"sessionUser":31,"doc_id":"638","userid":42,"revision":"4"}	2025-01-15 16:23:09.347583+00
 4448	31	42	27	{"sessionUser":31,"doc_id":"622","userid":42,"revision":"5"}	2025-01-15 16:23:10.533319+00
+4449	46	74	27	{"sessionUser":46,"doc_id":"1134","userid":74,"revision":"6"}	2025-01-16 10:03:14.431477+00
+4450	46	74	27	{"sessionUser":46,"doc_id":"1834","userid":74,"revision":"0"}	2025-01-16 10:03:16.90787+00
+4451	46	74	27	{"sessionUser":46,"doc_id":"266","userid":74,"revision":"3"}	2025-01-16 10:03:19.768482+00
+4452	46	74	27	{"sessionUser":46,"doc_id":"279","userid":74,"revision":"5"}	2025-01-16 10:03:22.839419+00
+4453	46	74	27	{"sessionUser":46,"doc_id":"280","userid":74,"revision":"5"}	2025-01-16 10:03:24.96224+00
+4454	46	74	27	{"sessionUser":46,"doc_id":"281","userid":74,"revision":"8"}	2025-01-16 10:03:26.414238+00
+4455	46	74	27	{"sessionUser":46,"doc_id":"339","userid":74,"revision":"9"}	2025-01-16 10:03:27.369207+00
+4456	46	74	27	{"sessionUser":46,"doc_id":"345","userid":74,"revision":"3"}	2025-01-16 10:03:28.652209+00
+4457	46	74	27	{"sessionUser":46,"doc_id":"509","userid":74,"revision":"2"}	2025-01-16 10:03:29.405649+00
+4458	46	74	27	{"sessionUser":46,"doc_id":"510","userid":74,"revision":"3"}	2025-01-16 10:03:30.268786+00
+4459	46	74	27	{"sessionUser":46,"doc_id":"511","userid":74,"revision":"2"}	2025-01-16 10:03:31.890062+00
+4460	46	74	27	{"sessionUser":46,"doc_id":"512","userid":74,"revision":"2"}	2025-01-16 10:03:33.305118+00
+4461	46	74	27	{"sessionUser":46,"doc_id":"513","userid":74,"revision":"4"}	2025-01-16 10:03:34.90719+00
+4462	46	74	27	{"sessionUser":46,"doc_id":"514","userid":74,"revision":"3"}	2025-01-16 10:03:35.85198+00
+4463	46	74	27	{"sessionUser":46,"doc_id":"545","userid":74,"revision":"8"}	2025-01-16 10:03:37.091358+00
+4464	46	74	27	{"sessionUser":46,"doc_id":"546","userid":74,"revision":"8"}	2025-01-16 10:03:38.034661+00
+4465	46	74	27	{"sessionUser":46,"doc_id":"547","userid":74,"revision":"7"}	2025-01-16 10:03:39.705341+00
+4466	46	74	27	{"sessionUser":46,"doc_id":"552","userid":74,"revision":"3"}	2025-01-16 10:03:40.490405+00
+4467	46	74	27	{"sessionUser":46,"doc_id":"559","userid":74,"revision":"7"}	2025-01-16 10:03:41.780014+00
+4468	46	74	27	{"sessionUser":46,"doc_id":"628","userid":74,"revision":"16"}	2025-01-16 10:03:42.885366+00
+4469	46	74	27	{"sessionUser":46,"doc_id":"636","userid":74,"revision":"4"}	2025-01-16 10:03:44.195102+00
+4470	46	74	27	{"sessionUser":46,"doc_id":"638","userid":74,"revision":"4"}	2025-01-16 10:03:45.096488+00
+4471	46	74	27	{"sessionUser":46,"doc_id":"762","userid":74,"revision":"10"}	2025-01-16 10:03:46.239432+00
+4472	46	74	27	{"sessionUser":46,"doc_id":"763","userid":74,"revision":"7"}	2025-01-16 10:03:47.153854+00
+4473	29	78	27	{"sessionUser":29,"doc_id":"636","userid":78,"revision":"4"}	2025-01-16 10:05:11.346245+00
+4474	10	10	26	{"sessionUser":10,"doc_id":"277","risk_level":"0","revision":"4","run_date":null,"userid":"10","needs_verification":"0","trained":true,"old_revision":3}	2025-01-16 10:27:03.110273+00
+4475	10	10	26	{"sessionUser":10,"doc_id":"283","risk_level":"0","revision":"4","run_date":null,"userid":"10","needs_verification":"0","trained":true,"old_revision":3}	2025-01-16 10:37:47.591728+00
+4476	76	76	26	{"sessionUser":76,"doc_id":"470","risk_level":"0","revision":"11","run_date":"2024-11-05T16:23:33.182Z","userid":"76","needs_verification":"0","trained":true,"old_revision":10}	2025-01-16 11:04:07.917557+00
+4477	86	86	26	{"sessionUser":86,"doc_id":"1182","risk_level":"0","revision":"1","run_date":null,"userid":"86","needs_verification":"0","trained":true,"old_revision":0}	2025-01-16 11:05:14.732576+00
+4478	86	86	26	{"sessionUser":86,"doc_id":"1183","risk_level":"0","revision":"1","run_date":null,"userid":"86","needs_verification":"0","trained":true,"old_revision":0}	2025-01-16 11:17:22.906872+00
+4479	10	10	26	{"sessionUser":10,"doc_id":"340","risk_level":"0","revision":"8","run_date":null,"userid":"10","needs_verification":"0","trained":true,"old_revision":7}	2025-01-16 11:18:42.175044+00
+4480	86	86	26	{"sessionUser":86,"doc_id":"1184","risk_level":"0","revision":"1","run_date":null,"userid":"86","needs_verification":"0","trained":true,"old_revision":0}	2025-01-16 11:32:36.390515+00
+4481	76	76	26	{"sessionUser":76,"doc_id":"277","risk_level":"0","revision":"4","run_date":null,"userid":"76","needs_verification":"0","trained":true,"old_revision":3}	2025-01-16 11:33:45.145842+00
+4482	10	10	26	{"sessionUser":10,"doc_id":"341","risk_level":"0","revision":"7","run_date":null,"userid":"10","needs_verification":"0","trained":true,"old_revision":6}	2025-01-16 11:38:44.470324+00
+4483	86	86	26	{"sessionUser":86,"doc_id":"1185","risk_level":"0","revision":"1","run_date":null,"userid":"86","needs_verification":"0","trained":true,"old_revision":0}	2025-01-16 12:08:09.665614+00
+4484	86	86	26	{"sessionUser":86,"doc_id":"1186","risk_level":"0","revision":"1","run_date":null,"userid":"86","needs_verification":"0","trained":true,"old_revision":0}	2025-01-16 12:10:22.654751+00
+4485	10	10	26	{"sessionUser":10,"doc_id":"344","risk_level":"0","revision":"3","run_date":null,"userid":"10","needs_verification":"0","trained":true,"old_revision":2}	2025-01-16 12:39:35.669102+00
+4486	78	78	26	{"sessionUser":78,"doc_id":"277","risk_level":"0","revision":"4","run_date":null,"userid":"78","needs_verification":"0","trained":true,"old_revision":3}	2025-01-16 13:44:15.607403+00
+4487	78	78	26	{"sessionUser":78,"doc_id":"283","risk_level":"0","revision":"4","run_date":null,"userid":"78","needs_verification":"0","trained":true,"old_revision":3}	2025-01-16 13:52:49.36013+00
+4488	78	78	26	{"sessionUser":78,"doc_id":"340","risk_level":"0","revision":"8","run_date":null,"userid":"78","needs_verification":"0","trained":true,"old_revision":7}	2025-01-16 13:54:32.52832+00
+4489	10	10	26	{"sessionUser":10,"doc_id":"636","risk_level":"1","revision":"4","run_date":null,"userid":"10","needs_verification":"1","trained":true,"old_revision":3}	2025-01-16 13:56:21.837605+00
+4490	78	78	26	{"sessionUser":78,"doc_id":"341","risk_level":"0","revision":"7","run_date":null,"userid":"78","needs_verification":"0","trained":true,"old_revision":6}	2025-01-16 14:00:06.750708+00
+4491	78	78	26	{"sessionUser":78,"doc_id":"344","risk_level":"0","revision":"3","run_date":null,"userid":"78","needs_verification":"0","trained":true,"old_revision":2}	2025-01-16 14:05:57.590446+00
+4492	78	78	26	{"sessionUser":78,"doc_id":"545","risk_level":"1","revision":"8","run_date":null,"userid":"78","needs_verification":"1","trained":true,"old_revision":7}	2025-01-16 14:22:20.038464+00
+4493	86	86	26	{"sessionUser":86,"doc_id":"1187","risk_level":"0","revision":"1","run_date":null,"userid":"86","needs_verification":"0","trained":true,"old_revision":0}	2025-01-16 14:32:03.738793+00
+4494	86	86	26	{"sessionUser":86,"doc_id":"1188","risk_level":"0","revision":"1","run_date":null,"userid":"86","needs_verification":"0","trained":true,"old_revision":0}	2025-01-16 14:32:43.920482+00
+4495	86	86	26	{"sessionUser":86,"doc_id":"1188","risk_level":"0","revision":"1","run_date":null,"userid":"86","needs_verification":"0","trained":true,"old_revision":1}	2025-01-16 14:32:45.639699+00
+4496	76	76	26	{"sessionUser":76,"doc_id":"283","risk_level":"0","revision":"4","run_date":null,"userid":"76","needs_verification":"0","trained":true,"old_revision":3}	2025-01-16 14:57:37.675637+00
+4497	76	76	26	{"sessionUser":76,"doc_id":"340","risk_level":"0","revision":"8","run_date":null,"userid":"76","needs_verification":"0","trained":true,"old_revision":7}	2025-01-16 15:11:53.798088+00
+4498	9	9	26	{"sessionUser":9,"doc_id":"1134","risk_level":"1","revision":"6","run_date":"2024-11-05T16:23:33.182Z","userid":"9","needs_verification":"1","trained":true,"old_revision":5}	2025-01-16 15:13:17.808751+00
+4499	10	10	26	{"sessionUser":10,"doc_id":"545","risk_level":"1","revision":"8","run_date":null,"userid":"10","needs_verification":"1","trained":true,"old_revision":7}	2025-01-16 15:13:28.530862+00
+4500	9	9	26	{"sessionUser":9,"doc_id":"552","risk_level":"1","revision":"3","run_date":"2024-11-05T16:23:33.182Z","userid":"9","needs_verification":"1","trained":true,"old_revision":2}	2025-01-16 15:13:59.251435+00
+4501	78	78	26	{"sessionUser":78,"doc_id":"555","risk_level":"0","revision":"9","run_date":null,"userid":"78","needs_verification":"0","trained":true,"old_revision":8}	2025-01-16 15:14:00.286548+00
+4502	10	10	26	{"sessionUser":10,"doc_id":"555","risk_level":"0","revision":"9","run_date":null,"userid":"10","needs_verification":"0","trained":true,"old_revision":8}	2025-01-16 15:39:03.024082+00
+4503	76	76	26	{"sessionUser":76,"doc_id":"341","risk_level":"0","revision":"7","run_date":null,"userid":"76","needs_verification":"0","trained":true,"old_revision":6}	2025-01-16 15:39:13.400324+00
+4504	76	76	26	{"sessionUser":76,"doc_id":"344","risk_level":"0","revision":"3","run_date":null,"userid":"76","needs_verification":"0","trained":true,"old_revision":2}	2025-01-16 16:23:19.921076+00
+4505	76	76	26	{"sessionUser":76,"doc_id":"545","risk_level":"1","revision":"8","run_date":null,"userid":"76","needs_verification":"1","trained":true,"old_revision":7}	2025-01-16 16:45:21.401437+00
+4506	76	76	26	{"sessionUser":76,"doc_id":"555","risk_level":"0","revision":"9","run_date":null,"userid":"76","needs_verification":"0","trained":true,"old_revision":8}	2025-01-17 09:37:09.466419+00
+4507	76	76	26	{"sessionUser":76,"doc_id":"636","risk_level":"1","revision":"4","run_date":null,"userid":"76","needs_verification":"1","trained":true,"old_revision":3}	2025-01-17 09:52:03.853192+00
+4508	86	86	26	{"sessionUser":86,"doc_id":"1189","risk_level":"0","revision":"1","run_date":null,"userid":"86","needs_verification":"0","trained":true,"old_revision":0}	2025-01-17 10:17:52.75595+00
+4509	86	86	26	{"sessionUser":86,"doc_id":"1190","risk_level":"0","revision":"1","run_date":null,"userid":"86","needs_verification":"0","trained":true,"old_revision":0}	2025-01-17 12:22:45.471891+00
+4510	86	86	26	{"sessionUser":86,"doc_id":"1191","risk_level":"0","revision":"1","run_date":null,"userid":"86","needs_verification":"0","trained":true,"old_revision":0}	2025-01-17 14:14:18.460152+00
+4511	86	86	26	{"sessionUser":86,"doc_id":"148","risk_level":"0","revision":"9","run_date":null,"userid":"86","needs_verification":"0","trained":true,"old_revision":0}	2025-01-17 14:19:44.957334+00
+4512	86	86	26	{"sessionUser":86,"doc_id":"1698","risk_level":"0","revision":"0","run_date":null,"userid":"86","needs_verification":"0","trained":true,"old_revision":0}	2025-01-17 14:24:41.102405+00
+4513	65	65	26	{"sessionUser":65,"doc_id":"559","risk_level":"1","revision":"7","run_date":"2024-11-05T16:23:33.182Z","userid":"65","needs_verification":"1","trained":true,"old_revision":6}	2025-01-20 10:07:34.495024+00
+4514	65	65	26	{"sessionUser":65,"doc_id":"603","risk_level":"0","revision":"5","run_date":"2024-11-05T16:23:33.182Z","userid":"65","needs_verification":"0","trained":true,"old_revision":4}	2025-01-20 10:57:46.699756+00
+4515	65	65	26	{"sessionUser":65,"doc_id":"277","risk_level":"0","revision":"4","run_date":null,"userid":"65","needs_verification":"0","trained":true,"old_revision":3}	2025-01-20 11:10:43.731689+00
+4516	65	65	26	{"sessionUser":65,"doc_id":"283","risk_level":"0","revision":"4","run_date":null,"userid":"65","needs_verification":"0","trained":true,"old_revision":3}	2025-01-20 11:13:25.021328+00
+4517	65	65	26	{"sessionUser":65,"doc_id":"340","risk_level":"0","revision":"8","run_date":null,"userid":"65","needs_verification":"0","trained":true,"old_revision":7}	2025-01-20 11:15:25.281866+00
+4518	65	65	26	{"sessionUser":65,"doc_id":"341","risk_level":"0","revision":"7","run_date":null,"userid":"65","needs_verification":"0","trained":true,"old_revision":6}	2025-01-20 11:16:30.095125+00
+4519	65	65	26	{"sessionUser":65,"doc_id":"344","risk_level":"0","revision":"3","run_date":null,"userid":"65","needs_verification":"0","trained":true,"old_revision":2}	2025-01-20 11:18:11.889509+00
+4520	65	65	26	{"sessionUser":65,"doc_id":"545","risk_level":"1","revision":"8","run_date":null,"userid":"65","needs_verification":"1","trained":true,"old_revision":7}	2025-01-20 11:20:04.645596+00
+4521	65	65	26	{"sessionUser":65,"doc_id":"636","risk_level":"1","revision":"4","run_date":null,"userid":"65","needs_verification":"1","trained":true,"old_revision":3}	2025-01-20 11:23:30.097752+00
+4522	65	65	26	{"sessionUser":65,"doc_id":"555","risk_level":"0","revision":"9","run_date":null,"userid":"65","needs_verification":"0","trained":true,"old_revision":8}	2025-01-20 11:25:15.896543+00
+4523	37	20	27	{"sessionUser":37,"doc_id":"1109","userid":20,"revision":"7"}	2025-01-20 13:24:21.597969+00
+4524	37	20	27	{"sessionUser":37,"doc_id":"1110","userid":20,"revision":"7"}	2025-01-20 13:24:22.807462+00
+4525	37	20	27	{"sessionUser":37,"doc_id":"1140","userid":20,"revision":"31"}	2025-01-20 13:24:25.127162+00
+4526	37	20	27	{"sessionUser":37,"doc_id":"1525","userid":20,"revision":"11"}	2025-01-20 13:24:26.196855+00
+4527	37	20	27	{"sessionUser":37,"doc_id":"487","userid":20,"revision":"10"}	2025-01-20 13:24:27.437085+00
+4528	37	20	27	{"sessionUser":37,"doc_id":"488","userid":20,"revision":"6"}	2025-01-20 13:24:28.817788+00
+4529	37	8	27	{"sessionUser":37,"doc_id":"485","userid":8,"revision":"9"}	2025-01-20 13:24:31.457267+00
+4530	37	8	27	{"sessionUser":37,"doc_id":"487","userid":8,"revision":"10"}	2025-01-20 13:24:35.178022+00
+4531	37	8	27	{"sessionUser":37,"doc_id":"488","userid":8,"revision":"6"}	2025-01-20 13:24:36.260387+00
+4532	37	70	27	{"sessionUser":37,"doc_id":"1528","userid":70,"revision":"6"}	2025-01-20 13:24:38.651668+00
+4533	37	70	27	{"sessionUser":37,"doc_id":"1532","userid":70,"revision":"10"}	2025-01-20 13:24:40.751811+00
+4534	37	70	27	{"sessionUser":37,"doc_id":"481","userid":70,"revision":"15"}	2025-01-20 13:24:42.25328+00
+4535	37	70	27	{"sessionUser":37,"doc_id":"487","userid":70,"revision":"10"}	2025-01-20 13:24:43.624123+00
+4536	37	70	27	{"sessionUser":37,"doc_id":"488","userid":70,"revision":"6"}	2025-01-20 13:24:45.176168+00
+4537	37	64	27	{"sessionUser":37,"doc_id":"481","userid":64,"revision":"15"}	2025-01-20 13:24:46.948387+00
+4538	37	64	27	{"sessionUser":37,"doc_id":"487","userid":64,"revision":"10"}	2025-01-20 13:24:48.215899+00
+4539	37	64	27	{"sessionUser":37,"doc_id":"488","userid":64,"revision":"6"}	2025-01-20 13:24:50.054723+00
+4540	86	86	26	{"sessionUser":86,"doc_id":"470","risk_level":"0","revision":"11","run_date":null,"userid":"86","needs_verification":"0","trained":true,"old_revision":0}	2025-01-20 14:44:26.123124+00
 \.
 
 
 --
--- Data for Name: transaction_object_type; Type: TABLE DATA; Schema: public; Owner: binxenlightenmentdb
+-- Data for Name: transaction_object_type; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.transaction_object_type (id, name) FROM stdin;
+COPY "public"."transaction_object_type" ("id", "name") FROM stdin;
 1	Document
 2	User
 3	Team
@@ -39056,10 +39343,10 @@ COPY public.transaction_object_type (id, name) FROM stdin;
 
 
 --
--- Data for Name: transaction_type; Type: TABLE DATA; Schema: public; Owner: binxenlightenmentdb
+-- Data for Name: transaction_type; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.transaction_type (id, type_name, type_text) FROM stdin;
+COPY "public"."transaction_type" ("id", "type_name", "type_text") FROM stdin;
 9	CREATE_USER	Create NEW User
 11	ADD_USER_TO_TEAM	Add User to New Team
 12	CREATE_NEW_ROLE	Create a new user team role
@@ -39084,10 +39371,10 @@ COPY public.transaction_type (id, type_name, type_text) FROM stdin;
 
 
 --
--- Data for Name: transaction_type_object_type; Type: TABLE DATA; Schema: public; Owner: binxenlightenmentdb
+-- Data for Name: transaction_type_object_type; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.transaction_type_object_type (transaction_type_id, transaction_object_type_id) FROM stdin;
+COPY "public"."transaction_type_object_type" ("transaction_type_id", "transaction_object_type_id") FROM stdin;
 9	1
 11	4
 12	5
@@ -39108,10 +39395,10 @@ COPY public.transaction_type_object_type (transaction_type_id, transaction_objec
 
 
 --
--- Data for Name: user_jobtitle; Type: TABLE DATA; Schema: public; Owner: binxenlightenmentdb
+-- Data for Name: user_jobtitle; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.user_jobtitle (id, user_id, job_title_id) FROM stdin;
+COPY "public"."user_jobtitle" ("id", "user_id", "job_title_id") FROM stdin;
 526	5	186
 527	63	180
 528	29	181
@@ -39994,10 +40281,10 @@ COPY public.user_jobtitle (id, user_id, job_title_id) FROM stdin;
 
 
 --
--- Data for Name: user_raw; Type: TABLE DATA; Schema: public; Owner: binxenlightenmentdb
+-- Data for Name: user_raw; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.user_raw (lastname, firstname, emailaddress) FROM stdin;
+COPY "public"."user_raw" ("lastname", "firstname", "emailaddress") FROM stdin;
 BARNES	 SEAN	sean.barnes@mybinxhealth.com
 BARTLETT	 EVAN	evan.bartlett@mybinxhealth.com
 BEISSEL	 ANTHONY	anthony.beissel@mybinxhealth.com
@@ -40081,10 +40368,10 @@ WOOTEN	 ARIS	aris.wooten@mybinxhealth.com
 
 
 --
--- Data for Name: user_relationship_raw; Type: TABLE DATA; Schema: public; Owner: binxenlightenmentdb
+-- Data for Name: user_relationship_raw; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.user_relationship_raw (lastname, firstname, manageremail, directreportemail, member_of, manager_of, businesstitle, jobrolesforemployee, user_id, job_id, team_id) FROM stdin;
+COPY "public"."user_relationship_raw" ("lastname", "firstname", "manageremail", "directreportemail", "member_of", "manager_of", "businesstitle", "jobrolesforemployee", "user_id", "job_id", "team_id") FROM stdin;
 KARSONOVICH	Karsonovich		mike.karsonovich@mybinxhealth.com	President	President	President and Chief Commercial Officer	CCO	33	193	82
 OCASIO	Ocasio	mike.karsonovich@mybinxhealth.com	susan.ocasio@mybinxhealth.com	President		POC Regional Sales Director_Chicago	Commercial Sales Rep	51	194	82
 WATSON	Watson	victoriahall@mybinxhealth.com	javaise.watson@mybinxhealth.com	Oak House		Reagent Production Technician	QMS - Investigation	76	151	70
@@ -40788,10 +41075,10 @@ BEISSEL	Beissel	john.dowell@mybinxhealth.com	anthony.beissel@mybinxhealth.com	PO
 
 
 --
--- Data for Name: users; Type: TABLE DATA; Schema: public; Owner: binxenlightenmentdb
+-- Data for Name: users; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.users (id, username, email_address, firstname, surname, active, is_admin, is_manager, role, primary_title_id, reports_to, manages_team_id, location, md5) FROM stdin;
+COPY "public"."users" ("id", "username", "email_address", "firstname", "surname", "active", "is_admin", "is_manager", "role", "primary_title_id", "reports_to", "manages_team_id", "location", "md5") FROM stdin;
 64	Tim Stewart	tim.stewart@mybinxhealth.com	Tim	Stewart	t	f	t	manager	117	33	89	2	8483d858a705aad9fdf0a610726aebe9
 82	Matt Maguy	matt.maguy@mybinxhealth.com	Matt	Maguy	t	f	f	user	222	64	\N	2	70010e02b0c72d96b50ab481afd083f0
 40	Alyssa Luber	alyssa.luber@mybinxhealth.com	Alyssa	Luber	t	f	f	user	135	33	\N	2	9c1ff8a447c84865e1780f8e3f584a58
@@ -40882,183 +41169,260 @@ COPY public.users (id, username, email_address, firstname, surname, active, is_a
 
 
 --
--- Name: documents_id_seq1; Type: SEQUENCE SET; Schema: public; Owner: binxenlightenmentdb
+-- Name: documents_id_seq1; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.documents_id_seq1', 1391, true);
-
-
---
--- Name: job_documents_id_seq1; Type: SEQUENCE SET; Schema: public; Owner: binxenlightenmentdb
---
-
-SELECT pg_catalog.setval('public.job_documents_id_seq1', 1235, true);
+SELECT pg_catalog.setval('"public"."documents_id_seq1"', 1391, true);
 
 
 --
--- Name: job_titles_id_seq1; Type: SEQUENCE SET; Schema: public; Owner: binxenlightenmentdb
+-- Name: job_documents_id_seq1; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.job_titles_id_seq1', 224, true);
-
-
---
--- Name: location_id_seq; Type: SEQUENCE SET; Schema: public; Owner: binxenlightenmentdb
---
-
-SELECT pg_catalog.setval('public.location_id_seq', 2, true);
+SELECT pg_catalog.setval('"public"."job_documents_id_seq1"', 1235, true);
 
 
 --
--- Name: team_members_id_seq; Type: SEQUENCE SET; Schema: public; Owner: binxenlightenmentdb
+-- Name: job_titles_id_seq1; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.team_members_id_seq', 85, true);
-
-
---
--- Name: teams_id_seq1; Type: SEQUENCE SET; Schema: public; Owner: binxenlightenmentdb
---
-
-SELECT pg_catalog.setval('public.teams_id_seq1', 91, true);
+SELECT pg_catalog.setval('"public"."job_titles_id_seq1"', 224, true);
 
 
 --
--- Name: training_record_id_seq; Type: SEQUENCE SET; Schema: public; Owner: binxenlightenmentdb
+-- Name: location_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.training_record_id_seq', 1128, true);
-
-
---
--- Name: training_record_id_seq1; Type: SEQUENCE SET; Schema: public; Owner: binxenlightenmentdb
---
-
-SELECT pg_catalog.setval('public.training_record_id_seq1', 9343, true);
+SELECT pg_catalog.setval('"public"."location_id_seq"', 2, true);
 
 
 --
--- Name: training_record_id_seq2; Type: SEQUENCE SET; Schema: public; Owner: binxenlightenmentdb
+-- Name: team_members_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.training_record_id_seq2', 9229, true);
-
-
---
--- Name: transaction_detail_id_seq; Type: SEQUENCE SET; Schema: public; Owner: binxenlightenmentdb
---
-
-SELECT pg_catalog.setval('public.transaction_detail_id_seq', 1, false);
+SELECT pg_catalog.setval('"public"."team_members_id_seq"', 85, true);
 
 
 --
--- Name: transaction_log_id_seq1; Type: SEQUENCE SET; Schema: public; Owner: binxenlightenmentdb
+-- Name: teams_id_seq1; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.transaction_log_id_seq1', 4448, true);
-
-
---
--- Name: transaction_object_type_id_seq; Type: SEQUENCE SET; Schema: public; Owner: binxenlightenmentdb
---
-
-SELECT pg_catalog.setval('public.transaction_object_type_id_seq', 8, true);
+SELECT pg_catalog.setval('"public"."teams_id_seq1"', 91, true);
 
 
 --
--- Name: transaction_type_id_seq; Type: SEQUENCE SET; Schema: public; Owner: binxenlightenmentdb
+-- Name: training_record_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.transaction_type_id_seq', 28, true);
-
-
---
--- Name: user_jobtitle_id_seq1; Type: SEQUENCE SET; Schema: public; Owner: binxenlightenmentdb
---
-
-SELECT pg_catalog.setval('public.user_jobtitle_id_seq1', 1334, true);
+SELECT pg_catalog.setval('"public"."training_record_id_seq"', 1128, true);
 
 
 --
--- Name: users_id_seq1; Type: SEQUENCE SET; Schema: public; Owner: binxenlightenmentdb
+-- Name: training_record_id_seq1; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.users_id_seq1', 86, true);
-
-
---
--- Name: documents_old documents_pkey; Type: CONSTRAINT; Schema: public; Owner: binxenlightenmentdb
---
-
-ALTER TABLE ONLY public.documents_old
-    ADD CONSTRAINT documents_pkey PRIMARY KEY (id);
+SELECT pg_catalog.setval('"public"."training_record_id_seq1"', 9343, true);
 
 
 --
--- Name: documents documents_pkey1; Type: CONSTRAINT; Schema: public; Owner: binxenlightenmentdb
+-- Name: training_record_id_seq2; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-ALTER TABLE ONLY public.documents
-    ADD CONSTRAINT documents_pkey1 PRIMARY KEY (id);
-
-
---
--- Name: training_record_old training_record_pkey; Type: CONSTRAINT; Schema: public; Owner: binxenlightenmentdb
---
-
-ALTER TABLE ONLY public.training_record_old
-    ADD CONSTRAINT training_record_pkey PRIMARY KEY (id);
+SELECT pg_catalog.setval('"public"."training_record_id_seq2"', 9311, true);
 
 
 --
--- Name: training_record_mistake training_record_pkey1; Type: CONSTRAINT; Schema: public; Owner: binxenlightenmentdb
+-- Name: transaction_detail_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-ALTER TABLE ONLY public.training_record_mistake
-    ADD CONSTRAINT training_record_pkey1 PRIMARY KEY (id);
-
-
---
--- Name: training_record training_record_pkey2; Type: CONSTRAINT; Schema: public; Owner: binxenlightenmentdb
---
-
-ALTER TABLE ONLY public.training_record
-    ADD CONSTRAINT training_record_pkey2 PRIMARY KEY (id);
+SELECT pg_catalog.setval('"public"."transaction_detail_id_seq"', 1, false);
 
 
 --
--- Name: transaction_log transaction_log_pkey1; Type: CONSTRAINT; Schema: public; Owner: binxenlightenmentdb
+-- Name: transaction_log_id_seq1; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-ALTER TABLE ONLY public.transaction_log
-    ADD CONSTRAINT transaction_log_pkey1 PRIMARY KEY (id);
-
-
---
--- Name: transaction_type transaction_type_pkey; Type: CONSTRAINT; Schema: public; Owner: binxenlightenmentdb
---
-
-ALTER TABLE ONLY public.transaction_type
-    ADD CONSTRAINT transaction_type_pkey PRIMARY KEY (id);
+SELECT pg_catalog.setval('"public"."transaction_log_id_seq1"', 4572, true);
 
 
 --
--- Name: user_jobtitle user_jobtitle_pkey; Type: CONSTRAINT; Schema: public; Owner: binxenlightenmentdb
+-- Name: transaction_object_type_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-ALTER TABLE ONLY public.user_jobtitle
-    ADD CONSTRAINT user_jobtitle_pkey PRIMARY KEY (user_id, job_title_id);
+SELECT pg_catalog.setval('"public"."transaction_object_type_id_seq"', 8, true);
 
 
 --
--- Name: users users_pkey1; Type: CONSTRAINT; Schema: public; Owner: binxenlightenmentdb
+-- Name: transaction_type_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-ALTER TABLE ONLY public.users
-    ADD CONSTRAINT users_pkey1 PRIMARY KEY (id);
+SELECT pg_catalog.setval('"public"."transaction_type_id_seq"', 28, true);
+
+
+--
+-- Name: user_jobtitle_id_seq1; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('"public"."user_jobtitle_id_seq1"', 1334, true);
+
+
+--
+-- Name: users_id_seq1; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('"public"."users_id_seq1"', 86, true);
+
+
+--
+-- Name: documents_old documents_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY "public"."documents_old"
+    ADD CONSTRAINT "documents_pkey" PRIMARY KEY ("id");
+
+
+--
+-- Name: documents documents_pkey1; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY "public"."documents"
+    ADD CONSTRAINT "documents_pkey1" PRIMARY KEY ("id");
+
+
+--
+-- Name: training_record_old training_record_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY "public"."training_record_old"
+    ADD CONSTRAINT "training_record_pkey" PRIMARY KEY ("id");
+
+
+--
+-- Name: training_record_mistake training_record_pkey1; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY "public"."training_record_mistake"
+    ADD CONSTRAINT "training_record_pkey1" PRIMARY KEY ("id");
+
+
+--
+-- Name: training_record training_record_pkey2; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY "public"."training_record"
+    ADD CONSTRAINT "training_record_pkey2" PRIMARY KEY ("id");
+
+
+--
+-- Name: transaction_log transaction_log_pkey1; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY "public"."transaction_log"
+    ADD CONSTRAINT "transaction_log_pkey1" PRIMARY KEY ("id");
+
+
+--
+-- Name: transaction_type transaction_type_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY "public"."transaction_type"
+    ADD CONSTRAINT "transaction_type_pkey" PRIMARY KEY ("id");
+
+
+--
+-- Name: user_jobtitle user_jobtitle_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY "public"."user_jobtitle"
+    ADD CONSTRAINT "user_jobtitle_pkey" PRIMARY KEY ("user_id", "job_title_id");
+
+
+--
+-- Name: users users_pkey1; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY "public"."users"
+    ADD CONSTRAINT "users_pkey1" PRIMARY KEY ("id");
 
 
 --
 -- PostgreSQL database dump complete
+--
+
+--
+-- Database "training_jdmr" dump
+--
+
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 16.6 (Debian 16.6-1.pgdg120+1)
+-- Dumped by pg_dump version 16.6 (Debian 16.6-1.pgdg120+1)
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- Name: training_jdmr; Type: DATABASE; Schema: -; Owner: -
+--
+
+CREATE DATABASE "training_jdmr" WITH TEMPLATE = template0 ENCODING = 'UTF8' LOCALE_PROVIDER = libc LOCALE = 'en_US.UTF8';
+
+
+\connect "training_jdmr"
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- Name: training_jdmr; Type: DATABASE PROPERTIES; Schema: -; Owner: -
+--
+
+ALTER DATABASE "training_jdmr" SET "TimeZone" TO 'utc';
+
+
+\connect "training_jdmr"
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- Name: SCHEMA "public"; Type: COMMENT; Schema: -; Owner: -
+--
+
+COMMENT ON SCHEMA "public" IS 'standard public schema';
+
+
+--
+-- PostgreSQL database dump complete
+--
+
+--
+-- PostgreSQL database cluster dump complete
 --
 

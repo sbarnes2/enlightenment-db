@@ -1,0 +1,23 @@
+customer
+
+site
+
+io
+
+location
+
+results
+
+user
+
+error
+
+system
+	salt
+
+
+
+user
+	id guid
+	name
+	passwordhash
